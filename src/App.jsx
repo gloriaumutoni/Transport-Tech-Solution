@@ -7,8 +7,6 @@ import Routes from "./component/routes";
 import Booking from "./pages/Booking/booking";
 
 function App() {
-  // const [count, setCount] = useState(0);
-
   return (
    <>
      {/* <Home/>  */}
