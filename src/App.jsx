@@ -1,13 +1,13 @@
-
-import { BrowserRouter as Router } from 'react-router-dom'
-import Routes from './component/routes'
+import { useState } from "react";
+import { Route, BrowserRouter as Router } from "react-router-dom";
+import Routes from "./component/routes";
 // import './App.css'
 
-// import Admin from './pages/Admindashboard/admindash'
-// import Home from './pages/home/home'
+// import Admin from "./pages/Admindashboard/admindash";
+import Booking from "./pages/Booking/booking";
 
-
-const App=()=>{
+function App() {
+  // const [count, setCount] = useState(0);
 
   return (
    <>
@@ -18,5 +18,5 @@ const App=()=>{
    </>
   )
 }
- 
-export default App
+
+export default App;

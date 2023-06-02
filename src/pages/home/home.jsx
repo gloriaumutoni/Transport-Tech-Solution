@@ -4,7 +4,7 @@ import NavBar  from "../../pages/navigation/NavigationBar.jsx";
 import { FaSearch } from 'react-icons/fa';
 import {AiOutlineSwapRight} from 'react-icons/ai'
 import {AiOutlineRight} from 'react-icons/ai'
-import {motion} from 'framer-motion'
+// import {motion} from 'framer-motion'
 import { useRef,useEffect,useState } from 'react'
 import images from './images'
 import Image from '../image/ElecMobility.jpg'
