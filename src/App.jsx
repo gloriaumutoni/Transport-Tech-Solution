@@ -1,9 +1,8 @@
 import { useState } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import Routes from './component/routes'
-// import './App.css'
-
-// import Home from './pages/home/home'
+import './App.css'
+import Login from '../src/pages/login.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +10,7 @@ function App() {
   return (
     <>
       {/* <Home/> */}
+      <Login/>
       <Router>
     <Routes></Routes>
    </Router>

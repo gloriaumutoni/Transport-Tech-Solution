@@ -1,12 +1,13 @@
 import React from "react";
-import {Routes, Route} from 'react-router-dom'
+import {Routes, Route} from 'React-router-dom'
 
-import Trial from '../trial.jsx'
-const Index = () =>{
+import Login from '../Login.jsx'
+const Login = () =>{
     return(
         <Routes>
-            <Route path="/trial" element ={<Trial/>}/>
+            {/* <Route path="/trial" element ={<Trial/>}/> */}
+            <Route path="/login" element={<login />}/>
         </Routes>
     )
 }
-export default Index;
+export default Login;

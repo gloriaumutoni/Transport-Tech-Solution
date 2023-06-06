@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.all{
+    background: white;
+    margin-left: 160px;
+}
+.box{
+    background: whitesmoke;
+    /* z-index: 0; */
+    display: grid;
+    height: 65%;
+    width: 80%;
+    margin-top: 60px;
+    grid-template-columns: 0.4fr 1fr;
+}
+.blue{
+    background-color: rgb(17, 17, 56);
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+}
+.left{
+    background-color: whitesmoke;
+    display: grid;
+    height: 65%;
+    width: 80%;
+    grid-template-columns: 0.4fr 1fr;
+    margin-top: 40px;
+}
+.red{
+    background-color: rgb(4, 4, 46);
+    color: white;
+    border-radius: 0px 15px 15px 0px;
+}
+form h3{
+    padding-left: 30px;
+    color: black;
+}
+.red h1{
+    padding-top: 50px;
+    padding-left: 20px;
+}
+.red p{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.red p3{
+    padding-left: 20px;
+}
+.blue p3{
+    padding-left: 20px;
+}
+.blue h1{
+    padding-top: 50px;
+    padding-left: 20px;
+}
+.blue p{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+form{
+    padding-left: 70px;
+    padding-top: 30px;
+}
+form h1{
+    padding-left: 60px;
+}
+button{
+    margin-left: 100px;
+    margin-top: 80px;
+    background-color: rgb(4, 4, 46);
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid snow;
+    color: white;
+}
+button a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.user input{
+    height: 40px;
+    width: 400px;
+    background: rgb(231, 230, 230);
+    border: 2px solid white;
+    box-shadow: black;
+    border-radius: 15px;
+    
+    font: bold;
+}
+#email{
+    height: 40px;
+    width: 400px;
+    background: rgb(226, 223, 223);
+    border: 2px solid white;
+    /* box-shadow: black; */
+    border-radius: 15px;
+    
+
+}
+#password{
+    height: 40px;
+    width: 400px;
+    background: rgb(226, 223, 223);
+    border: 2px solid white;
+    /* box-shadow: black; */
+    border-radius: 15px;
+    
+}
+.sub{
+    background: rgb(51, 179, 179);
+    border-radius: 20px;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 100px;
+}
+.sub a{
+    text-decoration: none;
+    color: white;
+}
+.box1{
+    width: 30px;
+    height: 30px;
+    background: rgb(226, 223, 223);
+    border-radius: 50%;
+}
+.box2{
+    width: 30px;
+    height: 30px;
+    background: rgb(226, 223, 223);
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: -30px;
+    position: absolute;
+}
+.box3{
+    width: 30px;
+    height: 30px;
+    background: rgb(226, 223, 223);
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-top: -30px;
+    position: absolute;
+}
+.ico{
+    margin-left: 50px;
+}
