@@ -1,16 +1,20 @@
-import '../contact/contact.css';
+import '../contact-us/contactUs.css';
 import { BsFacebook, BsTwitter, BsInstagram, BsTelephone } from "react-icons/bs"
 import { ImLocation } from "react-icons/im"
 import { FiMail } from "react-icons/fi"
-import GoogleMapsLink from '../contact/GoogleMap';
+import GoogleMapsLink from '../contact-us/GoogleMap';
+import Navigation from '../Navigation/Navigation';
+
 
 let Contact = () => {
 
     return (
+        
         <div className='container'>
+             <Navigation />
         <div className="contactUs">
             <div className="title">
-                <h1>Get in Touch</h1>
+              <h1>Get in Touch</h1>
             </div>
             <div className='box'>
                 {/* form of contact */}
@@ -49,6 +53,7 @@ let Contact = () => {
                             <div className='row100'>
                                 <div className='inputBox'>
                                     <input type='submit' value="Send" id='submit'></input>
+                                    
                                 </div>
                             </div>
                         </div>
