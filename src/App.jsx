@@ -5,11 +5,13 @@ import Routes from "./component/routes";
 
 // import Admin from "./pages/Admindashboard/admindash";
 
+import { useState } from 'react'
+import Footer from '../src/component/footer.jsx';
 
 function App() {
   return (
    <>
-     {/* <Home/>  */}
+     {/* <Footer/>  */}
      <Router>
 <Routes></Routes>
 </Router>
