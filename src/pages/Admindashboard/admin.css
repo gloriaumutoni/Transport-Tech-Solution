@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    list-style: none;
+}
+.admin-container{
+    background-color: #2A4966;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.admin-content{
+    background-color: white;
+    
+}
+.admin-content h4{
+    padding: 20px 20px;
+}
+.line2{
+    content: "";
+    border: 1px solid #009AC7;
+    width: 90%;
+    margin: auto;
+}
+.card-admin{
+    width: 80%;
+    
+}
+.blue-card{
+    /* display: flex; */
+    /* justify-content: center; */
+    height: 22vh;
+}
+.blue-card:hover{
+    transition: 0.5s ease;
+}
+.blue-card h1{
+    margin-left: 115px;
+    width: 120px;
+    font-size: 40px;
+    color: #2A4966;
+}
+.blue-card p{
+    margin-left: 125px ;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #2A4966;
+    font-weight: 600;
+}
+.blue-card button{
+    height: 6vh;
+    position: absolute;
+    margin-top: 110px;
+    border-radius: 0 0 20px 20px;
+    background-color: #2A4966;
+    color: white;
+    font-size: 18px;
+    border: none;
+    width: 345px;
+    margin-left: -30px;
+}
+.blue-card button:hover{
+    background-color: #009AC7;
+    cursor: pointer;
+}

@@ -1,0 +1,86 @@
+.admin-sidebar{
+    position: fixed;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.logo h1{
+padding-bottom: 40px;
+margin-top: 20px;
+}
+.list-items {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.list-items ul {
+    list-style: none;
+}
+.list-items ul li{
+    padding-bottom: 40px;
+    gap: 20px;
+    
+}
+.list-items ul li a{
+    text-decoration: none;
+    color: white;
+}
+.line{
+    content: "";
+    margin-left: 30px;
+    border: 1px solid white;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    width: 150px;
+}
+/* The switch container */
+.switch {
+    position: relative;
+    display: inline-block;
+    margin-left: 40px;
+    width: 150px;
+    height: 34px;
+  }
+  
+  /* Hide the default checkbox */
+  .switch input {
+    display: none;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #009AC7;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    color: white;
+    height: 26px;
+    width: 85px;
+    left: 5px;
+    bottom: 4px;
+    background-color: #2A4966;
+    transition: 0.4s;
+    border-radius: 20px;
+  }
+  
+  /* Styling for the checked state */
+  input:checked + .slider {
+    background-color: #009AC7;
+    
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(55px);
+    
+  }
+  
