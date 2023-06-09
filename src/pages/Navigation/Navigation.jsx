@@ -15,10 +15,10 @@ let NavBar = () =>{
             </a>
             <div>
                 <ul id='navbar'>
-                 <li><a className='active' href='#'>Home</a></li>
+                 <li><a  href='#'>Home</a></li>
                  <li><a href='#'>Book here</a></li>
                  <li><a href='#'>Manage Booking</a></li>
-                 <li><a href='#'>Contact</a></li>
+                 <li><a className='active'href='#'>Contact</a></li>
                  <li><a href='#'>Sign in</a></li>   
                 </ul>
             </div>

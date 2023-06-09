@@ -3,14 +3,14 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import Routes from './component/routes'
 // import './App.css'
 
-// import Home from './pages/home/home'
+import Contact from "../src/pages/contact-us/contactUs"
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      {/* <Home/> */}
+       <Contact />
       <Router>
     <Routes></Routes>
    </Router>
