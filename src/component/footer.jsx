@@ -1,6 +1,7 @@
 import React from 'react'
 import style from "./footer.css"
-import { AiOutlineLinkedin } from "react-icons/ai";
+
+import  { AiFillLinkedin } from "react-icons/ai"; 
 import { AiFillFacebook } from "react-icons/ai";
 import { AiFillInstagram} from "react-icons/ai";
 import { FaTwitter} from "react-icons/fa";
@@ -64,9 +65,7 @@ function Footer(){
     <div className='line'>
 
     </div>
-    <div className='down'>
-<p>copy @ 2020 All right reserved by:Bus Link</p>
-    </div>
+
     <div class="icons">
     <div className='one'>
         < AiFillFacebook />
@@ -78,10 +77,17 @@ function Footer(){
         < AiFillInstagram/>
         </div>
         <div className='four'>
-        <AiOutlineLinkedin/>
+          < AiFillLinkedin/>
+       
         </div>
+        <div className='down'>
+<p>copy @ 2023 All right reserved by:Bus Link</p>
+    </div>
       </div>
  </div>
+ {/* <div className='down'>
+<p>copy @ 2020 All right reserved by:Bus Link</p>
+    </div> */}
  </div>
   </>
   )

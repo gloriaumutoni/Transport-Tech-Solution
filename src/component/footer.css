@@ -3,12 +3,13 @@
   padding: 0px;
   box-sizing: border-box;
   width: 100%;
+
 } 
 .all{
   background-color: rgb(214, 223, 223);
-  width: 1370px;
-  height: 600px;
-}
+   width: 100%;
+  height:100%; 
+ }
 .navbar{
   display: flex; 
 }
@@ -18,74 +19,112 @@
 }
 .navbar ul{
   display: flex;
-  gap: -10px;
-  padding-left: 150px;
   background-color:rgb(10, 10, 59);
-  width: 1350px;
+  width: 100%;
   height: 60px;
   
 }
 .navbar ul li{
   list-style: none;
   margin-top: 17px;
-
-  
+/* margin-left: 30%; */
 }
 .navbar ul li a{
   color: white;
   text-decoration: none;
 }
-.west{
-  padding-left: 100px;
-}
-.down{
-  margin-left: 500px;
-  color: rgb(24, 168, 168);
-  padding-top:310px;
-}
+/* .down{  */
+  /* margin-left: 40%; */
+  /* color: rgb(39, 167, 167); */
+  /* padding-top:1%;  */
+ /* } */
 .north p{
-  margin-top:40%;
+  margin-top:30%;
+  font-size: 16px;
 
 }
 .quick p{
-  margin-top:40%; 
+  margin-top:30%; 
+  font-size: 20px;
 }
 .left p{
-  margin-top: 40%;
+  margin-top: 30%;
+  font-size: 20px;
 }
 .east p{
-  margin-top: 40%; 
+  margin-top: 30%; 
+  font-size:20px;
 }
 
 .icons{
   display: flex;
-  padding-top:40px;
-}
-.cons{
-  margin-right: 200px;
+  padding-top:30.5%;
+  gap: 2px;
 
 }
+
+
 .lines-1{
-  width: 1250px;
-  margin-right: 20px;
-  margin-left:60px ;
-  margin-left: 20px;
+  width: 100%;
   height: 2px;
+  margin-top: 22%;
   background-color: rgb(153, 187, 187);
-  margin-top: 100PX;
   position: absolute;
-} 
+}  
 
-.line{
-  width: 1250px;
+ .line{
+  width: 100%;
   height: 2px;
-  margin-left: 20px;
-  margin-right: 100px;
+  margin-top :28%;
    background-color: rgb(153, 187, 187);
-  margin-top: 300PX;
   position: absolute;
 } 
 
 
-/* @media screen and(max-width:850){ */
-/* } */
+
+
+    @media screen and (max-width: 760px) { 
+  } 
+ .north {
+  padding-left:1%;
+  font-size: 14px;
+
+  } 
+.east-p{
+  padding-top: 10%;
+  font-size: 14px;
+  
+}
+.quick p{
+  /* margin-left:2%;  */
+  font-size: 14px;
+} 
+
+.north p{
+padding-left: 1%;
+font-size: 20px;
+}
+ 
+.all {
+  width: 100%; 
+  height: 100%;
+  margin-left:1%;
+  margin-right: 1%;
+  
+}
+
+.paragraph p{
+  margin-left:1%;
+  margin-right: 1%;
+  gap: 2%;
+  font-size:14px;
+ 
+} 
+
+
+.lines-1{
+ 
+  background-color: rgb(153, 187, 187);
+  margin-top: 7%;
+
+} 
