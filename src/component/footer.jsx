@@ -80,14 +80,14 @@ function Footer(){
           < AiFillLinkedin/>
        
         </div>
-        <div className='down'>
+        {/* <div className='down'>
 <p>copy @ 2023 All right reserved by:Bus Link</p>
-    </div>
+    </div> */}
       </div>
  </div>
- {/* <div className='down'>
+ <div className='down'>
 <p>copy @ 2020 All right reserved by:Bus Link</p>
-    </div> */}
+    </div>
  </div>
   </>
   )
