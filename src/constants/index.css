@@ -1,0 +1,18 @@
+.card-admin{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    padding: 40px 50px;
+    margin: auto;
+}
+.blue-card{
+    padding: 20px 30px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;   
+    width: 90%;
+    background-color: white;
+    border: 1px solid black;
+}
