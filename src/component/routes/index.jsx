@@ -1,7 +1,12 @@
 import React from "react";
 import {Routes, Route} from 'react-router-dom'
-import Home from '../../pages/home/home.jsx';
 import Admindash from '../../pages/Admindashboard/admindash'
+import Admindash2 from "../../pages/Admindashboard/admindash2";
+import Admindash3 from "../../pages/Admindashboard/admindash3"
+import Admindash4 from '../../pages/Admindashboard/admindash4'
+import Admindash5 from '../../pages/Admindashboard/admindash5'
+import Home from '../../pages/home/home.jsx';
+// import Admindash from '../../pages/Admindashboard/admindash'
 import Trial from '../trial.jsx'
 import Booking from "../../pages/Booking/booking";
 import Destination from "../../pages/Destination/destination";
@@ -12,10 +17,10 @@ const Index = () =>{
         <Routes>
             <Route path="/trial" element ={<Trial/>}/>
             <Route path="/admin" element={<Admindash/>}/>
-            <Route path="/booking" element={<Booking/>}/>
-            <Route path="/destination" element={<Destination/>}/>
-            <Route path='/' element={<Home/>}/>
-           
+            <Route path="/driver" element={<Admindash2/>}/>
+            <Route path="/bus" element={<Admindash3/>}/>
+            <Route path="/claim" element={<Admindash4/>}/>
+            <Route path="/form" element={<Admindash5/>}/>
         </Routes>
     )
 }
