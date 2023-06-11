@@ -1,59 +1,43 @@
 import React from 'react';
-import './signup.css'
-// import AiOutlineEyeInvisible from "react-icons"
-import { AiOutlineEyeInvisible } from 'react-icons/ai';
-import { AiFillGooglePlusCircle } from 'react-icons/ai';
-// import { BiLogoLinkedin } from 'react-icons/bi';
-const Signup = () => {
-    return (
-        <>
-        <div className='all'>
-            <div className='box'>
-                <div className='blue'>
-                    <h1>Welcome Back <span>!</span></h1>
-                    <p>To keep connected with us please <br></br>
-                    </p>
-                    <p3>login with your personal info.</p3>
-                    <div className='add'>
-                    <a href='LOGIN'>SIGNUP</a>
-                    </div>
-                </div>
-                <div className='right'>
-                <form>
-                    <h1>LOGIN</h1>
-                    <div className='ico'>
-                    <div className='box1'>
-                        <AiOutlineEyeInvisible size={30} color="black" backgroundcolor="black"/>
-                    </div>
-                    
-                    <div className='box2'>
-                    <AiFillGooglePlusCircle size={30} color="black" />   
-                    </div>
-                    <div className='box3'>
-                    {/* <FaLinkedinSquare size={30} color="blue" /> */}
-                    </div>
-                    </div>
-                    <label>username</label><br></br>
-                    <div className='user'>
-                    <input type='text' id="username"/><br></br>
-                    
-                    </div>
-                    <label>Emailorphonenumber</label><br></br>
-                    <input type='email' id="email" /><br></br>
-                    <label>Password</label><br></br>
-                    <input type='password' id="password"/><br></br>
-                    <div className='sub'>
-                    <a href='SIGNUP'>LOGIN</a>
-                    </div>
-                    </form>                     
-                </div>
-                </div>
-                
-        </div>
-        
-        
-        </>
-    )
+import './signup.css';
 
+const Signup = () => {
+  return (
+    <>
+      <div className="container">
+        <div className="forms-container">
+          <div className="form-control signup-form">
+            <form action="#">
+              <h2>Create Account</h2>
+              <input type="text" placeholder="Username" required />
+              <input type="email" placeholder="Email" required />
+              <input type="password" placeholder="Password" required />
+              <input type="password" placeholder="Confirm password" required />
+              <button>Signup</button>
+            </form>
+            <span>or signup with</span>
+            <div className="socials">
+              <i className="fab fa-facebook-f"></i>
+              <i className="fab fa-google-plus-g"></i>
+              <i className="fab fa-linkedin-in"></i>
+            </div>
+          </div>
+        </div>
+        <div className="intros-container">
+          <div className="intro-control signup-intro">
+            <div className="intro-control__inner">
+              <h2>Welcome Back!</h2>
+              <p>
+                We are so excited to have you here. If you haven't already, create an account to get access to exclusive
+                offers, rewards, and discounts.
+              </p>
+              <button id="signin-btn" ><a href="">Already have an account? Signin.</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
+
 export default Signup;
