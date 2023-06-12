@@ -46,6 +46,21 @@ h1 {
   width: 500px;
   outline: none;
 }
+.vice-versa{
+  display: flex;
+  
+}
+#arrow{
+   margin-right: 10px;
+   align-self: flex-end;
+   
+  
+}
+#arrow:hover{
+  cursor: pointer;
+
+}
+
  
 
 label {
