@@ -60,7 +60,7 @@ body {
   border: none;
   padding: 20px;
   margin-top: 5px;
-  background-color: #0a153a;
+  background-color: #2A4966;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
@@ -78,7 +78,7 @@ body {
 }
 .container .forms-container .form-control .socials .fa-facebook-f {
   padding: 5px 8px;
-  background-color: #3b5998;
+  background-color: #2A4966;
 }
 .container .forms-container .form-control .socials .fa-google-plus-g {
   padding: 5px 4px;
@@ -86,7 +86,7 @@ body {
 }
 .container .forms-container .form-control .socials .fa-linkedin-in {
   padding: 5px 6px;
-  background-color: #0e76a8;
+  background-color: #7092b3;
 }
 .container .forms-container .form-control.signup-form {
   opacity: 1;
@@ -106,7 +106,7 @@ body {
   flex-direction: column;
   height: 480px;
   color: #fff;
-  background: linear-gradient(170deg, #2f3e6d, #0a153a);
+  background: linear-gradient(170deg, #7092b3, #2A4966);
   transition: all 0.5s ease-in;
 }
 .container .intros-container .intro-control .intro-control__inner {
@@ -115,7 +115,7 @@ body {
 .container .intros-container .intro-control button {
   border: none;
   padding: 15px 30px;
-  background-color: #2f3e6d;
+  background-color: #2A4966;
   border-radius: 50px;
   color: #fff;
   margin: 10px 0px;
@@ -130,7 +130,7 @@ body {
 
 .container .intros-container .intro-control button:focus, .container .intros-container .intro-control button:hover {
   outline: none;
-  background-color: #0a153a;
+  background-color: #2A4966;
 }
 .container .intros-container .intro-control h3,
 .container .intros-container .intro-control p {
