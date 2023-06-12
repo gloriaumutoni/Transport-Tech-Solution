@@ -1,5 +1,5 @@
-import React from "react";
-import './Home.css'
+ import React from "react";
+import '../home/trial.css'
 import NavBar  from "../../pages/navigation/NavigationBar.jsx";
 import { FaSearch } from 'react-icons/fa';
 import {AiOutlineSwapRight} from 'react-icons/ai'
@@ -9,18 +9,21 @@ import { useRef,useEffect,useState } from 'react'
 import images from './images'
 import Image from '../image/ElecMobility.jpg'
 
-const Home =()=>{
+
+const Trial =()=>{
     const[width,setWidth] = useState(0);
     const carousel =useRef();
   
     useEffect(()=>{
-  setWidth(carousel.current - carousel.current)
+//   setWidth(carousel.current - carousel.current)
+setWidth(carousel.current.clientWidth)
     },[])
     return(
+        
         <div id="whole1">
-            <NavBar/>
-        <div id="container1">
-<img src={Image}/>
+            <nav> <NavBar/></nav>
+        <div  className="homecontainer1">
+<img  className='homeImage' src={Image}/>
 <div id="overlay"></div>
 <div id="whole2"> 
 <h1>Your next stop awaits</h1> 
@@ -64,9 +67,9 @@ const Home =()=>{
     <h1>Bus Schedule</h1>
     <p id="p">Our three automated rapid transit Bus lines take you all around Kigali:</p>
     <div id="p1">
-        <p id="p2">  Gasabo district  <AiOutlineSwapRight/> 34 bus routes </p>
-        <p id="p2">  Kicukiro district  <AiOutlineSwapRight/> 2 bus routes</p>
-        <p id="p2">  Nyarugenge district  <AiOutlineSwapRight/> 15 bus routes</p>
+        <p id="p2"> Gasabo district  <AiOutlineSwapRight/> 34 bus routes </p>
+        <p id="p2"> Kicukiro district  <AiOutlineSwapRight/> 2 bus routes</p>
+        <p id="p2"> Nyarugenge district  <AiOutlineSwapRight/> 15 bus routes</p>
     </div>
 <div id="map">
     <div id="line1"></div>
@@ -132,4 +135,4 @@ const Home =()=>{
         </div>
     )
 }
-export default Home
+export default Trial

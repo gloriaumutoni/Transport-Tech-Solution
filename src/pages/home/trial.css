@@ -2,8 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box;
- 
+   
+
 }
+body {
+    font-family: "Poppins", sans-serif;
+   /* height: 300rem; */
+  }
+/* #whole1{ */
+    /* height: 100vh; */
+/* } */
+
 h1, h2, h3 {
   font-style: italic;
   font-weight: bolder;
@@ -12,28 +21,24 @@ p{
     /* font-style: italic; */
     font-weight: bold;  
 }
-body {
-  font-family: "Poppins", sans-serif;
-   height: -600px;
+
+ 
+ .homecontainer1{
+    /* display: grid; */
+    height: 100vh;
+    background-color: rgb(110, 109, 109);
 }
- #whole1{
-    height: 100%;
- } 
-#container1{
-    display: grid;
-    
-}
-#container1 img {
-    object-fit: cover; 
-    background-color: aqua;
+ .homeImage {
+    /* object-fit: cover;  */
+     
     width: 100%;
     height: 85vh;
-    position: relative;
+    /* position: relative; */
    }
-#overlay{
+   .homecontainer1 #overlay{
     content: "";
     position: absolute;
-    background-color: rgba(14, 34, 51, 0#373);
+    background-color: rgba(14, 34, 51, 0);
     width: 100%;
     height: 95.1vh;
     left: 0;
@@ -41,7 +46,7 @@ body {
     top: 0;
     bottom: 0;
 }
-#whole2 {
+.homecontainer1 #whole2 {
     /* font-family: 'Poppins', sans-serif; */
     width: 380px;
     position: absolute;
@@ -49,13 +54,13 @@ body {
    margin-top: 9%;
    
 }
-#whole2 h1{
+.homecontainer1 #whole2 h1{
 color: white;
 font-size: 58px;
 font-family:bold italic;
 text-align: center;
 }
-#whole2 button{
+.homecontainer1 #whole2 button{
     margin-top: 8%;
     margin-left: 35%;
     padding: 3% 10%;
@@ -87,12 +92,12 @@ height: 30%;
 #container2 p{
     padding-bottom: 1.5%;
     padding-bottom:3%;
-    color: rgba(0, 0, 0, 0#452);
+    color: rgba(0, 0, 0, 0);
 }
 span{
     margin-right: 6%;
 }
- #input1 input{
+input{
     margin-top: 2.6%;
     padding: 2% 5%;
     border-radius: 3px;
@@ -240,6 +245,7 @@ margin-bottom: 1%;
     border: none;
    background-color: white;
    color: rgb(112, 112, 112);
+  
 }
 #rect button:hover{
     cursor: pointer;
@@ -319,22 +325,22 @@ background-color: #d1e5fa;
 
   /* @media screen  and (max-width:360px) {
    
-    #container1 img{
+    .homecontainer1 img{
         width:82.2rem;
     }
-    #overlay{
+    .homecontainer1 #overlay{
         width:82.2rem;
     }
-#whole2{
+    .homecontainer1 #whole2{
         margin-top: 17%;
         margin-left: 100%;
     }
-    #whole2 h1{
+    .homecontainer1 #whole2 h1{
 font-size: 5rem;
 width:30rem;
 
     }
-    #whole2 button{
+    .homecontainer1   #whole2 button{
 margin-left: 7rem;
 padding:  1rem 3rem;
 font-size: 2rem;
@@ -381,7 +387,7 @@ select{
     margin-left: 2.1rem;
     width: 20.3rem;
     height: 4rem;
-    
+   
     font-size: 33px;
 }
 #whole3{
@@ -503,25 +509,25 @@ select{
     body{
         height:127rem;
     }
-    #container1 img{
+   .homecontainer1 img{
         width: 33.4rem;
         height: 80%;
     }
-    #overlay{
+    .homecontainer1 #overlay{
         width:33.4rem;
         height: 30%;
     }
-    #whole2{
+    .homecontainer1  #whole2{
         margin-top: 20px;
         margin-left: 50px;
         
     }
-    #whole2 h1{
+    .homecontainer1  #whole2 h1{
         font-size: 34px;
         width: 260px;
         margin-left: 20%;
     }
-    #whole2 button{
+    .homecontainer1 #whole2 button{
         font-size: 14px;
        
     }
@@ -540,7 +546,7 @@ font-size: 16px;
     #container2 p{
         font-size: 13px;
             }
-#input1 input{
+input{
     width: 8rem;
 }
 #input1 label{
@@ -663,26 +669,26 @@ margin-top: 2rem;
     body{
         height:120rem;
     }
-    #overlay{
+    .homecontainer1 #overlay{
         height: 32.5%;
         width:33.4rem;
     }
-    #container1 img{
+   .homecontainer1 img{
         width: 33.4rem;
         height: 80%;
     }
     
-    #whole2{
+    .homecontainer1  #whole2{
         margin-top: 20px;
         margin-left: 50px;
         
     }
-    #whole2 h1{
+    .homecontainer1  #whole2 h1{
         font-size: 34px;
         width: 260px;
         margin-left: 20%;
     }
-    #whole2 button{
+    .homecontainer1  #whole2 button{
         font-size: 18px;
        
     }
@@ -701,7 +707,7 @@ font-size: 16px;
     #container2 p{
         font-size: 13px;
             }
-#input1 input{
+input{
     width: 8rem;
 }
 #input1 label{
@@ -823,23 +829,23 @@ margin-top: 2rem;
     body{
         height:248vh;
       } 
-      #container1 img{
+       .homecontainer1 img{
 height: 90%;
 width: 33.6rem;
       } 
-      #overlay{
+      .homecontainer1 #overlay{
     height: 72%;    
     width: 33.6rem;      
 }
-      #whole2{
+.homecontainer1  #whole2{
         margin-top: 12%;
         margin-left: 20%;
       }  
-#whole2 h1{
+      .homecontainer1 #whole2 h1{
     font-size: 2.6rem;
     width: 20rem;
 }
-#whole2 button{
+.homecontainer1 #whole2 button{
     margin-top: 6%;
     margin-left: 28%;
 }
@@ -852,7 +858,7 @@ width: 33.6rem;
 #input2 label{
     margin-left: 4%;
 }
-#input1 input{
+input{
     width: 10rem;
 }
 select{
@@ -914,21 +920,21 @@ margin-left: -60%;
     body{
         height:248vh;
       } 
-      #container1 img{
+      .homecontainer1 img{
 height: 90%;
       } 
-      #overlay{
+      .homecontainer1 #overlay{
     height: 43.5%;    
       }
-      #whole2{
+      .homecontainer1   #whole2{
         margin-top: 12%;
         margin-left: 20%;
       }  
-#whole2 h1{
+      .homecontainer1 #whole2 h1{
     font-size: 2.6rem;
     width: 20rem;
 }
-#whole2 button{
+.homecontainer1 #whole2 button{
     margin-top: 6%;
     margin-left: 28%;
 }
@@ -941,7 +947,7 @@ height: 90%;
 #input2 label{
     margin-left: 4%;
 }
-#input1 input{
+input{
     width: 10rem;
 }
 select{
@@ -1005,10 +1011,10 @@ margin-left: -60%;
     width: 70%;
     margin-left: 20%;
 }
-#whole2{
+.homecontainer1 #whole2{
     margin-left: 15%;
 }
-#overlay{
+.homecontainer1 #overlay{
     height: 33.4rem;
 }
 #input1 label{
@@ -1019,7 +1025,7 @@ margin-left: -60%;
     font-size: 14px; 
     margin-left: 4%; 
 }
-#input1 input{
+input{
     width: 7rem;
 }
 select{
@@ -1043,7 +1049,7 @@ select{
   body{
     height:248vh;
   } 
-  #whole2{
+  .homecontainer1 #whole2{
     margin-top: 45%;
     margin-left: 26%;
   } 
@@ -1094,7 +1100,7 @@ font-size: 46px;
     body{
       height:248vh;
     } 
-    #whole2{
+    .homecontainer1  #whole2{
       margin-top: 15%;
       margin-left: 26%;
     } 
@@ -1146,13 +1152,13 @@ font-size: 46px;
     body{
        height: 208vh ;
     }
-    #container1 img{
+   .homecontainer1 img{
        height: 80%;
     }
-    #overlay{
+    .homecontainer1 #overlay{
         height: 99.4%;   
     }
-#whole2{
+    .homecontainer1 #whole2{
 margin-top: 11%;
 margin-left: 30%;
 }
@@ -1202,13 +1208,13 @@ margin-bottom: 20px;
 }
 
 @media screen and (min-width:913px) and (max-width:963px){
-#whole2{
+    .homecontainer1 #whole2{
     margin-top: 20rem;
 }
     #container2{
   height: 11rem;  
 }
-#input1 input{
+input{
     width: 8rem;
 }
 
@@ -1223,13 +1229,13 @@ select{
 }
 
 @media screen and (min-width:964px) and (max-width:1024px){
-    #container1 img{
+    .homecontainer1 img{
         height:70%;
     }
-    #overlay{
+    .homecontainer1 #overlay{
         height:77.4%;  
     }
-#whole2{
+    .homecontainer1 #whole2{
     margin-top: 9%;
 }
 #container2{
@@ -1256,10 +1262,10 @@ select{
 }
 
 @media screen and (min-width:1025px) and (max-width:1280px){
-#container1 img{
+.homecontainer1 img{
 height: 60%;
 }
-#overlay{
+.homecontainer1 #overlay{
  height: 62%;   
 }
 #container2{
