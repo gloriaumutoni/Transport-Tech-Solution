@@ -40,7 +40,7 @@ const handleShow = (content) =>{
 <i class='bx bx-dots-vertical-rounded'></i>
 <h2>{show}</h2>
 
-
+<i class='bx bxs-user'></i>
 <h2><span>Driver</span><br></br>Driver Name<strong><i class='bx bxs-phone-call' ></i></strong></h2>
 <button>Book Now</button>
 </div>
@@ -88,6 +88,7 @@ const handleShow = (content) =>{
             }
             </div>)}
            {activate && (<div className='kicukiro-route'>
+           
             {
                 KicukiroBusStop.map((bus) =>(
                     <h2 key={bus.id}>{bus.BusStop}</h2>

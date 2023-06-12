@@ -109,6 +109,30 @@ export const NyarugengeBusStop = [
     {
         id:26,
         BusStop:"DownTown - Batsinda"
+    },
+    {
+        id:38,
+        BusStop:"Rya Nyuma - Nyabugogo"
+    },
+    {
+        id:39,
+        BusStop:"Nyabugogo - Batsinda"
+    },
+    {
+        id:40,
+        BusStop:"DownTown - Nyacyonga"
+    },
+    {
+        id:41,
+        BusStop:"Nyabugogo - Nyacyonga"
+    },
+    {
+        id:42,
+        BusStop:"Nyabugogo - Bwerankoli"
+    },
+    {
+        id:43,
+        BusStop:"DownTown - Bwerankoli"
     }
 ]
 export const GasaboBusStop =[
@@ -135,6 +159,54 @@ export const GasaboBusStop =[
     {
         id:32,
         BusStop:"Kanombe - Remera"
+    },
+    {
+        id:44,
+        BusStop:"Nyabugogo - Kacyiru - Remera"
+    },
+    {
+        id:45,
+        BusStop:"Ndera - Remera"
+    },
+    {
+        id:46,
+        BusStop:"Bwerankoli - Remera"
+    },
+    {
+        id:47,
+        BusStop:"Kabuga - Remera"
+    },
+    {
+        id:48,
+        BusStop:"Nyabugogo - Rwandex - Remera"
+    },
+    {
+        id:49,
+        BusStop:"Remera - Rubilizi"
+    },
+    {
+        id:50,
+        BusStop:"Kimironko - Nyabugogo"
+    },
+    {
+        id:51,
+        BusStop:"DownTown - Zindiro"
+    },
+    {
+        id:52,
+        BusStop:"Kimironko - Kinyinya"
+    },
+    {
+        id:53,
+        BusStop:"Kimironko - Batsinda"
+    },
+    {
+        id:54,
+        BusStop:"Nyabugogo - Kibagabaga-Kimironko"
+    },
+    {
+        id:55,
+        BusStop:"Bwerankoli - Kimironko"
     }
 ]
 export const KicukiroBusStop = [
@@ -148,14 +220,18 @@ export const KicukiroBusStop = [
     },
     {
         id:35,
-        BusStop:"Gahanga - Nyanza"
+        BusStop:"Kimironko - Nyanza"
     },
     {
         id:36,
-        BusStop:"Gahanga - Nyanza"
+        BusStop:"Nyanza - Nyamata"
     },
     {
         id:37,
-        BusStop:"Gahanga - Nyanza"
+        BusStop:"Nyanza - Nyabugogo"
+    },
+    {
+        id:32,
+        BusStop:"Remera - Nyanza"
     }
 ]
