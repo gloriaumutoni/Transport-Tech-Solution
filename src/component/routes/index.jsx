@@ -15,6 +15,7 @@ import Booking from "../../pages/booking/Booking";
 import Destination from "../../pages/Destination/destination";
 import Signup from "../../pages/signup";
 import Login from "../../pages/login";
+import NavBar from "../../pages/navigation/NavigationBar";
 
 
 const Index = () =>{
@@ -32,6 +33,7 @@ const Index = () =>{
             <Route path="/bus" element={<Admindash3/>}/>
             <Route path="/claim" element={<Admindash4/>}/>
             <Route path="/form" element={<Admindash5/>}/>
+            <Route path="/navbar" element={<NavBar/>}/>
         </Routes>
     )
 }
