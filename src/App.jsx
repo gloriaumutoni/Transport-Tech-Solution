@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 import Routes from "./component/routes";
 // import './App.css'
@@ -14,13 +13,7 @@ import Booking from './pages/booking/Booking';
 
 function App() {
   return (
-
-    <>
-      <Booking/>
-    </>
-
    <>
-     {/* <Footer/>  */}
      <Router>
 <Routes></Routes>
 </Router>
