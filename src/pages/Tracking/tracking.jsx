@@ -4,13 +4,16 @@ import { TrackingArray } from '../../constants/trackingc';
 import {NyarugengeBusStop} from '../../constants/trackingc';
 import {GasaboBusStop} from '../../constants/trackingc';
 import { KicukiroBusStop } from '../../constants/trackingc';
+import {GrFormClose} from 'react-icons/gr'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Tracking = () =>{
     const [value,setPlaceholder] = useState("");
   const [show,setShow] = useState('BusStop Name');
   const [activate,setActivate] = useState(null);
+  const [visivle,setVisible] = useState(false)
   
 const handleShow = (content) =>{
     setShow(content);
@@ -42,7 +45,7 @@ const handleShow = (content) =>{
 
 <i class='bx bxs-user'></i>
 <h2><span>Driver</span><br></br>Driver Name<strong><i class='bx bxs-phone-call' ></i></strong></h2>
-<button>Book Now</button>
+<Link to='/Booking' className='tracking-link-tag'><button>Book Now</button></Link>
 </div>
 </div>
 <div className="content-tracking">
@@ -58,9 +61,20 @@ const handleShow = (content) =>{
 
 </div>
 </div>
-<div className="menu-tracking">
-<i class='bx bx-menu'></i>   
-                    </div>
+{!visible &&<div className="menu-tracking">
+<i class='bx bx-menu' onClick={() =>setVisible(true)}></i>   
+                    </div>}
+                    {visible &&  <div className='Navigation-Bar-tracking'>
+                    <GrFormClose onClick={() =>setVisible (false)} className='tracking-close-icon'/>
+                <ul id='navbar'>
+                 <li className='navbar-list'><a id='navbar-a' className='active' href='#'><Link to="/" >Home</Link></a></li>
+                 <li className='navbar-list'><a id='navbar-a' href='#'>Book here</a></li>
+                 <li className='navbar-list'><a id='navbar-a' href='#'>Manage Booking</a></li>
+                 <li className='navbar-list'><a id='navbar-a' href='#'>Contact</a></li>
+                 <li className='navbar-list'><a id='navbar-a' href='#'><Link to="/Signup" >Sign in</Link></a></li>   
+                </ul>
+            </div>}
+                    
 </div>
 <div className='display-content'>
 {!activate &&(<div className="tracking-body">
