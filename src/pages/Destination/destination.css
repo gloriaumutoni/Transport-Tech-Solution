@@ -47,7 +47,6 @@
   }
   .KicukiroNyabugogo{
     background-color:#D9D9D9;
-    /* border: 2px solid black; */
     padding: 5rem;
     height:5px;
   }
@@ -67,9 +66,4 @@
      .status{
        color:#008000 ;
        font-weight: 700;
-       }
-  
-  
-  
-  
-      
+       }  
