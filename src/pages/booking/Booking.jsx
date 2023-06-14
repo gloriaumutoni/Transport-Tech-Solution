@@ -84,7 +84,7 @@ const Booking =()=>{
 export default Booking;
 =======
 import "./booking.css";
-import drivers from "../../../Driver";
+import drivers from '../../../src/Driver'
 import DriveSidebar from "../../component/Side/driveSidebar";
 // const driver = drivers();
 console.log(drivers);
