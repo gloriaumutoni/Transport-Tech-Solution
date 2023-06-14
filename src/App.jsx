@@ -5,17 +5,27 @@ import Routes from "./component/routes";
 
 // import Admin from "./pages/Admindashboard/admindash";
 
+
 import { useState } from 'react'
 import Footer from '../src/component/footer.jsx';
 
+import Booking from './pages/booking/Booking';
+
+
 function App() {
   return (
+
+    <>
+      <Booking/>
+    </>
+
    <>
      {/* <Footer/>  */}
      <Router>
 <Routes></Routes>
 </Router>
    </>
+
   )
 }
 
