@@ -8,7 +8,7 @@ import Admindash5 from '../../pages/Admindashboard/admindash5'
 import Home from '../../pages/home/home.jsx';
 // import Admindash from '../../pages/Admindashboard/admindash'
 import Trial from '../trial.jsx'
-import Booking from "../../pages/Booking/booking";
+import Booking from "../../pages/booking/Booking";
 import Destination from "../../pages/Destination/destination";
 import Signup from "../../pages/signup";
 import Login from "../../pages/login";
