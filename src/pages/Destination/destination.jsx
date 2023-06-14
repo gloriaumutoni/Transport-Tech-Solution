@@ -12,7 +12,7 @@ console.log(destination);
 // ) )}
 const Destination = () => {
   return (
-    <div className="container">
+    <div className="container-destination" id="destination-fix-error">
       <div className="sidebar">
         <DriveSidebar/>
       </div>
