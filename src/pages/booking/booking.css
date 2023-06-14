@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-  body{
+ #booking-fix-error{
     background-color: #2A4966;
     width: 100%;
     height: 100vh;
@@ -13,7 +13,7 @@
     width: 100%;
     height: 100vh;
   }
-  .container{
+  .container-booking{
     width: 100%;
     height: 100vh;
     display: grid;
