@@ -10,8 +10,8 @@ import Home from '../../pages/home/home.jsx';
 import Trial from '../trial.jsx'
 
 import Tracking from "../../pages/Tracking/tracking";
+import Booking from "../../pages/booking/Booking";
 
-import Booking from "../../pages/Booking/booking";
 import Destination from "../../pages/Destination/destination";
 import Signup from "../../pages/signup";
 import Login from "../../pages/login";

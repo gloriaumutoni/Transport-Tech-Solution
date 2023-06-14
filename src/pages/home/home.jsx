@@ -1,5 +1,5 @@
 import React from "react";
-import './Home.css'
+import './home.css';
 import NavBar  from "../../pages/navigation/NavigationBar.jsx";
 import { FaSearch } from 'react-icons/fa';
 import {AiOutlineSwapRight} from 'react-icons/ai'
