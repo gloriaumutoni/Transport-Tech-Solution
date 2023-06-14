@@ -4,7 +4,7 @@ import Routes from "./component/routes";
 // import './App.css'
 
 // import Admin from "./pages/Admindashboard/admindash";
-import Booking from "./pages/Booking/booking";
+
 
 function App() {
   return (
