@@ -1,6 +1,6 @@
 import React from "react";
 import "./destination.css";
-import destination from "../../../Destination";
+import destination from "../../../src/Destination";
 import DriveSidebar from "../../component/Side/driveSidebar";
 // const driver = drivers();
 console.log(destination);
