@@ -1,19 +1,31 @@
-import { useState } from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
-import Routes from './component/routes'
+import { useState } from "react";
+import { Route, BrowserRouter as Router } from "react-router-dom";
+import Routes from "./component/routes";
 // import './App.css'
 
+ 
 import Contact from "../src/pages/contact-us/contactUs"
+ 
+// import Admin from "./pages/Admindashboard/admindash";
+ 
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
+ 
     <>
        <Contact />
        
-    </>
+     
+ 
+    
+     {/* <Home/>  */}
+     <Router>
+<Routes></Routes>
+</Router>
+   </>
+ 
   )
 }
 
-export default App
+export default App;
