@@ -8,6 +8,8 @@ import {motion} from 'framer-motion'
 import { useRef,useEffect,useState } from 'react'
 import images from './images'
 import Image from '../image/ElecMobility.jpg'
+import Footer from "../../component/newfooter";
+
 
 const Home =()=>{
     const[width,setWidth] = useState(0);
@@ -18,7 +20,7 @@ const Home =()=>{
     },[])
     return(
         <div className="whole1" id="home-fix-one">
-            {/* <NavBar/> */}
+            <NavBar/>
         <div className="home-container1">
 <img src={Image}/>
 <div className="overlay"></div>
@@ -128,6 +130,7 @@ const Home =()=>{
         </div>
 
 </div>
+<Footer/>
         </div>
     )
 }
