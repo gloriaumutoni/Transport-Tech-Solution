@@ -38,10 +38,10 @@ const Side =()=>{
           </div>
         <div className="admnin-sidebar">
         
-            <div className="logo">
-                <h1 style={{color:"white"}}>Bus<span style={{color:"#009AC7"}}> link</span></h1>
+            <div className="logo-admin">
+                <h1 style={{color:"white"}}>Bus<span style={{color:"#009AC7"}}>  link</span></h1>
             </div>
-            <div className="list-items">
+            <div className="list-items-admin">
                 <ul>
                 <li><i class='bx bxs-dashboard'></i><Link to="/admin" style={linkStyle} onClick={handleClick}>Dashboard</Link></li>
                 <li><i class='bx bxs-id-card'></i><Link to="/driver"style={linkStyle} onClick={handleClick}>Drivers</Link></li>
@@ -49,8 +49,8 @@ const Side =()=>{
                 <li> <i class='bx bxs-book-content'></i> <Link to ="/form"style={linkStyle} onClick={handleClick}>Form</Link></li>
                 </ul>
             </div>
-            <div className="line"></div>
-            <div className="list-items">
+            <div className="line-admin"></div>
+            <div className="list-items-admin">
                 <ul>
                 <li><i class='bx bx-comment-dots'></i> <Link to="/claim"style={linkStyle} onClick={handleClick}>Claims & <br/>feedback  </Link></li>
                 <li><i class='bx bx-cog'></i> Settings </li>
