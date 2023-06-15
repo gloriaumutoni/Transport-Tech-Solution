@@ -31,14 +31,14 @@ const BookingForm = () => {
   };
 
   return (
-    <div className="container">
+    <div className="Bcontainer">
       <form onSubmit={handleSubmit} className="form">
-        <header>Book your ticket</header>
+        <header id="head">Book your ticket</header>
 
         {error && <p className="error">{error}</p>}
 
         <label>
-          <h1>From:</h1>
+          <h1 id="title">From:</h1>
           <select
             value={from}
             onChange={(e) => setFrom(e.target.value)}
@@ -58,7 +58,7 @@ const BookingForm = () => {
         </div>
 
         <label>
-          <h1>Destination:</h1>
+          <h1 id="title">Destination:</h1>
           <select
             value={destination}
             onChange={(e) => setDestination(e.target.value)}
@@ -74,7 +74,7 @@ const BookingForm = () => {
         </label>
 
         <label>
-          <h1>Time:</h1>
+          <h1 id="title">Time:</h1>
           <input
             type="text"
             value={time}

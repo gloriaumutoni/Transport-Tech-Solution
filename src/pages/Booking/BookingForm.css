@@ -3,7 +3,7 @@
   padding: 0;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
 
-.container {
+.Bcontainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,11 +12,11 @@
   background-size: cover;
 }
 
-header {
+#head {
   font-size: 1.3rem;
   margin-top: 5px;}
 
-h1 {
+#title {
   font-size: 1.1rem;
 }
 
