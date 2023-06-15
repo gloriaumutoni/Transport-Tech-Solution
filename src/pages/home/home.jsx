@@ -8,7 +8,11 @@ import {motion} from 'framer-motion'
 import { useRef,useEffect,useState } from 'react'
 import images from './images'
 import Image from '../image/ElecMobility.jpg'
-import Footer from '../../component/newfooter'
+ 
+import Footer from "../../component/newfooter";
+
+ 
+ 
 
 const Home =()=>{
     const[width,setWidth] = useState(0);
@@ -18,6 +22,7 @@ const Home =()=>{
   setWidth(carousel.current - carousel.current)
     },[])
     return(
+
  
         <div id="homewhole1">
             <NavBar/>
@@ -26,6 +31,7 @@ const Home =()=>{
 <div id="homeoverlay"></div>
 <div id="homewhole2"> 
 <h1>Your next stop awaits</h1> 
+ 
 <button>Book here</button>
 </div>
         </div>
@@ -136,6 +142,7 @@ const Home =()=>{
         </div>
 
 </div>
+<Footer/>
         </div>
     )
 }
