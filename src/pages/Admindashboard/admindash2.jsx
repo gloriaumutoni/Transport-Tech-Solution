@@ -20,7 +20,7 @@ const Admin1 =()=>{
             </div>
             <div className="vertical"></div>
             <div className="credential">
-            <img src=""/>
+            
               <h5>Tristan</h5>
               <p>tristanboo9@gmail.com</p>
             </div>
