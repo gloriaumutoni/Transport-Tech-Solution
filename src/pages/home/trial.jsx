@@ -1,5 +1,5 @@
-import React from "react";
-import './home.css';
+ import React from "react";
+import '../home/trial.css'
 import NavBar  from "../../pages/navigation/NavigationBar.jsx";
 import { FaSearch } from 'react-icons/fa';
 import {AiOutlineSwapRight} from 'react-icons/ai'
@@ -9,39 +9,40 @@ import { useRef,useEffect,useState } from 'react'
 import images from './images'
 import Image from '../image/ElecMobility.jpg'
 
-const Home =()=>{
+
+const Trial =()=>{
     const[width,setWidth] = useState(0);
     const carousel =useRef();
   
     useEffect(()=>{
-  setWidth(carousel.current - carousel.current)
+//   setWidth(carousel.current - carousel.current)
+setWidth(carousel.current.clientWidth)
     },[])
     return(
- 
-        <div id="homewhole1">
-            <NavBar/>
-        <div id="homecontainer1">
-<img  id='homeImage' src={Image}/>
-<div id="homeoverlay"></div>
-<div id="homewhole2"> 
+        
+        <div id="whole1">
+            <nav> <NavBar/></nav>
+        <div  className="homecontainer1">
+<img  className='homeImage' src={Image}/>
+<div id="overlay"></div>
+<div id="whole2"> 
 <h1>Your next stop awaits</h1> 
 <button>Book here</button>
 </div>
         </div>
-        <div id="homecontainer2">
-            <div id="homecont2">
+        <div id="container2">
+            <div id="cont2">
             <h2>Find schedule</h2> 
        <p>Quickly look up scheduled times for a specific bus stop, bus route or station</p>
-
        <form>
-        <div id="homeinput">
-        <div id="homeinput1">
+        <div id="input">
+        <div id="input1">
         <label>Search route name</label>
         <input placeholder="e.g.chez lando" type="text"/>
         </div>
-        <div id="homeinput2">
+        <div id="input2">
         <label>Filter</label>
-        <select id='homeDropdown'>
+        <select id='myDropdown'>
             <option value="option1">Show all</option>
             <option value="option2">Stops</option>
             <option value="option3">Routes/Lines</option>
@@ -52,13 +53,12 @@ const Home =()=>{
         </div>
         </form>  </div>  
         </div>
- 
-        
-<div id="homewhole3">
-    <div id="homeone">
+        <div id="fix">
+<div id="whole3">
+    <div id="one">
 <p>Schedule and maps</p>
     </div>
-    <div id="hometwo">
+    <div id="two">
     <p> bus schedules</p>
     </div>
 </div>
@@ -67,10 +67,9 @@ const Home =()=>{
     <h1>Bus Schedule</h1>
     <p id="p">Our three automated rapid transit Bus lines take you all around Kigali:</p>
     <div id="p1">
-        <p id="p2">  Gasabo district  <AiOutlineSwapRight/> 34 bus routes </p>
-        <p id="p2">  Kicukiro district  <AiOutlineSwapRight/> 2 bus routes</p>
-        <p id="p2">  Nyarugenge district  <AiOutlineSwapRight/> 15 bus routes</p>
- 
+        <p id="p2"> Gasabo district  <AiOutlineSwapRight/> 34 bus routes </p>
+        <p id="p2"> Kicukiro district  <AiOutlineSwapRight/> 2 bus routes</p>
+        <p id="p2"> Nyarugenge district  <AiOutlineSwapRight/> 15 bus routes</p>
     </div>
 <div id="map">
     <div id="line1"></div>
@@ -90,14 +89,13 @@ const Home =()=>{
         </div>
         <div id="rect">
             <h4>Discover all destinations</h4>
-              <p id="home-fix-para">Choose from over 100 routes destination in Kigali</p>
+            <p>Choose from over 100 routes destination in Kigali</p>
             <button>Expore the map <AiOutlineRight style={{paddingTop:'2%'}}/></button>
         </div>
     </div>
     <div id="line2"></div>
 </div>
 </div>
- 
 <div id="paragraph">
     <div id="parg1">
         <h2>Get Cheap Bus Tickets Easily with Us</h2>
@@ -112,11 +110,10 @@ const Home =()=>{
         <p>Our website makes it easy to plan your journey, find the cheapest bus fares, and purchase your bus tickets securely. Whether you are planning or booking last-minute trip, We make buying bus tickets a breeze. Plus, with our convenient e-ticket system, you can board your bus without the hassle of paper tickets as your phone will serve as your ticket.</p>
     </div>
 </div>
-
+</div>
 <div id="drag">
 <p>Explore roads with us</p>
 <h1>Our Bus Stops</h1>
- 
 <div id='container'>
             <motion.div ref={carousel} id='carousel' whileTap={{cursor: 'grabbing'}}  >
               <motion.div drag="x" dragConstraints={{right:0,left: -width}} id='inner-carousel'>
@@ -138,4 +135,4 @@ const Home =()=>{
         </div>
     )
 }
-export default Home
+export default Trial
