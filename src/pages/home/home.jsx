@@ -1,5 +1,5 @@
 import React from "react";
-import './Home.css'
+import './home.css';
 import NavBar  from "../../pages/navigation/NavigationBar.jsx";
 import { FaSearch } from 'react-icons/fa';
 import {AiOutlineSwapRight} from 'react-icons/ai'
@@ -17,6 +17,7 @@ const Home =()=>{
   setWidth(carousel.current - carousel.current)
     },[])
     return(
+ 
         <div id="homewhole1">
             <NavBar/>
         <div id="homecontainer1">
@@ -31,6 +32,7 @@ const Home =()=>{
             <div id="homecont2">
             <h2>Find schedule</h2> 
        <p>Quickly look up scheduled times for a specific bus stop, bus route or station</p>
+
        <form>
         <div id="homeinput">
         <div id="homeinput1">
@@ -50,6 +52,7 @@ const Home =()=>{
         </div>
         </form>  </div>  
         </div>
+ 
         
 <div id="homewhole3">
     <div id="homeone">
@@ -67,6 +70,7 @@ const Home =()=>{
         <p id="p2">  Gasabo district  <AiOutlineSwapRight/> 34 bus routes </p>
         <p id="p2">  Kicukiro district  <AiOutlineSwapRight/> 2 bus routes</p>
         <p id="p2">  Nyarugenge district  <AiOutlineSwapRight/> 15 bus routes</p>
+ 
     </div>
 <div id="map">
     <div id="line1"></div>
@@ -86,13 +90,14 @@ const Home =()=>{
         </div>
         <div id="rect">
             <h4>Discover all destinations</h4>
-            <p>Choose from over 100 routes destination in Kigali</p>
+              <p id="home-fix-para">Choose from over 100 routes destination in Kigali</p>
             <button>Expore the map <AiOutlineRight style={{paddingTop:'2%'}}/></button>
         </div>
     </div>
     <div id="line2"></div>
 </div>
 </div>
+ 
 <div id="paragraph">
     <div id="parg1">
         <h2>Get Cheap Bus Tickets Easily with Us</h2>
@@ -111,6 +116,7 @@ const Home =()=>{
 <div id="drag">
 <p>Explore roads with us</p>
 <h1>Our Bus Stops</h1>
+ 
 <div id='container'>
             <motion.div ref={carousel} id='carousel' whileTap={{cursor: 'grabbing'}}  >
               <motion.div drag="x" dragConstraints={{right:0,left: -width}} id='inner-carousel'>
