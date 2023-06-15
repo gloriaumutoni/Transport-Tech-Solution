@@ -2,18 +2,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-body{
-    list-style: none;
-}
+}    
 .admin-container{
     background-color: #2A4966;
+    list-style: none;
     height: 100%;
     display: grid;
     grid-template-columns: 0.2fr 1fr;
 }
-.logo{
+.logo-admin h1{
     display: flex;
+    padding: 20px 0;
     justify-content: center;
 }
 
@@ -26,17 +25,17 @@ body{
     padding: 20px 20px;
 }
 .line2{
-    content: "";
-    border: 1px solid #009AC7;
-    width: 90%;
-    margin: auto;
+    /* content: ""; */
+    /* border: 1px solid #009AC7; */
+    
+    
 }
 .card-admin{
     width: 80%;  
 }
 .blue-card{
     height: 22vh;
-    /* width: 25.3%; */
+    width: 25.3%;
     display: flex;
     justify-content: center;
 }
@@ -44,7 +43,7 @@ body{
     transition: 0.5s ease;
 }
 .blue-card h1{
-    margin: auto;
+    text-align: center;
     font-size: 40px;
     color: #2A4966;
 }
@@ -55,7 +54,7 @@ body{
     color: #2A4966;
     font-weight: 600;
 }
-.blue-card button{
+.button-admin{
     height: 6vh;
     position: fixed;
     margin-top: 106px;
@@ -67,7 +66,6 @@ body{
     width: 25.3%;
     margin-left: -30px;
     display: flex;
-    
     justify-content: center;
 }
 .blue-card button:hover{
@@ -264,6 +262,9 @@ margin-bottom: 40px;
   height: 3vh;
   margin-top: 20px;
 }
+.credential{
+  padding: 10px 20px;
+}
 .credential p{
   font-size: 12px;
 }
@@ -295,6 +296,7 @@ margin-bottom: 40px;
 
 .part-one h4 {
    margin-top: 20px;
+   display: flex;
 }
 
 .form-section {
@@ -357,8 +359,8 @@ button:disabled {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 400px){
+/* @media screen and (max-width: 400px){
   .cards{
     flex-direction: column;
   }
-}
+} */

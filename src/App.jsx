@@ -1,5 +1,6 @@
 import { Route, BrowserRouter as Router } from "react-router-dom";
 import Routes from "./component/routes";
+
 // import './App.css'
 
 // import Admin from "./pages/Admindashboard/admindash";
