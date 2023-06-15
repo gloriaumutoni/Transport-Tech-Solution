@@ -10,13 +10,13 @@ let NavBar = () =>{
     let [visible, SetVisible] = useState(true);
     return(
     
-        <div className='container'>
-          <nav>
+        <div className='navcontainer'>
+          <nav className='nav'>
             <a href='#' id='logo'>
                  {/* <img src={Logo}></img> */}
             </a>
             <div>
-                <ul id='navbar'>
+                <ul id='navnavbar'>
                  <li><a className='active' href='#'>Home</a></li>
                  <li><a href='#'>Book here</a></li>
                  <li><a href='#'>Manage Booking</a></li>

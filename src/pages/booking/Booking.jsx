@@ -2,14 +2,7 @@ import React from "react";
 import "./booking.css";
 import drivers from "../../../Driver";
 import DriveSidebar from "../../component/Side/driveSidebar";
-// const driver = drivers();
-console.log(drivers);
-// { Students.map((item) => (
-//     <div className="mappu">
-//         <div className="name"><span > name: {item.name}</span></div>
-//         <div className="age"><span > age: {item.age}</span></div>
-//        </div>
-// ) )}
+
 const Booking = () => {
   return (
     <div className="container">
