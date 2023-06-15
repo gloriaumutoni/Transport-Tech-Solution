@@ -87,12 +87,10 @@
    background-color: rgb(153, 187, 187);
   position: absolute;
 } 
-
+*/
 
 
  @media screen and (max-width:411px) {
-  
-
 
 .north {
   padding-left:1%;
@@ -328,7 +326,7 @@ font-size: 20px;
   font-size:14px;
  
 }
-down{  
+.down{  
 
   color: rgb(39, 167, 167); 
   padding-left: 32%;
@@ -604,7 +602,10 @@ font-size: 20px;
   margin-top :22%;
    background-color: rgb(153, 187, 187); 
   } 
-} */
+} 
+
+
+
 .footer-1 li a{
   list-style: none;
   text-decoration: none;
@@ -673,7 +674,6 @@ color: rgb(39, 167, 167);
 .footer-four{
   margin-top: 12%;
   margin-right: 20px;
-  
 }
 .footer-four li{
   list-style: none;
@@ -688,10 +688,7 @@ background-color: #E9F4FF;
   margin-top: 20px;
 }
 
-
 .footer-line{
   height: 2px;
-  /* width: 1350px; */
-
   background-color: rgb(153, 187, 187);
 }
