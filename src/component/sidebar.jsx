@@ -36,8 +36,9 @@ const Side =()=>{
           {!visible && <AiOutlineMenu onClick={() => setvisible(true)}/>}
           {visible && <AiOutlineClose onClick={() => setvisible(false)}/>}
           </div>
+           
         <div className="admnin-sidebar">
-        
+        <div className="admin-fix">
             <div className="logo-admin">
                 <h1 style={{color:"white"}}>Bus<span style={{color:"#009AC7"}}>  link</span></h1>
             </div>
@@ -62,6 +63,8 @@ const Side =()=>{
           <span className="slider round"></span>
         </label>
         </div>
+        </div>
+         
         </>
     )
 }
