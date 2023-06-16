@@ -10,7 +10,7 @@ let Contact = () => {
 
     return (
         
-        <div className='container'>
+        <div className='C-container'>
              <Navigation />
         <div className="contactUs">
             <div className="title">
