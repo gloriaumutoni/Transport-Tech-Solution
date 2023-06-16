@@ -6,8 +6,10 @@ function App() {
   return (
     <>
       <Router>
-        <Routes></Routes>
-        <Contact />
+        <Routes>
+           
+          <Route path="/contact" component={Contact} />
+        </Routes>
       </Router>
     </>
   );
