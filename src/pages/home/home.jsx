@@ -80,7 +80,7 @@ const Home =()=>{
  
     </div>
 <div id="map">
-    <div id="line1"></div>
+    <div id="homeline1"></div>
     <div id="rectangle">
         <div>
         <iframe
@@ -101,7 +101,7 @@ const Home =()=>{
             <button>Expore the map <AiOutlineRight style={{paddingTop:'2%'}}/></button>
         </div>
     </div>
-    <div id="line2"></div>
+    <div id="homeline2"></div>
 </div>
 </div>
  
