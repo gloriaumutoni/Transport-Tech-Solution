@@ -1,15 +1,8 @@
 import React from "react";
 import "./booking.css";
-import drivers from "../../../Driver";
+import drivers from '../../../src/Driver'
 import DriveSidebar from "../../component/Side/driveSidebar";
-// const driver = drivers();
-console.log(drivers);
-// { Students.map((item) => (
-//     <div className="mappu">
-//         <div className="name"><span > name: {item.name}</span></div>
-//         <div className="age"><span > age: {item.age}</span></div>
-//        </div>
-// ) )}
+ 
 const Booking = () => {
   return (
     <div className="container">
@@ -28,7 +21,7 @@ const Booking = () => {
               <th className="header">Seats Booked</th>
               <th className="header"> Booking Status</th>
             </thead>
-            <tbody className="table-body">
+            <tbooking-fix-error className="table-booking-fix-error">
               {drivers.map((item) => (
                 <tr className="table-row">
                   <td className="item0">{item.no}</td>
@@ -46,7 +39,7 @@ const Booking = () => {
                   </td>
                 </tr>
               ))}
-            </tbody>
+            </tbooking-fix-error>
           </table>
         </div>
       </div>
