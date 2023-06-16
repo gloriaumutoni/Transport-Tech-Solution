@@ -13,7 +13,7 @@ const Tracking = () =>{
     const [value,setPlaceholder] = useState("");
   const [show,setShow] = useState('BusStop Name');
   const [activate,setActivate] = useState(null);
-  const [visivle,setVisible] = useState(false)
+  const [visible,setVisible] = useState(false)
   
 const handleShow = (content) =>{
     setShow(content);
@@ -66,7 +66,7 @@ const handleShow = (content) =>{
                     </div>}
                     {visible &&  <div className='Navigation-Bar-tracking'>
                     <GrFormClose onClick={() =>setVisible (false)} className='tracking-close-icon'/>
-                <ul id='navbar'>
+                <ul id='navnavbar'>
                  <li className='navbar-list'><a id='navbar-a' className='active' href='#'><Link to="/" >Home</Link></a></li>
                  <li className='navbar-list'><a id='navbar-a' href='#'>Book here</a></li>
                  <li className='navbar-list'><a id='navbar-a' href='#'>Manage Booking</a></li>
