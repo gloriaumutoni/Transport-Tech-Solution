@@ -3,7 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
-body{
+.C-container{
     background-image: url(../image/background1.png);
 }
  
