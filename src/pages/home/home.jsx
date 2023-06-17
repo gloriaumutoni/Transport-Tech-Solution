@@ -29,11 +29,12 @@ const Home =()=>{
 
 <div id="homewhole2">
     <div id="homepar">
+        <div id="homediv">
     <h1>Your next stop awaits</h1> 
     <div id="homebutton">
     <button >Book here</button>
     </div>
- 
+    </div>
         </div> 
 
 </div>
