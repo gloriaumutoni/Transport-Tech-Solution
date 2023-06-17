@@ -15,9 +15,9 @@ import Login from "../../pages/login-signup/log-in";
 import NavBar from "../../pages/navigation/NavigationBar";
 
  
-import BookingForm from "../../pages/Booking/BookingForm";
+import BookingForm from "../../pages/booking/BookingForm"
  
-import CancelTicket from "../../pages/cancel-ticket/cancelTicket"
+// import CancelTicket from "../../pages/cancel-ticket/cancelTicket"
 
  
 
@@ -46,9 +46,9 @@ const Index = () =>{
  <Route path="/bookingform" element={<BookingForm/>}/>
  
  
-            <Route path="/book-here" element= {<BookingForm />}/>
+            {/* <Route path="/book-here" element= {<BookingForm />}/> */}
              
-            <Route path="/cancel-ticket" element= {<CancelTicket />}/>
+            {/* <Route path="/cancel-ticket" element= {<CancelTicket />}/> */}
            
  
            
