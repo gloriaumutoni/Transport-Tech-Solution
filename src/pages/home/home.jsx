@@ -1,13 +1,11 @@
 import React from "react";
 import './home.css';
-// import NavBar  from "../../pages/navigation/NavigationBar.jsx";
 import { FaSearch } from 'react-icons/fa';
 import {AiOutlineSwapRight} from 'react-icons/ai'
 import {AiOutlineRight} from 'react-icons/ai'
 import {motion} from 'framer-motion'
 import { useRef,useEffect,useState } from 'react'
 import images from './images'
-// import Image from '../image/ElecMobility.jpg'
  import NavBar from '../navigation/NavigationBar'
 import Footer from "../../component/newfooter";
 
@@ -27,7 +25,6 @@ const Home =()=>{
         <div id="homewhole1">
             <NavBar/>
         <div id="homecontainer1">
-{/* <img  id='homeImage' src={Image}/> */}
 <div id="homeoverlay"></div>
 
 <div id="homewhole2">
