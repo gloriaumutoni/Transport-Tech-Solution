@@ -8,7 +8,7 @@
     /* margin-left: 100px; */
     position:relative;
     display: grid;
-    grid-template-rows: 0.4fr 1fr 0.2fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
 }
 .tracking-map-cont{
     display: grid;
@@ -24,7 +24,7 @@
     color: white;
     padding: 10px 10px 10px 70px;
     /* margin-top: 500px; */
-    margin-top: -80px;
+    /* margin-top: -80px; */
     /* width: 650px; */
 position: relative;
 }
@@ -43,12 +43,15 @@ margin-left: 10px;
 } */
 .tracking-cont button{
     margin-top:20px;
-    padding: 7px 0px 7px 0px;
+    padding: 7px 70px 7px 70px;
     background-color: white;
     color: black;
     border-radius: 10px;
     margin-left: 20px;
     border: 1px solid#fff;
+}
+.tracking-link-tag{
+    text-decoration: none;
 }
  .tracking-cont h2 strong{
    border-radius: 50%;
@@ -73,6 +76,7 @@ margin-left: 10px;
     margin-top: 15px;
     font-size: 2rem;
     margin-left: -35px;
+    float: right;
 }
 .bx-dots-vertical-rounded{
     position: absolute;
@@ -121,6 +125,23 @@ margin-left: 10px;
     display: grid;
     grid-template-rows: 1fr 1fr; 
 }
+.Navigation-Bar-tracking #navnavbar{
+    display: block;
+    position: absolute;
+    margin-left: -100px;
+    background-color: #2A4966;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+.Navigation-Bar-tracking.tracking-close-icon{
+    color: white;
+}
+.content-tracking-opacity .nav-tracking{
+    background-color: #2A4966;
+   
+
+}
+
 .nav-tracking h2{
     font-size: 1rem;
     position: absolute;
@@ -130,7 +151,7 @@ margin-left: 10px;
     justify-content: center;
     position: absolute;
     margin-left: 50px;
-    margin-top: 30px;
+    /* margin-top: 10px; */
     /* padding: 10px 20px; */
 }
 .tracking-body a{
@@ -173,11 +194,12 @@ margin-left: 10px;
     align-items: center;
     /* height: 21vh; */
 }
-.tracking-input{
+.search-tracking .tracking-input{
    /* position: absolute; */
-    padding: 7px 40px 7px 40px;
+    padding: 7px 20px 7px 20px;
     border-radius: 10px;
     background-color: white;
+    width:150px;
     margin-left: 50px;
     margin-top: 5px;
     border: 1px solid#fff;
@@ -240,24 +262,34 @@ position: absolute;
     }
     .tracking-clipath h5{
         margin-top: 25px;
-        margin-left:35px;
+        /* margin-left:20px; */
         /* color: white; */
         position: absolute;
+        }
+        .Navigation-Bar-tracking #navnavbar{
+            margin-left: -150px;
+            position: absolute;
+           height: 40vh;
         }
     .tracking-map-cont{
         /* display: grid;
         grid-template-rows: 1fr 0.3fr;  */
-        /* margin-left: -20px; */
+        margin-left: -20px;
        
     }
+    .search-tracking .tracking-input{
+        /* position: absolute; */
+z-index: 1;
+         width:140px;
+     }
     .content-tracking{
-       margin-top: -9px;
+       /* margin-top: -9px; */
     }
     /* .tracking-map{
         width: 375px;
     } */
     .tracking-map iframe{
-        /* width: 425px; */
+        width: 426px;
     }
     .tracking-clippath h5{
         margin-top: 50px;
@@ -283,14 +315,14 @@ position: absolute;
     .tracking-cont{
         /* position: absolute;
         margin-top: 100px; */
-        /* width: 425px; */
+        width: 426px;
     }
     .tracking-map-cont{
         display: grid;
         grid-template-rows: 1fr 0.3fr;
     }
     .content-tracking{
-        /* width: 200px; */
+        width: 406px;
         /* margin-left: -20px; */
     }
 }     
@@ -301,6 +333,16 @@ position: absolute;
         /* grid-template-rows: 1fr 1fr; */
         /* grid-template-columns: 1fr 1fr; */
     }
+    .Navigation-Bar-tracking #navnavbar{
+       height: 40vh;
+    }
+    .search-tracking .tracking-input{
+        /* position: absolute; */
+         width:190px;
+        }
+        .nav-tracking-search{
+            margin-left: 18px; 
+        }
     .tracking-map-cont{
         /* display: grid;
         grid-template-rows: 1fr 0.3fr;  */
@@ -338,6 +380,9 @@ position: absolute;
         margin-left: -20px;
        
     }
+    .Navigation-Bar-tracking #navnavbar{
+       height: 30vh;
+    }
     .tracking-clippath h5{
         margin-top: 75px;
         position: absolute;
@@ -358,22 +403,35 @@ position: absolute;
     }
     .content-tracking{
         margin-left: -20px;
-        margin-top: 48px;
+        margin-top: 1px;
     }
+    .search-tracking .tracking-input{
+        /* position: absolute; */
+z-index: 1;
+         width:280px;
+     }
     .nav-tracking-search{
         margin-left: 18px; 
     }
     .tracking-map iframe{
-        width: 758px;
+        width: 788px;
     }
     .tracking-cont{
-        width: 758px;
+        width: 788px;
     }
 }
 @media screen and (min-width:820px) and (max-width:900px) {
     .container-tracking{
         display: block;
     }
+    .search-tracking .tracking-input{
+        /* position: absolute; */
+z-index: 1;
+         width:300px;
+     }
+     .Navigation-Bar-tracking #navnavbar{
+        height: 30vh;
+     }
     .tracking-map-cont{
         margin-left: -20px;
        
@@ -412,6 +470,13 @@ position: absolute;
         display: block;
         font-size: 1.8rem;
     }
+    .Navigation-Bar-tracking #navnavbar{
+        height: 30vh;
+     }
+    .search-tracking .tracking-input{
+        /* position: absolute; */
+         width:335px;
+        }
     .tracking-map-cont{
         margin-left: -20px;
        

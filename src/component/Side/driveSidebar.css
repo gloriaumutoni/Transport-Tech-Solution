@@ -1,5 +1,6 @@
 .driver-sidebar{
   background-color: #2A4966;
+
   height: 100vh;
 
 }
@@ -11,6 +12,7 @@
  .logo-admin{
   padding-bottom: 30px;
  }
+
   .list-items-driver {
     display: flex;
     justify-content: center;
@@ -25,6 +27,7 @@
 }
 .list-items-driver ul li{
     padding-bottom: 40px;
+
     gap: 20px;
     
 }
@@ -43,6 +46,7 @@
 .switch-driver {
     position: relative;
     display: inline-block;
+
     margin-left: 60px;
     width: 150px;
     height: 34px;

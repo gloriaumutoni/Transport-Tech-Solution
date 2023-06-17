@@ -44,7 +44,7 @@ const driverSidebar =()=>{
                 <li ><i class='bx bx-bus'></i> <Link to="/destination" style={linkStyle} onClick={handleClick}>
                Destination Status
               </Link></li>
-        
+
                 </ul>
             </div>
             <div className="line-driver"></div>

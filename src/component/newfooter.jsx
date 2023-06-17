@@ -62,10 +62,10 @@ function Footer(){
       </div>
 
 
-    {/* </div> */}
+   
   
  </div>
- {/* </div> */}
+ 
  <div className='footer-line'>
   
  </div>
