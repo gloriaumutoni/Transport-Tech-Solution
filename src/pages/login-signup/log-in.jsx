@@ -61,9 +61,9 @@ const Login = () => {
                         <div className="intro-control__inner">
                             <h2>Welcome Back!</h2>
                             <p>
-                                We are so excited to have you here. If you haven't already, create an account to get access to exclusive offers, rewards, and discounts.
+                                We are so excited to have you here. If you haven't already, created an account to get access to exclusive offers, rewards, and discounts.
                             </p>
-                            <button id="signin-btn" onClick={Submit}>Don't have an account? Sign Up.</button>
+                            <button id="signin-btn" onClick={Submit}>Sign Up.</button>
                         </div>
                     </div>
                 </div>
