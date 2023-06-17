@@ -5,7 +5,7 @@ import { FiMail } from "react-icons/fi"
 import GoogleMapsLink from '../contact-us/GoogleMap';
  
 import NavigationBar from '../navigation/NavigationBar';
-import Footer from '../../component/newfooter';
+
 
 
 let Contact = () => {
@@ -98,7 +98,7 @@ let Contact = () => {
                 
             </div>
         </div>
-        <Footer />
+       
         </div>
 
     );
