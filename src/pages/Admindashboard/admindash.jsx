@@ -6,9 +6,9 @@ const Admin = ()=>{
   return(
     <>
     <div className="admin-container">
-      
+      <div className="cont-side">
         <Sidebar/>
-        
+        </div>
         <div className="admin-content">
         <div className="upper-part">
             <div className="part-one">
@@ -28,13 +28,11 @@ const Admin = ()=>{
             </div>
             </div>
             </div>
-          {/* <div className="line2"></div>   */}
      <div className="card-admin">
             {Card.map((data) => (
                <div className="blue-card">
                 <h1>{data.icon}</h1>
                 <p>{data.number}</p>
-                 
                 <button>{data.button}</button>
               
                </div>
