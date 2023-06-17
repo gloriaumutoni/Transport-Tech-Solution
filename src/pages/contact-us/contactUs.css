@@ -164,15 +164,14 @@
     color: #fff;
 }
 
-/* Responsive Design */
-/* for small devices */
+ 
 @media (max-width: 768px){
     *{
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
     }
-    body{
+    .C-container{
         background-image: url(../image/background1.png);   
     }
      

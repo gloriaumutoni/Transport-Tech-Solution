@@ -9,6 +9,7 @@ import Admindash5 from '../../pages/Admindashboard/admindash5'
 import Home from '../../pages/home/home.jsx';
  
  
+ 
 import Footer from '../newfooter'
  
 import Tracking from "../../pages/Tracking/tracking";
@@ -17,6 +18,11 @@ import Destination from "../../pages/Destination/destination";
 import Signup from "../../pages/signup";
 import Login from "../../pages/login";
 import NavBar from "../../pages/navigation/NavigationBar";
+import BookingForm from "../../pages/Booking/BookingForm";
+import Contact from "../../pages/contact-us/contactUs";
+import CancelTicket from "../../pages/cancel-ticket/cancelTicket"
+
+ 
 const Index = () =>{
     return(
         <Routes>
@@ -33,6 +39,10 @@ const Index = () =>{
             <Route path="/bus" element={<Admindash3/>}/>
             <Route path="/claim" element={<Admindash4/>}/>
             <Route path="/form" element={<Admindash5/>}/>
+            <Route path="/book-here" element= {<BookingForm />}/>
+            <Route path="/contact" element= {<Contact />}/>
+            <Route path="/cancel-ticket" element= {<CancelTicket />}/>
+           
  
            
  
