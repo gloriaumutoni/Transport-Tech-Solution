@@ -3,18 +3,22 @@ import { BsFacebook, BsTwitter, BsInstagram, BsTelephone } from "react-icons/bs"
 import { ImLocation } from "react-icons/im"
 import { FiMail } from "react-icons/fi"
 import GoogleMapsLink from '../contact-us/GoogleMap';
-// import Navigation from '../Navigation/Navigation';
-import NavBar from '../navigation/NavigationBar';
+ 
+import NavigationBar from '../navigation/NavigationBar';
+import Footer from '../../component/newfooter';
+
 
 let Contact = () => {
 
     return (
         
         <div className='C-container'>
-             <NavBar />
+ 
+              <NavigationBar/>
+ 
         <div className="contactUs">
             <div className="title">
-              <h1>Get in Touch</h1>
+              <h1 >Get in Touch</h1>
             </div>
             <div className='box'>
                 {/* form of contact */}
@@ -84,17 +88,19 @@ let Contact = () => {
                             <li><a href="www.instagram.com"><BsInstagram /></a></li>
                         </ul>
                     </div>
-
-                     
+  
 
                 </div>
                 {/* Location of our company on map  */}
                 <div className='contact map'>
                  <GoogleMapsLink />
                 </div>
+                
             </div>
         </div>
+        <Footer />
         </div>
+
     );
 }
 

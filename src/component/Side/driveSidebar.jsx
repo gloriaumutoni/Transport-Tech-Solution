@@ -37,14 +37,14 @@ const driverSidebar =()=>{
             </div>
             <div className="list-items-driver">
                 <ul>
-                <li><i class='bx bxs-dashboard'></i><Link to="#" style={linkStyle} onClick={handleClick}>Dashboard</Link></li>
+
                 <li><i class='bx bxs-id-card'></i> <Link to="/booking" style={linkStyle} onClick={handleClick}>
                 Booking Status
               </Link></li>
                 <li ><i class='bx bx-bus'></i> <Link to="/destination" style={linkStyle} onClick={handleClick}>
                Destination Status
               </Link></li>
-                <li> <i class='bx bxs-book-content'></i> <Link to ="#"style={linkStyle} onClick={handleClick}>Form</Link></li>
+
                 </ul>
             </div>
             <div className="line-driver"></div>

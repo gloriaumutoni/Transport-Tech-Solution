@@ -115,7 +115,7 @@
     background: #0e3959;
 }
 .info h3{
-    color: rgb(59, 190, 83);
+    color: #18b6ffdf;
     text-align: center;
     padding-bottom: 15px;
 }
@@ -168,15 +168,14 @@
     color: #ffffff;
 }
 
-/* Responsive Design */
-/* for small devices */
+ 
 @media (max-width: 768px){
     *{
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
     }
-    body{
+    .C-container{
         background-image: url(../image/background1.png);   
     }
      

@@ -1,14 +1,18 @@
 .driver-sidebar{
   background-color: #2A4966;
+
+  height: 100vh;
+
 }
  .SIDEBAR{
   position: fixed;
  }
 
-.driver-logo h1{
-  padding-bottom: 40px;
-  margin-top: 20px;
-  }
+
+ .logo-admin{
+  padding-bottom: 30px;
+ }
+
   .list-items-driver {
     display: flex;
     justify-content: center;
@@ -18,9 +22,12 @@
 .list-items-driver ul {
     list-style: none;
     gap: 15px;
+    
+    margin-bottom: 2rem
 }
 .list-items-driver ul li{
-    padding-bottom: 35px;
+    padding-bottom: 40px;
+
     gap: 20px;
     
 }
@@ -39,9 +46,11 @@
 .switch-driver {
     position: relative;
     display: inline-block;
-    margin-left: 70px;
+
+    margin-left: 60px;
     width: 150px;
     height: 34px;
+    margin-right: 2rem;
   }
   
   /* Hide the default checkbox */
