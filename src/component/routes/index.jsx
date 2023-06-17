@@ -17,9 +17,11 @@ import Signup from "../../pages/login-signup/sign-up";
 import Login from "../../pages/login-signup/log-in";
 import NavBar from "../../pages/navigation/NavigationBar";
 import BookingForm from '../../pages/booking/BookingForm';
+ 
 import Contact from '../../pages/contact-us/contactUs';
 
 
+ 
 const Index = () =>{
     return(
         <Routes>
