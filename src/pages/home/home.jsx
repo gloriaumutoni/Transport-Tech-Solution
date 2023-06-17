@@ -1,14 +1,14 @@
 import React from "react";
 import './home.css';
-import NavBar  from "../../pages/navigation/NavigationBar.jsx";
+// import NavBar  from "../../pages/navigation/NavigationBar.jsx";
 import { FaSearch } from 'react-icons/fa';
 import {AiOutlineSwapRight} from 'react-icons/ai'
 import {AiOutlineRight} from 'react-icons/ai'
 import {motion} from 'framer-motion'
 import { useRef,useEffect,useState } from 'react'
 import images from './images'
-import Image from '../image/ElecMobility.jpg'
- 
+// import Image from '../image/ElecMobility.jpg'
+ import NavBar from '../navigation/NavigationBar'
 import Footer from "../../component/newfooter";
 
  
@@ -27,14 +27,21 @@ const Home =()=>{
         <div id="homewhole1">
             <NavBar/>
         <div id="homecontainer1">
-<img  id='homeImage' src={Image}/>
+{/* <img  id='homeImage' src={Image}/> */}
 <div id="homeoverlay"></div>
-<div id="homewhole2"> 
-<h1>Your next stop awaits</h1> 
+
+<div id="homewhole2">
+    <div id="homepar">
+    <h1>Your next stop awaits</h1> 
+    <div id="homebutton">
+    <button >Book here</button>
+    </div>
  
-<button>Book here</button>
+        </div> 
+
 </div>
         </div>
+        <div id="homecontainer22">
         <div id="homecontainer2">
             <div id="homecont2">
             <h2>Find schedule</h2> 
@@ -59,7 +66,7 @@ const Home =()=>{
         </div>
         </form>  </div>  
         </div>
- 
+        </div>
         
 <div id="homewhole3">
     <div id="homeone">
