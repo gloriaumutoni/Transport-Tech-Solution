@@ -5,9 +5,7 @@ import Admindash2 from "../../pages/Admindashboard/admindash2";
 import Admindash3 from "../../pages/Admindashboard/admindash3"
 import Admindash4 from '../../pages/Admindashboard/admindash4'
 import Admindash5 from '../../pages/Admindashboard/admindash5'
- 
 import Footer from '../newfooter'
- 
 import Tracking from "../../pages/Tracking/tracking";
 import Booking from "../../pages/booking/Booking";
 import Destination from "../../pages/Destination/destination";
@@ -23,13 +21,12 @@ import Home from '../../pages/home/home.jsx';
 const Index = () =>{
     return(
         <Routes>
-  <Route path='/' element={<Home/>}/>
-             <Route path="/footer" element ={<Footer/>}/>
+            <Route path='/' element={<Home/>}/>
+            <Route path="/footer" element ={<Footer/>}/>
             <Route path="/admin" element={<Admindash/>}/>
             <Route path="/tracking" element={<Tracking/>}/>
             <Route path="/booking" element={<Booking/>}/>
             <Route path="/destination" element={<Destination/>}/>
-           
             <Route path="/signup" element={<Signup />}/>
             <Route path="/login" element={<Login />}/>
             <Route path="/driver" element={<Admindash2/>}/>
