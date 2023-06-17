@@ -1,19 +1,33 @@
 import React from 'react';
-import './signup.css';
+import './sign-up.css';
+import { useNavigate } from 'react-router';
+
+
 
 const Signup = () => {
+    const navigate =useNavigate();
+    const Submit =()=>{
+        navigate('/login')
+    }
+    const Redirect=()=>{
+      navigate('/admin')
+  }
+  
   return (
-    <>
+    <div className='login-signup-center'>
       <div className="container-signup" id='signup-fix-error'>
         <div className="forms-container">
           <div className="form-control signup-form">
             <form action="#">
               <h2>Create Account</h2>
               <input type="text" placeholder="Username" required />
-              <input type="email" placeholder="Email" required />
+              <input 
+              type="email"
+               placeholder="Email" 
+               required />
               <input type="password" placeholder="Password" required />
               <input type="password" placeholder="Confirm password" required />
-              <button>Signup</button>
+              <button onClick={ Redirect} >Signup</button>
             </form>
             <span>or signup with</span>
             <div className="socials">
@@ -31,12 +45,12 @@ const Signup = () => {
                 We are so excited to have you here. If you haven't already, create an account to get access to exclusive
                 offers, rewards, and discounts.
               </p>
-              <button id="signin-btn" ><a href="">Already have an account? Signin.</a></button>
+              <button id="signin-btn" onClick={Submit} ><a href="">Already have an account? Signin.</a></button>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

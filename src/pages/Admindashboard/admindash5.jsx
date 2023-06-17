@@ -94,6 +94,10 @@ const userForm =()=>{
           </select>
         </div>
         <div className="form-section">
+          <label htmlFor="user">User Email:</label>
+          <input type='email'  />
+        </div>
+        <div className="form-section">
           <label htmlFor="currentRole">Current Role:</label>
           <input type="text" id="currentRole" value={currentRole} readOnly />
         </div>

@@ -6,7 +6,9 @@ const Admin = ()=>{
   return(
     <>
     <div className="admin-container">
+      
         <Sidebar/>
+        
         <div className="admin-content">
         <div className="upper-part">
             <div className="part-one">
@@ -32,9 +34,9 @@ const Admin = ()=>{
                <div className="blue-card">
                 <h1>{data.icon}</h1>
                 <p>{data.number}</p>
-                <div className="button-admin">
+                 
                 <button>{data.button}</button>
-                </div>
+              
                </div>
             ))}
           </div>

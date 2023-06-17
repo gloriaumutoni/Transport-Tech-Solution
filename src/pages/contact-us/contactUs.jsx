@@ -3,10 +3,9 @@ import { BsFacebook, BsTwitter, BsInstagram, BsTelephone } from "react-icons/bs"
 import { ImLocation } from "react-icons/im"
 import { FiMail } from "react-icons/fi"
 import GoogleMapsLink from '../contact-us/GoogleMap';
+ 
 import NavigationBar from '../navigation/NavigationBar';
 import Footer from '../../component/newfooter';
-
- 
 
 
 let Contact = () => {
@@ -14,7 +13,9 @@ let Contact = () => {
     return (
         
         <div className='C-container'>
+ 
               <NavigationBar/>
+ 
         <div className="contactUs">
             <div className="title">
               <h1 >Get in Touch</h1>
@@ -22,7 +23,7 @@ let Contact = () => {
             <div className='box'>
                 {/* form of contact */}
                 <div className='contact form'>
-                    <h2>Send a Message</h2>
+                    {/* <h2>Send a Message</h2> */}
                     <form>
                         <div className='formBox'>
                             <div className='row50'>
