@@ -14,7 +14,7 @@ import Destination from "../../pages/Destination/destination";
 import Signup from "../../pages/login-signup/sign-up";
 import Login from "../../pages/login-signup/log-in";
 import NavBar from "../../pages/navigation/NavigationBar";
-import BookingForm from '../../pages/booking/BookingForm';
+// import BookingForm from '../../pages/booking/BookingForm';
  
 import Contact from '../../pages/contact-us/contactUs';
 
@@ -36,7 +36,7 @@ const Index = () =>{
             <Route path="/bus" element={<Admindash3/>}/>
             <Route path="/claim" element={<Admindash4/>}/>
             <Route path="/form" element={<Admindash5/>}/>
- <Route path="/bookingform" element={<BookingForm/>}/>
+ {/* <Route path="/bookingform" element={<BookingForm/>}/> */}
  <Route path="/contact" element={<Contact/>}/>      
  
             <Route path="/navbar" element={<NavBar/>}/>
