@@ -21,15 +21,16 @@
 }
 
 .form {
-  background-color: #83c397;
-  box-shadow: 0px 8px 32px 0 rgb(120, 186, 120);
+  /* background-color: #83c397; */
+  /* box-shadow: 0px 8px 32px 0 rgb(120, 186, 120); */
   backdrop-filter: blur(3px);
-  padding: 0px 16px 16px;
+  /* padding: 16px 16px; */
+  margin: auto;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
-  max-width: 600px;
-  height: 70vh;
+  /* max-width: 600px; */
+  height: 80vh;
   justify-content: center;
   align-items: center;
 }
