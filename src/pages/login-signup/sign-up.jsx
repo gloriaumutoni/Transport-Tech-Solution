@@ -9,6 +9,9 @@ const Signup = () => {
     const Submit =()=>{
         navigate('/login')
     }
+    const Redirect=()=>{
+      navigate('/admin')
+  }
   return (
     <div className='login-signup-center'>
       <div className="container-signup" id='signup-fix-error'>
@@ -20,7 +23,7 @@ const Signup = () => {
               <input type="email" placeholder="Email" required />
               <input type="password" placeholder="Password" required />
               <input type="password" placeholder="Confirm password" required />
-              <button >Signup</button>
+              <button onClick={ Redirect} >Signup</button>
             </form>
             <span>or signup with</span>
             <div className="socials">

@@ -7,6 +7,9 @@ const Login = () => {
     const Submit =()=>{
         navigate('/signup')
     }
+    const Redirect=()=>{
+        navigate('/admin')
+    }
     return (
         <div className='login-center'>
             <div className="container-Login" id='Login-fix-fab'>
@@ -16,7 +19,7 @@ const Login = () => {
                             <h2>Login</h2>
                             <input type="email" placeholder="Email" required />
                             <input type="password" placeholder="Password" required />
-                            <button>Login</button>
+                            <button onClick={Redirect}>Login</button>
                         </form>
                         <span>or signin with</span>
                         <div className="socials">
