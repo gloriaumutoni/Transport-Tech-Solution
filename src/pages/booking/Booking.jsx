@@ -10,7 +10,9 @@ const Booking = () => {
         <DriveSidebar />
       </div>
       <div className="driverContent">
-        <div className="KicukiroNyabugogo">
+
+        <div className="KicukiroNyabugogoos">
+
           <span className="driverLocation">Kicukiro - Nyabugogo</span>
         </div>
         <div className="driverTable">
