@@ -8,7 +8,6 @@ import Admindash5 from '../../pages/Admindashboard/admindash5'
 
 import Home from '../../pages/home/home.jsx';
  
- 
 import Footer from '../newfooter'
  
 import Tracking from "../../pages/Tracking/tracking";
@@ -18,7 +17,11 @@ import Signup from "../../pages/login-signup/sign-up";
 import Login from "../../pages/login-signup/log-in";
 import NavBar from "../../pages/navigation/NavigationBar";
 import BookingForm from '../../pages/booking/BookingForm';
-import Contact from '../../pages/contact-us/contactUs'
+ 
+import Contact from '../../pages/contact-us/contactUs';
+
+
+ 
 const Index = () =>{
     return(
         <Routes>
