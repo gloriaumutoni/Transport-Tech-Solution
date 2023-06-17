@@ -12,6 +12,7 @@ const Signup = () => {
     const Redirect=()=>{
       navigate('/admin')
   }
+  
   return (
     <div className='login-signup-center'>
       <div className="container-signup" id='signup-fix-error'>
@@ -20,7 +21,10 @@ const Signup = () => {
             <form action="#">
               <h2>Create Account</h2>
               <input type="text" placeholder="Username" required />
-              <input type="email" placeholder="Email" required />
+              <input 
+              type="email"
+               placeholder="Email" 
+               required />
               <input type="password" placeholder="Password" required />
               <input type="password" placeholder="Confirm password" required />
               <button onClick={ Redirect} >Signup</button>

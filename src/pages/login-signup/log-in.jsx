@@ -1,14 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./log-in.css";
 import { useNavigate } from 'react-router';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const navigate =useNavigate();
+    const [password,setPassword]=useState('');
+    const [email,setEmail]=useState('');
     const Submit =()=>{
         navigate('/signup')
     }
-    const Redirect=()=>{
-        navigate('/admin')
+    const Redirect=(e)=>{
+        e.preventDefault()
+        if (email==='admin@gmail.com' && password==='admin1'){
+            navigate('/admin')
+        }
+         if(email==='driver@gmail.com' && password==='driver1'){
+            navigate('/destination')
+        }
+        else{
+            toast.error('invalid credentials')
+        }
     }
     return (
         <div className='login-center'>
@@ -17,8 +30,22 @@ const Login = () => {
                     <div className="form-control signin-form">
                         <form action="#">
                             <h2>Login</h2>
-                            <input type="email" placeholder="Email" required />
-                            <input type="password" placeholder="Password" required />
+                            <input 
+                             type="email"
+                              placeholder="Email"
+                               value= {email} 
+                              onChange={(e)=>{
+                                setEmail(e.target.value)
+                              }}
+                               required />
+                            <input 
+                            type="password" 
+                            placeholder="Password" 
+                            value={password}
+                           onChange={(e)=>{
+                            setPassword(e.target.value)
+                           }}
+                            required />
                             <button onClick={Redirect}>Login</button>
                         </form>
                         <span>or signin with</span>
@@ -41,6 +68,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+            <ToastContainer/>
         </div>
     )
 

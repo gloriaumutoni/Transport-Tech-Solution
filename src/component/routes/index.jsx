@@ -5,8 +5,6 @@ import Admindash2 from "../../pages/Admindashboard/admindash2";
 import Admindash3 from "../../pages/Admindashboard/admindash3"
 import Admindash4 from '../../pages/Admindashboard/admindash4'
 import Admindash5 from '../../pages/Admindashboard/admindash5'
-
-
  
 import Footer from '../newfooter'
  
