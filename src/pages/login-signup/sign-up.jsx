@@ -45,7 +45,7 @@ const Signup = () => {
                 We are so excited to have you here. If you haven't already, create an account to get access to exclusive
                 offers, rewards, and discounts.
               </p>
-              <button id="signin-btn" onClick={Submit} ><a href="">Already have an account? Signin.</a></button>
+              <button id="signin-btn" onClick={Submit} ><a href=""> Login.</a></button>
             </div>
           </div>
         </div>
