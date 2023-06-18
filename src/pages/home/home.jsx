@@ -8,8 +8,6 @@ import { useRef,useEffect,useState } from 'react'
 import images from './images'
  import NavBar from '../navigation/NavigationBar'
 import Footer from "../../component/newfooter";
-
- 
  
 
 const Home =()=>{
