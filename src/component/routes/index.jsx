@@ -19,7 +19,7 @@ import NavBar from "../../pages/navigation/NavigationBar";
  
 // import CancelTicket from "../../pages/cancel-ticket/cancelTicket"
 
- 
+ import CancelTicket from '../../pages/cancel-ticket/cancelTicket'
 
  
 import Contact from '../../pages/contact-us/contactUs';
@@ -48,7 +48,7 @@ const Index = () =>{
  
             {/* <Route path="/book-here" element= {<BookingForm />}/> */}
              
-            {/* <Route path="/cancel-ticket" element= {<CancelTicket />}/> */}
+            <Route path="/cancel-ticket" element= {<CancelTicket/>}/>
            
  
            
