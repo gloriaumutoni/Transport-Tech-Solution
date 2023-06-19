@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import '../Booking/BookingForm.css';
 import { BsArrowDownUp } from "react-icons/bs";
 import Footer from '../../component/newfooter';
-import NavigationBar from '../navigation/NavigationBar'
+import NavigationBar from '../navigation/NavigationBar';
+
  
 
 const BookingForm = () => {
@@ -90,8 +91,9 @@ const BookingForm = () => {
 
         <button type="submit">Book Ticket</button>
       </form>
-   
+      
     </div>
+   
     <Footer/>
     </div>
   );
