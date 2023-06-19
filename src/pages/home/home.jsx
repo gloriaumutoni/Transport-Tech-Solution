@@ -8,7 +8,7 @@ import { useRef,useEffect,useState } from 'react'
 import images from './images'
  import NavBar from '../navigation/NavigationBar'
 import Footer from "../../component/newfooter";
- 
+import { Link } from 'react-router-dom';
 
 const Home =()=>{
     const[width,setWidth] = useState(0);
@@ -30,8 +30,8 @@ const Home =()=>{
     <div id="homepar">
         <div id="homediv">
     <h1>Your next stop awaits</h1> 
-    <div id="homebutton">
-    <button >Book here</button>
+    <div >
+    <Link to='/book-here' id="homebutton"> <button >Book here</button></Link> 
     </div>
     </div>
         </div> 
@@ -60,7 +60,7 @@ const Home =()=>{
             <option value="option4">Bus Station</option>
         </select>
         </div>
-<button><span><FaSearch/></span>Find Schedule</button>
+<Link to='/book-here'><button><span><FaSearch/></span>Find Schedule</button></Link>
         </div>
         </form>  </div>  
         </div>
@@ -103,7 +103,7 @@ const Home =()=>{
         <div id="rect">
             <h4>Discover all destinations</h4>
               <p id="home-fix-para">Choose from over 100 routes destination in Kigali</p>
-            <button>Expore the map <AiOutlineRight style={{paddingTop:'2%'}}/></button>
+              <Link to='/tracking'><button>Expore the map <AiOutlineRight style={{paddingTop:'2%'}}/></button></Link>   
         </div>
     </div>
     <div id="homeline2"></div>
