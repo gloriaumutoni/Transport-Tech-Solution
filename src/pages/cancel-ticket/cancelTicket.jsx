@@ -3,6 +3,7 @@ import React from 'react';
  
 
 import { BsFillBusFrontFill } from "react-icons/bs";
+import NavBar from '../navigation/NavigationBar';
 
  
 
@@ -14,6 +15,8 @@ class CancelTicketPage extends React.Component {
 
   render() {
     return (
+      <div>
+        <NavBar/>
       <div className="cancel-container">
         <h1 id="title">Bus Ticket Booking Online</h1>
         <p id="sub-title">Bus link makes it easy for booking <BsFillBusFrontFill id="bus"/></p>
@@ -39,6 +42,7 @@ class CancelTicketPage extends React.Component {
           </div>
         </div>
        
+      </div>
       </div>
     );
   }

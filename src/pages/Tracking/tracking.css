@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .container-tracking{
     display: grid;
     /* margin-left: 100px; */
@@ -282,12 +287,7 @@ position: absolute;
 z-index: 1;
          width:140px;
      }
-    .content-tracking{
-       /* margin-top: -9px; */
-    }
-    /* .tracking-map{
-        width: 375px;
-    } */
+
     .tracking-map iframe{
         width: 426px;
     }
@@ -309,9 +309,7 @@ z-index: 1;
         /* margin-left: 78px; */
         font-size: 1.2rem;
     }
-    .nav-tracking-search{
-        /* margin-left: 28px;  */
-    }
+    
     .tracking-cont{
         /* position: absolute;
         margin-top: 100px; */
