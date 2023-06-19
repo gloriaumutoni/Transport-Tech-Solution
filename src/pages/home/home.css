@@ -960,10 +960,12 @@ margin-left: -60%;
  #homeinput1 label{
     margin-left: 6%;
     font-size: 14px;
+    width: 130px;
 }
  #homeinput2 label{
     font-size: 14px; 
     margin-left: 4%; 
+ 
 }
  #homeinput1 input{
     width: 130px;

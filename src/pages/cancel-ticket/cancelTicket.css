@@ -1,16 +1,15 @@
-/* *{
+*{
     margin: 0px;
     padding:0px;
     box-sizing: border-box;
     font-family: arial;
-    
-    
+     
   }
   
   .cancel-container{
     
     padding-top: 100px;
-    height:100vh;
+    height:90vh;
     background: url('../image/background1.png');  
    
   }
@@ -89,4 +88,4 @@
   
   .btn button:focus {
     outline: none;
-  } */
+  }

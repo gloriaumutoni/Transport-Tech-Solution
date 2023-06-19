@@ -29,7 +29,7 @@ function Footer(){
 
 </div>
     <div className='para-footer'>
-      <div class="para-1">
+      <div className="para-1">
         <p>We Welcome all members to join us here <br /> we provide Best services to everyone <br /> And this bus transport goes On time, <br />for peaple who join We get more benefit <br /> to save More money and save time  </p>
       </div>
       <div className='footer-one'>
