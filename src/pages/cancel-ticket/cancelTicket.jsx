@@ -1,5 +1,7 @@
 import '../cancel-ticket/CancelTicket.css'
 import React from 'react';
+ 
+
 import { BsFillBusFrontFill } from "react-icons/bs";
 import NavBar from '../navigation/NavigationBar';
 
@@ -35,7 +37,7 @@ class CancelTicketPage extends React.Component {
           </div>
           <div className="btn">
           <button className="cancel-ticket" onClick={this.handleCancelTicket}>
-          Cancel Ticket
+          Cancel Ticket 
         </button>
           </div>
         </div>

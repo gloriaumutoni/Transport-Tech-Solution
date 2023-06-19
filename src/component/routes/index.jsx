@@ -15,7 +15,9 @@ import Login from "../../pages/login-signup/log-in";
 import NavBar from "../../pages/navigation/NavigationBar";
 
  
+ 
 // import BookingForm from "../../pages/booking/BookingForm"
+ 
  
 // import CancelTicket from "../../pages/cancel-ticket/cancelTicket"
 
@@ -25,6 +27,8 @@ import NavBar from "../../pages/navigation/NavigationBar";
 import Contact from '../../pages/contact-us/contactUs';
 
 import Home from '../../pages/home/home.jsx';
+import Seat from '../../pages/newBooking/Seat';
+import NewBookingForm from "../../pages/newBooking/newBookingForm";
  
  
 const Index = () =>{
@@ -42,13 +46,16 @@ const Index = () =>{
             <Route path="/bus" element={<Admindash3/>}/>
             <Route path="/claim" element={<Admindash4/>}/>
             <Route path="/form" element={<Admindash5/>}/>
+  
+        
  
- {/* <Route path="/bookingform" element={<BookingForm/>}/> */}
  
- 
-            {/* <Route path="/book-here" element= {<BookingForm />}/> */}
              
-            <Route path="/cancel-ticket" element= {<CancelTicket/>}/>
+             
+            <Route path="/cancel-ticket" element= {<CancelTicket />}/>
+            <Route path="/seat" element={<Seat/>}/>
+            <Route path="/book-here" element={<NewBookingForm />}/>
+ 
            
  
            
