@@ -17,6 +17,7 @@ const Home =()=>{
     useEffect(()=>{
   setWidth(carousel.current - carousel.current)
     },[])
+
     return(
 
  
@@ -25,7 +26,7 @@ const Home =()=>{
         <div id="homecontainer1">
 <div id="homeoverlay"></div>
 
-<div id="homewhole2">
+<div id="homewhole2"  >
     <div id="homepar">
         <div id="homediv">
     <h1>Your next stop awaits</h1> 
@@ -37,6 +38,7 @@ const Home =()=>{
 
 </div>
         </div>
+        <div id="fix">
         <div id="homecontainer22">
         <div id="homecontainer2">
             <div id="homecont2">
@@ -64,7 +66,7 @@ const Home =()=>{
         </div>
         </div>
         
-<div id="homewhole3">
+<div id="homewhole3"  >
     <div id="homeone">
 <p>Schedule and maps</p>
     </div>
@@ -122,11 +124,13 @@ const Home =()=>{
         <p>Our website makes it easy to plan your journey, find the cheapest bus fares, and purchase your bus tickets securely. Whether you are planning or booking last-minute trip, We make buying bus tickets a breeze. Plus, with our convenient e-ticket system, you can board your bus without the hassle of paper tickets as your phone will serve as your ticket.</p>
     </div>
 </div>
+</div>
 
 <div id="drag">
 <p>Explore roads with us</p>
 <h1>Our Bus Stops</h1>
- 
+
+
 <div id='container'>
             <motion.div ref={carousel} id='carousel' whileTap={{cursor: 'grabbing'}}  >
               <motion.div drag="x" dragConstraints={{right:0,left: -width}} id='inner-carousel'>

@@ -30,13 +30,7 @@ function Footer(){
 </div>
     <div className='para-footer'>
       <div class="para-1">
-        <p>Welcome all members to<br/>
-           join us here we provide <br/>
-           Best services to everyone<br/>
-          And this bus transport goes<br/>
-           On time, for peaple who join<br/>
-          We get more benefit to save<br/>
-           More money and save time  </p>
+        <p>We Welcome all members to join us here <br /> we provide Best services to everyone <br /> And this bus transport goes On time, <br />for peaple who join We get more benefit <br /> to save More money and save time  </p>
       </div>
       <div className='footer-one'>
        <li>Home</li><br/>
@@ -47,39 +41,37 @@ function Footer(){
       <div className='footer-two'>
         <li>Your account</li><br/>
         <li>Your Location</li><br/>
-        <li>Your Price</li><br/>
-        <li>Manage Time</li>
-        <li>help</li>
+        <li>Manage Time</li><br/>
+        <li>Help</li><br/>
       </div>
       <div className='footer-left'>
     
   <div class="footer-four">
     <li> < HiLocationMarker />  Location</li><br/>
-    <li><MdCall/> (+250 798 687 989)</li><br/>
+    <li><MdCall/> +250 798 687 989</li><br/>
     <li><MdEmail/> transport-sln@gmail.com</li><br/>
-    <li><TbWorldWww/> www.transport-sln.com</li>
+    <li><TbWorldWww/> www.transport-sln.com</li><br />
   </div>
       </div>
 
 
-   
-  
  </div>
  
  <div className='footer-line'>
   
  </div>
  <div className='footer-down'>
-  
-  <div className='footer-copy'>
-    <p>copy @ 2020 All right reserved by:Bus link</p>
-  </div>
+ 
   <div className='footer-icons'>
   <AiFillLinkedin />
  <AiFillFacebook />
 <AiFillInstagram/>
 < FaTwitter/>
       </div>
+
+      <div className='footer-copy'>
+    <p>&copy; 2023 Bus link. All rights reserved.</p>
+  </div>
 
     </div>
 </div>
