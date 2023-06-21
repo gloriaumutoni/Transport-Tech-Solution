@@ -33,7 +33,7 @@ const handleShow = (content) =>{
         <div className="container-tracking">
 <div className='tracking-map-cont'>
 <div className='tracking-map'>
-<iframe width="595" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=kigali%20bus%20stop,kigali%20city%20Kigali+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'></a>
+<iframe width="595" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=kigali%20bus%20stop,kigali%20city%20Kigali+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'></a>
 
 
 </div>
@@ -129,6 +129,11 @@ const handleShow = (content) =>{
 <h5 >Nyarugenge Route</h5>
 </div>
                 </div>   
+</div>
+<div className='tracking-map' id='tracking-map'>
+<iframe width="595" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=kigali%20bus%20stop,kigali%20city%20Kigali+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'></a>
+
+
 </div>
 </div>
     );

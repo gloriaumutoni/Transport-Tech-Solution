@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import './log-in.css';
 import { useNavigate } from 'react-router-dom';
-
+import jwt_decode from 'jwt-decode'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
-  const initialValues = { email: '', password: '' };
+  const initialValues = { email: '', password: '', role: '' };
   const [formValues, setFormValues] = useState(initialValues);
   const [isSubmit, setIsSubmit] = useState(false);
   const [formErrors, setFormErrors] = useState({});
+
   const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormValues({ ...formValues, [name]: value });
-    setIsSubmit(false); // Reset isSubmit when input fields change
+    setFormValues({ ...formValues, [name]: value }); // Reset isSubmit when input fields change
   };
 
   const handleSubmit = (e) => {
@@ -46,7 +46,7 @@ const Login = () => {
 
   const sendDataToBackend = async () => {
     try {
-      const response = await fetch('https://precious-tan-slug.cyclic.app/api/v2/user/login', {
+      const response = await fetch('http://localhost:3100/api/v2/user/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -57,12 +57,37 @@ const Login = () => {
       if (!response.ok) {
         throw new Error('Failed to save data');
       }
-      console.log( "response",response)
-    toast("succefull login")
-      navigate('/admin');
+      toast('Successful login');
+      alert('Successful login');
+      const token = await response.json("");
+      const tokens= await token.token
+     
+   
+      localStorage.setItem('token', tokens);
+      
+      
+      var decoded = jwt_decode(tokens);
+      // console.log(decoded);
+const roles = await decoded.role
+// console.log("roles",roles)
+if(roles=="driver"){
+  navigate('//driver');
+
+}
+else if(roles=="user"){
+  navigate('/booking');
+}
+else{
+
+  navigate('/admin');
+
+}
+
+   
+      
     } catch (error) {
       console.error('Error saving data:', error);
-      toast('Error saving data:')
+      toast('Invalid credentials');
     }
   };
 
