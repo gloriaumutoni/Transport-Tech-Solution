@@ -46,7 +46,7 @@ const Login = () => {
 
   const sendDataToBackend = async () => {
     try {
-      const response = await fetch('http://localhost:3100/api/v2/user/login', {
+      const response = await fetch('https://precious-tan-slug.cyclic.app/api/v2/user/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
