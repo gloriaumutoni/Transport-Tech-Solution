@@ -5,10 +5,12 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Signup = () => {
+
   const initialValues = { userName: '', email: '', password: '' };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
+  const [ConfirmPassword,setConfirmPassword]=useState("")
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -26,6 +28,7 @@ const Signup = () => {
     if (!values.password) {
       errors.password = 'Password is required';
     }
+ 
     return errors;
   };
 
@@ -33,18 +36,29 @@ const Signup = () => {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
+   
   };
 
-  useEffect(() => {
+  useEffect((e) => {
 
     
     console.log('formValues:', formValues);
     console.log('formErrors:', formErrors);
     if (Object.keys(formErrors).length === 0 && isSubmit) {
-      sendDataToBackend();
-      toast("succefull saved")
+      if(formValues.password !=ConfirmPassword){
+        toast("password are not marching")
+  
+      }
+      else{
+        sendDataToBackend();
+
+      }
+    
+   
       
     }
+  
+    
   }, [formErrors]);
 
   const sendDataToBackend = async () => {
@@ -61,9 +75,9 @@ const Signup = () => {
         throw new Error('Failed to save data');
       }
 
-      
+     alert ("succefull signup")
      
-      
+  
       navigate('/login');
     } catch (error) {
       console.error('Error saving data:', error);
@@ -114,7 +128,12 @@ const Signup = () => {
                 onChange={handleChange}
               />
               {formErrors.password && <p>{formErrors.password}</p>}
-              <input type='password' placeholder='Confirm password' required />
+              <input type='password' placeholder='Confirm password' required 
+              name='Confirmpassword'
+              value={ConfirmPassword}
+              onChange={(e)=>setConfirmPassword(e.target.value)}
+              />
+               
               <button type='submit'>Signup</button>
             </form>
             <span>or signup with</span>

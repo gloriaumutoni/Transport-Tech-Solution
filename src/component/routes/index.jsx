@@ -15,7 +15,6 @@ import Login from "../../pages/login-signup/log-in";
 import NavBar from "../../pages/navigation/NavigationBar";
 
 
-//  import CancelTicket from '../../pages/cancel-ticket/cancelTicket'
 
  
 import Contact from '../../pages/contact-us/contactUs';
