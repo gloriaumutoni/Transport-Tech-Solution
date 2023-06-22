@@ -15,6 +15,8 @@ import Login from "../../pages/login-signup/log-in";
 import NavBar from "../../pages/navigation/NavigationBar";
 
 
+ import CancelTicket from '../../pages/cancel-ticket/cancelTicket'
+
 
  
 import Contact from '../../pages/contact-us/contactUs';
@@ -40,12 +42,9 @@ const Index = () =>{
             <Route path="/claim" element={<Admindash4/>}/>
             <Route path="/form" element={<Admindash5/>}/>
   
-        
- 
- 
+       
              
-             
-            {/* <Route path="/cancel-ticket" element= {<CancelTicket />}/> */}
+            <Route path="/cancel-ticket" element= {<CancelTicket />}/>
             <Route path="/seat" element={<Seat/>}/>
             <Route path="/book-here" element={<NewBookingForm/>}/>
  

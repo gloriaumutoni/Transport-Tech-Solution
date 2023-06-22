@@ -1,13 +1,10 @@
 import '../cancel-ticket/CancelTicket.css'
 import React from 'react';
  
-
 import { BsFillBusFrontFill } from "react-icons/bs";
 import NavBar from '../navigation/NavigationBar';
 
  
-
-
 class CancelTicketPage extends React.Component {
   handleCancelTicket = () => {
     // Perform cancel ticket logic here
