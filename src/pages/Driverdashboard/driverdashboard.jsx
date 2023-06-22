@@ -15,20 +15,16 @@ function Driver() {
         <FaPoll className="reporticon"/>
         </div>
         <div className="driverscontent">
-          <span className="report">Daily Report</span>
+          <span className="report">Report</span>
         </div>
       </div>
 
       <div className="dateholder">
+      
         <div className="driverdate">
-          <FaCaretLeft />
+          <span className="date-year"><FaCaretLeft />31 may 2023   <FaCaretRight /></span>
         </div>
-        <div className="driverdate">
-          <span className="date-year">31 may 2023</span>
-        </div>
-        <div className="driverdate">
-          <FaCaretRight />
-        </div>
+    
       </div>
 
       <div className="alerts">12 Alerts</div>

@@ -24,7 +24,6 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    margin:5px 10px;
     background-color: rgb(255, 255, 255);
     width: 15%;
     border-radius: 10px;
@@ -38,26 +37,25 @@
    font-size: 20px;
 }
 
-.dateholder{
+
+.driverdate{
     display:flex;
     justify-content: center;
     align-items: center;
-    margin:5px 10px;
     background-color: rgb(255, 255, 255);
-    width: 20%;
-    border-radius: 10px;
-    height: 2rem;
+    width: 25%;
+    border-radius: 15px;
+    height: 40px;
     font-weight: 700;
     margin-top: 2rem;
+    font-size: 18px;
 }
 
-.date-year{
-padding: 0 30px;
-}
 
 .alerts{
     font-weight: 700;
     font-size: 20px;
+    margin-top: 10px;
 }
 
 .daysholder{
@@ -122,12 +120,13 @@ padding: 0 30px;
 
 .driverchart{
     width: 60%;
-    height: 15rem;
+    height: 18rem;
 }
 .feedbackholder{
-    margin: 10px 20px; 
+    margin:20px; 
+
 }
 .driverfeedback{
-    font-weight: 700;
+    font-weight:bolder;
     font-size: 15px;
 }
