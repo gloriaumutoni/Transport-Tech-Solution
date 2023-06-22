@@ -39,7 +39,7 @@ let Contact = () => {
 
 
         try {
-            const response = await fetch('http://localhost:3100/api/v2/messages', {
+            const response = await fetch('https://precious-tan-slug.cyclic.app/api/v2/messages', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
