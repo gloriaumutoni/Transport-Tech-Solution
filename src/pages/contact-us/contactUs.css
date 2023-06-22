@@ -28,6 +28,7 @@
 }
 .map{
     grid-area: map;
+    
 }
 .contact{
     padding: 40px;
@@ -35,6 +36,7 @@
     box-shadow: 0 5px 35px rgba(0,0,0,15);
 }
 .box{
+    background-color: rgb(219, 218, 218,0);
     position: relative;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -100,8 +102,8 @@
     max-width: 120px;
     font-weight: 500;
     cursor: pointer;
-    padding: 14px 15px;
-    border-radius: 15px;
+    padding: 10px 12px;
+    border-radius: 10px;
 }
 .inputBox ::placeholder{
     color: #999;
@@ -113,7 +115,7 @@
     background: #0e3959;
 }
 .info h3{
-    color: rgb(59, 190, 83);
+    color: #18b6ffdf;
     text-align: center;
     padding-bottom: 15px;
 }
@@ -127,7 +129,7 @@
     min-width: 30px;
     height: 35px;
     color: rgb(245, 239, 239);
-    background: #18b6ffdf;
+    /* background: #18b6ffdf; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,18 +165,17 @@
 }
 
 .sci li a:hover{
-    color: #fff;
+    color: #ffffff;
 }
 
-/* Responsive Design */
-/* for small devices */
+ 
 @media (max-width: 768px){
     *{
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
     }
-    body{
+    .C-container{
         background-image: url(../image/background1.png);   
     }
      

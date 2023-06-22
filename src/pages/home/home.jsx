@@ -8,9 +8,7 @@ import { useRef,useEffect,useState } from 'react'
 import images from './images'
  import NavBar from '../navigation/NavigationBar'
 import Footer from "../../component/newfooter";
-
- 
- 
+import { Link } from 'react-router-dom';
 
 const Home =()=>{
     const[width,setWidth] = useState(0);
@@ -19,6 +17,7 @@ const Home =()=>{
     useEffect(()=>{
   setWidth(carousel.current - carousel.current)
     },[])
+
     return(
 
  
@@ -27,18 +26,19 @@ const Home =()=>{
         <div id="homecontainer1">
 <div id="homeoverlay"></div>
 
-<div id="homewhole2">
+<div id="homewhole2"  >
     <div id="homepar">
         <div id="homediv">
     <h1>Your next stop awaits</h1> 
-    <div id="homebutton">
-    <button >Book here</button>
+    <div >
+    <Link to='/book-here' id="homebutton"> <button >Book here</button></Link> 
     </div>
     </div>
         </div> 
 
 </div>
         </div>
+        <div id="fix">
         <div id="homecontainer22">
         <div id="homecontainer2">
             <div id="homecont2">
@@ -60,13 +60,13 @@ const Home =()=>{
             <option value="option4">Bus Station</option>
         </select>
         </div>
-<button><span><FaSearch/></span>Find Schedule</button>
+<Link to='/book-here'><button><span><FaSearch/></span>Find Schedule</button></Link>
         </div>
         </form>  </div>  
         </div>
         </div>
         
-<div id="homewhole3">
+<div id="homewhole3"  >
     <div id="homeone">
 <p>Schedule and maps</p>
     </div>
@@ -103,7 +103,7 @@ const Home =()=>{
         <div id="rect">
             <h4>Discover all destinations</h4>
               <p id="home-fix-para">Choose from over 100 routes destination in Kigali</p>
-            <button>Expore the map <AiOutlineRight style={{paddingTop:'2%'}}/></button>
+              <Link to='/tracking'><button>Expore the map <AiOutlineRight style={{paddingTop:'2%'}}/></button></Link>   
         </div>
     </div>
     <div id="homeline2"></div>
@@ -124,11 +124,13 @@ const Home =()=>{
         <p>Our website makes it easy to plan your journey, find the cheapest bus fares, and purchase your bus tickets securely. Whether you are planning or booking last-minute trip, We make buying bus tickets a breeze. Plus, with our convenient e-ticket system, you can board your bus without the hassle of paper tickets as your phone will serve as your ticket.</p>
     </div>
 </div>
+</div>
 
 <div id="drag">
 <p>Explore roads with us</p>
 <h1>Our Bus Stops</h1>
- 
+
+
 <div id='container'>
             <motion.div ref={carousel} id='carousel' whileTap={{cursor: 'grabbing'}}  >
               <motion.div drag="x" dragConstraints={{right:0,left: -width}} id='inner-carousel'>
