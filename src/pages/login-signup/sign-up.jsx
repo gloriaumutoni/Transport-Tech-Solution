@@ -154,7 +154,7 @@ const Signup = () => {
                 offers, rewards, and discounts.
               </p>
               <button id='signin-btn' onClick={handleSignIn}>
-                <a href=''>Already have an account? Sign in.</a>
+                <a href=''> Sign in.</a>
               </button>
             </div>
           </div>

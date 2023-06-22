@@ -13,7 +13,6 @@ import Destination from "../../pages/Destination/destination";
 import Signup from "../../pages/login-signup/sign-up";
 import Login from "../../pages/login-signup/log-in";
 import NavBar from "../../pages/navigation/NavigationBar";
-// import BookingForm from '../../pages/booking/BookingForm'; 
 import Contact from '../../pages/contact-us/contactUs';
 import Home from '../../pages/home/home.jsx';
 import Aboutus from "../../pages/aboutus/aboutus";
@@ -38,10 +37,7 @@ const Index = () =>{
             <Route path="/claim" element={<Admindash4/>}/>
             <Route path="/form" element={<Admindash5/>}/>
   
-        
- 
- 
-             
+       
              
             {/* <Route path="/cancel-ticket" element= {<CancelTicket />}/> */}
             <Route path="/seat" element={<Seat/>}/>

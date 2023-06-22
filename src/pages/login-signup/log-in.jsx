@@ -139,7 +139,7 @@ else{
               <p>
                 We are so excited to have you here. If you haven't already, create an account to get access to exclusive offers, rewards, and discounts.
               </p>
-              <button id="signin-btn" onClick={handleSignup}>Don't have an account? Sign Up.</button>
+              <button id="signin-btn" onClick={handleSignup}> Sign Up.</button>
             </div>
           </div>
         </div>
