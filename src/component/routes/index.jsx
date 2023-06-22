@@ -14,11 +14,13 @@ import Destination from "../../pages/Destination/destination";
 import Signup from "../../pages/login-signup/sign-up";
 import Login from "../../pages/login-signup/log-in";
 import NavBar from "../../pages/navigation/NavigationBar";
+import aboutus from "../../pages/aboutus/aboutus";
 // import BookingForm from '../../pages/booking/BookingForm';
  
 import Contact from '../../pages/contact-us/contactUs';
 
 import Home from '../../pages/home/home.jsx';
+import Aboutus from "../../pages/aboutus/aboutus";
  
 const Index = () =>{
     return(
@@ -29,7 +31,7 @@ const Index = () =>{
             <Route path="/tracking" element={<Tracking/>}/>
             <Route path="/booking" element={<Booking/>}/>
             <Route path="/destination" element={<Destination/>}/>
-           
+            <Route path="/aboutus" element={<Aboutus/>}/>
             <Route path="/signup" element={<Signup />}/>
             <Route path="/login" element={<Login />}/>
             <Route path="/driver" element={<Admindash2/>}/>
