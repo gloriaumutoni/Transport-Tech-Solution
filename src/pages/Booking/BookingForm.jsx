@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import '../Booking/BookingForm.css';
 import { BsArrowDownUp } from "react-icons/bs";
+ 
+// import Footer from '../../component/newfooter';
+import NavigationBar from '../navigation/NavigationBar'
+ 
+ 
 
 const BookingForm = () => {
   const [from, setFrom] = useState('');
@@ -31,6 +36,8 @@ const BookingForm = () => {
   };
 
   return (
+    <div className='all'>
+      <NavigationBar />
     <div className="Bcontainer">
       <form onSubmit={handleSubmit} className="form">
         <header id="head">Book your ticket</header>
@@ -85,6 +92,10 @@ const BookingForm = () => {
 
         <button type="submit">Book Ticket</button>
       </form>
+      
+    </div>
+   
+ 
     </div>
   );
 };

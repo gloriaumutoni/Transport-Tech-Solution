@@ -106,10 +106,14 @@ const userForm = () => {
     }
   };
 
-  return (
-    <>
-      <div className="admin-container">
-        <Sidebar />
+
+    return (
+        <>
+        <div className="admin-container">
+        <div className="cont-side">
+        <Sidebar/>
+        </div>
+
         <div className="admin-content">
           <div className="upper-part">
             <div className="part-one">

@@ -1,25 +1,16 @@
+ 
 import { Route, BrowserRouter as Router } from "react-router-dom";
 import Routes from "./component/routes";
 
-// import './App.css'
-
-// import Admin from "./pages/Admindashboard/admindash";
-
-
-// import { useState } from 'react'
-// import Footer from '../src/component/footer.jsx';
-
-// import Booking from './pages/booking/Booking';
-import Contact from "../src/pages/contact-us/contactUs";
-import BookingForm from './pages/Booking/BookingForm'
+ 
+ 
 
 function App() {
   return (
     <>
+    
       <Router>
-        <Routes>
-           <Routes path="/book-here" element= {<BookingForm />}></Routes>
-          <Route path="/contact" component={Contact} />
+        <Routes>  
         </Routes>
       </Router>
  

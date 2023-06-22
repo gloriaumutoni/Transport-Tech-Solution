@@ -17,10 +17,10 @@ const Destination = () => {
         <DriveSidebar/>
       </div>
       <div className="content">
-        <div className="KicukiroNyabugogo">
-          <span className="loc">Destination Status</span>
+        <div className="KicukiroNyabugogoos">
+          <span className="driverLocation">Destination Status</span>
         </div>
-        <div className="table">
+        <div className="driverTable">
           <table>
             <thead className="table-header">
               <th className="header">Origin</th>

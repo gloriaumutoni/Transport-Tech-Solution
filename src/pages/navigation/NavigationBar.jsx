@@ -20,8 +20,8 @@ let NavBar = () =>{
  
                 <ul id='navnavbar'>
                  <li><Link to='/'>Home</Link> </li>
-                 <li><Link to='/bookingform'>Book here</Link> </li>
-                 <li><Link to=''> Manage Booking</Link></li>
+                 <li><Link to='/book-here'>Book here</Link> </li>
+                 <li><Link to='/cancel-ticket'> Manage Booking</Link></li>
                  <li><Link to='/contact'>Contact</Link> </li>
                  <li><Link to='/login'>Sign in</Link> </li>   
  
@@ -34,19 +34,16 @@ let NavBar = () =>{
             
             
                 {!visible && <ul id='forMobile'>
-                <li><a className='active' href='#'>Home</a></li>
-                 <li><a href='#'>Book here</a></li>
-                 <li><a href='#'>Manage Booking</a></li>
-                 <li><a href='#'>Contact</a></li>
-                 <li><a href='#'>Sign in</a></li>   
+                <li><Link to='/'>Home</Link> </li>
+                 <li><Link to='/bookingform'>Book here</Link> </li>
+                 {/* <li><Link to=''> Manage Booking</Link></li> */}
+                 <li><Link to='/contact'>Contact</Link> </li>
+                 <li><Link to='/login'>Sign in</Link> </li>    
                     </ul>}
                 </div>
         </nav>
         </div>
-      
-
-    
-    
+ 
     );
 }
 export default NavBar;
