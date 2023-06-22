@@ -71,11 +71,11 @@ const Login = () => {
 const roles = await decoded.role
 // console.log("roles",roles)
 if(roles=="driver"){
-  navigate('//driver');
+  navigate('/driver');
 
 }
 else if(roles=="user"){
-  navigate('/booking');
+  navigate('/book-here');
 }
 else{
 
