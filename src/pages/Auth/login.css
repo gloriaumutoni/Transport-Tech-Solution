@@ -7,13 +7,14 @@
     box-sizing: border-box;
 }
 
-
-
-.login-center{
+body {
+    font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: center;
-    height: 100vh;
     align-items: center;
+    height: 100vh;
+    background-color: #ddd;
+    font-size: 14px;
 }
 
 .container-Login {
@@ -64,7 +65,7 @@
     border: none;
     padding: 20px;
     margin-top: 5px;
-    background-color: #2A4966;
+    background-color: #0a153a;
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
@@ -109,7 +110,6 @@
     position: relative;
     width: 50%;
     text-align: center;
-   
 }
 
 .container-Login .intros-container .intro-control {
@@ -120,7 +120,7 @@
     flex-direction: column;
     height: 480px;
     color: #fff;
-    background: linear-gradient(170deg, #7092b3, #2A4966);
+    background: linear-gradient(170deg, #2f3e6d, #0a153a);
     transition: all 0.5s ease-in;
 }
 
@@ -129,9 +129,9 @@
 }
 
 .container-Login .intros-container .intro-control button {
-    border: 1px solid white;
-    padding: 12px 40px;
-    background-color: #46698a;
+    border: none;
+    padding: 15px 30px;
+    background-color: #2f3e6d;
     border-radius: 50px;
     color: #fff;
     margin: 10px 0px;
@@ -141,7 +141,7 @@
 .container-Login .intros-container .intro-control button:focus,
 .container-Login .intros-container .intro-control button:hover {
     outline: none;
-    background-color: #2A4966;
+    background-color: #0a153a;
 }
 
 .container-Login .intros-container .intro-control h3,
@@ -190,7 +190,8 @@
     }
 
 }
-@media screen and (min-width: 488px) and (max-width:560px) {
+
+@media screen and (max-width: 720px) {
     .container-Login {
         height: 100vh;
         display: flex;
@@ -218,54 +219,5 @@
         width: 100%;
         left: 0%;
         height: 40vh;
-    }
-
-    .container-Login .intros-container .intro-control {
-        position: absolute;
-        height: 40vh;
-    }
-}
-
-@media screen and  (min-width: 681px) and (max-width: 720px)  {
-    .container-Login {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .container-Login .forms-container {
-        order: 2;
-        width: 100%;
-        height: 50vh;
-    }
-   
-    .container-Login .forms-container .form-control {
-        position: absolute;
-        height: 50vh;
-    }
-    .container-Login .forms-container .form-control h2 {
-        margin-left: 340px;   
-    }
-    .container-Login .forms-container .form-control.signin-form {
-        left: 0%;
-        margin-top: 70px;
-    }
-    .container-Login .forms-container .form-control form input{
-        width: 44%;
-       margin-left: 340px;
-    }
-    .container-Login .forms-container .form-control form button{
-        width: 40%;
-        margin-left: 355px;
-        margin-top: 10px;
-    }
-    .container-Login .forms-container .form-control span{
-        margin-left: 340px;  
-    }
-    .container-Login .forms-container .form-control .socials {
-        margin-left: 340px;  
-    }
-    .container-Login .intros-container {
-        order: 1;
     }
 }

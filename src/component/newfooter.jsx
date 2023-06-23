@@ -48,7 +48,7 @@ function Footer(){
       </div>
       <div className='footer-left'>
     
-  <div class="footer-four">
+  <div className="footer-four">
     <li> < HiLocationMarker />  Location</li><br/>
     <li><MdCall/> (+250 788 000 000)</li><br/>
     <li><MdEmail/> transport-sln@gmail.com</li><br/>

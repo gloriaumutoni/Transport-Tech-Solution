@@ -13,14 +13,14 @@ import Destination from "../../pages/Destination/destination";
 import Signup from "../../pages/login-signup/sign-up";
 import Login from "../../pages/login-signup/log-in";
 import NavBar from "../../pages/navigation/NavigationBar";
+import Driver from "../../pages/Driverdashboard/driverdashboard";
 
 
-//  import CancelTicket from '../../pages/cancel-ticket/cancelTicket'
 
  
 import Contact from '../../pages/contact-us/contactUs';
-
 import Home from '../../pages/home/home.jsx';
+import Aboutus from "../../pages/aboutus/aboutus";
 import Seat from '../../pages/newBooking/Seat';
 import NewBookingForm from "../../pages/newBooking/newBookingForm";
  
@@ -34,13 +34,14 @@ const Index = () =>{
             <Route path="/tracking" element={<Tracking/>}/>
             <Route path="/booking" element={<Booking/>}/>
             <Route path="/destination" element={<Destination/>}/>
+            <Route path="/aboutus" element={<Aboutus/>}/>
             <Route path="/signup" element={<Signup />}/>
             <Route path="/login" element={<Login />}/>
             <Route path="/driver" element={<Admindash2/>}/>
             <Route path="/bus" element={<Admindash3/>}/>
             <Route path="/claim" element={<Admindash4/>}/>
             <Route path="/form" element={<Admindash5/>}/>
-  
+            <Route path="/driverdashboard" element={<Driver/>}/>
         
  
  

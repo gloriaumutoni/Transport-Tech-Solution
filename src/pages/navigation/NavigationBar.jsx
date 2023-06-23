@@ -43,10 +43,7 @@ let NavBar = () =>{
                 </div>
         </nav>
         </div>
-      
-
-    
-    
+ 
     );
 }
 export default NavBar;
