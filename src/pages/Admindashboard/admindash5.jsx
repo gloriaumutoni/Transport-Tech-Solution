@@ -19,7 +19,7 @@ const userForm = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/v2/role/readAllUsers`
+          `https://fine-pink-earthworm.cyclic.app/api/v2/role/readAllUsers`
         );
         const data = await response.json();
         setUsers(data.data);
@@ -33,7 +33,7 @@ const userForm = () => {
     const checkEmail = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/v2/role/read?email=${email}`
+          `https://fine-pink-earthworm.cyclic.app/api/v2/role/read?email=${email}`
         );
         const data = await response.json();
         // setUsers(data.data);
