@@ -1,12 +1,12 @@
 import React from "react";
 import "./booking.css";
 import drivers from "../../../src/Driver";
-import DriveSidebar from "../../component/Side/driveSidebar";
+import DriverSidebar from "../../component/Side/driveSidebar";
 const Booking = () => {
   return (
     <div className="driverContainer" id="booking-fix-error">
       <div className="sidebar">
-        <DriveSidebar />
+        <DriverSidebar />
       </div>
       <div className="driverContent">
 

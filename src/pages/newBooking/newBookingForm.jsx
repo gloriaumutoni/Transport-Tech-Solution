@@ -7,8 +7,24 @@ import { BsArrowDownUp } from "react-icons/bs";
 
 import NavigationBar from '../navigation/NavigationBar';
 import Seat from '../newBooking/Seat'
+import { useNavigate } from 'react-router-dom';
 
 const NewBookingForm = () => {
+  const navigate = useNavigate();
+  const bookingvalues = { passengerName: "", from: "", destination: "", seatNumber: "", bookingTime: "" }
+  const [formValues, useFormvalues] = useState(bookingvalues)
+  const [isSubmit, setIsSubmit] = useState(false);
+  const [formErrors, setFormErrors] = useState({});
+  const handleChange = (e) => {
+    const { passengerName, value } = e.target;
+    useFormvalues({ ...formValues, [passengerName]: value });
+  };
+
+
+
+
+
+
   const [from, setFrom] = useState('');
   const [destination, setDestination] = useState('');
   const [error, setError] = useState('');
@@ -21,10 +37,12 @@ const NewBookingForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    sendDataToBackend();
+    setIsSubmit(true);
 
     // Validate the form inputs
     if (from === '' || destination === '') {
-      setError('Please fill in all the fields.' );
+      setError('Please fill in all the fields.');
       return;
     }
 
@@ -35,6 +53,31 @@ const NewBookingForm = () => {
     toast.success('Your ticket was booked');
   };
 
+  // send data to Database
+  const sendDataToBackend = async () => {
+
+
+    try {
+      const response = await fetch('http://localhost:3100/api/v2/seats/seats', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formValues),
+      });
+      if (!response.ok) {
+        throw new Error('Failed to save data');
+      }
+
+
+    } catch (error) {
+      console.error('Error saving data:', error);
+    }
+  };
+
+
+
+
   return (
     <div className='all'>
       <NavigationBar />
@@ -43,9 +86,12 @@ const NewBookingForm = () => {
           <header id="head">Book your ticket</header>
 
           {error && <p className="error">{error}</p>}
-           <header id="title">enter your username</header>
-            <input type='text' placeholder="enter your username" id='first'/>
-           
+          <header id="title">enter your username</header>
+          <input type='text' placeholder="enter your Names" id='first'
+            value={formValues.passengerName}
+            onChange={handleChange}
+          />
+
           <label id="beyond">
             <h1 id="title">From:</h1>
             <select
@@ -59,6 +105,8 @@ const NewBookingForm = () => {
               <option id="design" value="Kicukiro">Kicukiro</option>
               <option id="design" value="Downtown">Downtown</option>
               <option id="design" value="Nyamirambo">Nyamirambo</option>
+              value={formValues.from}
+              onChange={handleChange}
             </select>
           </label>
 
@@ -79,6 +127,10 @@ const NewBookingForm = () => {
               <option id="design" value="Remera">Remera</option>
               <option id="design" value="Kabuga">Kabuga</option>
               <option id="design" value="Gikondo">Gikondo</option>
+              value={formValues.destination}
+              onChange={handleChange}
+
+
             </select>
           </label>
 
@@ -91,6 +143,8 @@ const NewBookingForm = () => {
               <option id="design" value="Remera">10:00am</option>
               <option id="design" value="Kabuga">11:00am</option>
               <option id="design" value="Gikondo">12:00am</option>
+              value={formValues.bookingTime}
+              onChange={handleChange}
             </select>
           </label>
 
@@ -103,6 +157,8 @@ const NewBookingForm = () => {
               <option id="design" value="3">3</option>
               <option id="design" value="4">4</option>
               <option id="design" value="5">5</option>
+              value={formValues.seatNumber}
+              onChange={handleChange}
             </select>
           </label>
 
