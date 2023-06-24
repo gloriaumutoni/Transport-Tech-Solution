@@ -3,35 +3,36 @@ import "./booking.css";
 import drivers from "../../../src/Driver";
 import DriverSidebar from "../../component/Side/driveSidebar";
 const Booking = () => {
-  // const [data, setData] = useState();
+  const [data, setData] = useState([]);
 
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
+  useEffect(() => {
+    
+    getDataToBackendDriver();
+  }, []);
 
-  // const fetchData = async () => {
-  //   try {
-  //     const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODE5MGJlZTc3OGI3ZjNlNmNkMTAyMyIsImVtYWlsIjoibXVnaXNoYWVsdmlzNDU2QGdtYWlsLmNvbSIsImlhdCI6MTY4NjMwNjU5MH0.jwkmGiRnF_Xe06T5vuT4WCHAZ_t8AngNbYRcuqeUA0g';
-  //     const headers = {
-  //       Authorization: `Bearer ${token}`,
-  //       'Content-Type': 'application/json',
-  //     };
-  
-  //     const response = await fetch('https://precious-tan-slug.cyclic.app/api/v2/booking/readAll', {
-  //       headers: headers,
-  //     });
-  
-  //     if (response.ok) {
-  //       const jsonData = await response.json();
-  //       setData(jsonData);
-       
-  //     } else {
-  //       console.log('Request failed with status:', response.status);
-  //     }
-  //   } catch (error) {
-  //     console.log('Error:', error);
-  //   }
-  // };
+
+
+  const  getDataToBackendDriver = async () => {
+    const YOUR_TOKEN = localStorage.getItem('token');
+    const response = await fetch('https://precious-tan-slug.cyclic.app/api/v2/booking/readAll', {
+      method: 'GET',
+      headers: {
+        Authorization: `bearer ${YOUR_TOKEN}`,
+        'Content-Type': 'application/json',
+      },
+    });
+
+    let actualData = await response.json();
+    console.log(YOUR_TOKEN);
+ 
+    
+ 
+    setData(actualData.data);
+    
+    console.log("your data",actualData.data);
+
+  };
+
 
   return (
     <div className="driverContainer" id="booking-fix-error">
@@ -53,11 +54,11 @@ const Booking = () => {
               <th className="header"> Booking Status</th>
             </thead>
             <tbody className="table-body">
-              {drivers ? 
-              drivers.map((item) => (
+              {data ? 
+              data.map((item) => (
                 <tr className="table-row">
-                  <td className="item0">{item.no}</td>
-                  <td className="item1">{item.name}</td>
+                  <td className="item0">{item.booking_id}</td>
+                  <td className="item1">{item.userName}</td>
                   <td className="item2">{item.seat}</td>
                   <td className="item3">
                     <div className="driverHolder">
