@@ -13,7 +13,11 @@ import Destination from "../../pages/Destination/destination";
 import Signup from "../../pages/login-signup/sign-up";
 import Login from "../../pages/login-signup/log-in";
 import NavBar from "../../pages/navigation/NavigationBar";
+
+import NewCancelTicketPage from "../../pages/NewCancelTicket/newCancelTicket";
+
 import Driver from "../../pages/Driverdashboard/driverdashboard";
+
 
 
 
@@ -47,7 +51,7 @@ const Index = () =>{
  
              
              
-            {/* <Route path="/cancel-ticket" element= {<CancelTicket />}/> */}
+            <Route path="/cancel-ticket" element= {< NewCancelTicketPage />}/>
             <Route path="/seat" element={<Seat/>}/>
             <Route path="/book-here" element={<NewBookingForm/>}/>
  
