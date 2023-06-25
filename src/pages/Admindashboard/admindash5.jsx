@@ -161,7 +161,7 @@ const userForm = () => {
                   onChange={handleUserEmail}
                 />
               </div>
-              <div className="form-section">
+              {/* <div className="form-section">
                 <label htmlFor="currentRole">Current Role:</label>
                 <input
                   type="text"
@@ -169,7 +169,7 @@ const userForm = () => {
                   value={currentRole}
                   readOnly
                 />
-              </div>
+              </div> */}
 
               <div className="form-section">
                 <label htmlFor="newRole">New Role:</label>

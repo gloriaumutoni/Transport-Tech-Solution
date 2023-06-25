@@ -20,7 +20,8 @@ const Admin1 = () => {
   useEffect(() => {
     fetch("http://localhost:5000/api/v2/role/readAll?role=Driver")
       .then((response) => response.json())
-      .then((data) => setDriverData(data.data))
+      .then((data) => {setDriverData(data.data)
+      console.log(data)})
       .catch((err) => console.log(err));
   });
 
