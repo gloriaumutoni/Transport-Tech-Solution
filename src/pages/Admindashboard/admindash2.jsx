@@ -15,12 +15,35 @@ const Admin1 =()=>{
       return updatedDrivers;
     });
   };
-    return(
-        <>
-        <div className="admin-container">
-        <div className="cont-side">
-        <Sidebar/>
-        </div>
+
+
+  const [driverData, setDriverData] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:5000/api/v2/role/readAll?role=Driver")
+      .then((response) => response.json())
+      .then((data) => {setDriverData(data.data)
+      console.log(data)})
+      .catch((err) => console.log(err));
+  });
+
+  useEffect(() => {
+    getData();
+  }, []);
+  // console.log(data);
+
+  return (
+    <>
+      <div className="admin-container">
+        <Sidebar />
+
+ 
+//     return(
+//         <>
+//         <div className="admin-container">
+//         <div className="cont-side">
+//         <Sidebar/>
+//         </div>
+ 
         <div className="admin-content">
           <div className="upper-part">
             <div className="part-one">
