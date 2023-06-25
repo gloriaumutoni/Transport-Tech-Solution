@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './log-in.css';
 import { useNavigate } from 'react-router-dom';
-import jwt_decode from 'jwt-decode'
+// import jwt_decode from 'jwt-decode'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
