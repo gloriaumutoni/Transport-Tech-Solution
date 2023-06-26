@@ -2,7 +2,7 @@ import React from "react";
 import admindrivers from "../../constants/admindrivers";
 import './admin.css'
 import Sidebar from '../../component/sidebar'
-import { useState } from "react";
+import { useState ,useEffect } from "react";
 const Admin1 =()=>{
   const [drivers, setDrivers] = useState(admindrivers);
   const toggleActions = (index) => {
@@ -31,18 +31,18 @@ const Admin1 =()=>{
   }, []);
   // console.log(data);
 
-  return (
-    <>
-      <div className="admin-container">
-        <Sidebar />
+  // return (
+  //   <>
+  //     <div className="admin-container">
+  //       <Sidebar />
 
  
-//     return(
-//         <>
-//         <div className="admin-container">
-//         <div className="cont-side">
-//         <Sidebar/>
-//         </div>
+     return(
+         <>
+         <div className="admin-container">
+         <div className="cont-side">
+         <Sidebar/>
+         </div>
  
         <div className="admin-content">
           <div className="upper-part">
