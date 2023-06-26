@@ -4,7 +4,7 @@ import { toast, ToastContainer } from 'react-toastify';
  
 
 import { BsFillBusFrontFill } from "react-icons/bs";
-// import NavBar from '../navigation/NavigationBar';
+import NavBar from '../navigation/NavigationBar';
 
  
 
@@ -18,7 +18,7 @@ class NewCancelTicketPage extends React.Component {
   render() {
     return (
       <div>
-        {/* <NavBar/> */}
+        <NavBar/>
       <div className="cancel-container">
         <h1 className="title1">Bus Ticket Booking Online</h1>
         <p id="sub-title">Bus link makes it easy for booking <BsFillBusFrontFill id="bus"/></p>

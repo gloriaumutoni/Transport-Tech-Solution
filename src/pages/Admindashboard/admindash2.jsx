@@ -31,18 +31,18 @@ const Admin1 =()=>{
   }, []);
   // console.log(data);
 
-  return (
-    <>
-      <div className="admin-container">
-        <Sidebar />
+  // return (
+  //   <>
+  //     <div className="admin-container">
+  //       <Sidebar />
 
  
-//     return(
-//         <>
-//         <div className="admin-container">
-//         <div className="cont-side">
-//         <Sidebar/>
-//         </div>
+     return(
+         <>
+         <div className="admin-container">
+         <div className="cont-side">
+         <Sidebar/>
+         </div>
  
         <div className="admin-content">
           <div className="upper-part">

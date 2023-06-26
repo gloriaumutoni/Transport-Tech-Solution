@@ -209,57 +209,57 @@ const userForm = () => {
             <div className="error-message">{errorMsg}</div>
           </div>
  
-//             </div>
-//           <div className="line2"></div>  
-//       <h4 className='head'>User Role Change Form</h4>
-//       <div className="another-form">
-//       <div className='form-container'>
-//       <form onSubmit={handleSubmit}>
-//         <div className="form-section">
-//           <label htmlFor="user">User:</label>
-//           <select id="user" value={selectedUser} onChange={handleUserChange}>
-//             <option value="">Select a user</option>
-//             {users.map((user) => (
-//               <option key={user.id} value={user.id}>
-//                 {user.name}
-//               </option>
-//             ))}
-//           </select>
-//         </div>
-//         <div className="form-section">
-//           <label htmlFor="user">User Email:</label>
-//           <input type='email'  />
-//         </div>
-//         <div className="form-section">
-//           <label htmlFor="currentRole">Current Role:</label>
-//           <input type="text" />
-//         </div>
-//         <div className="form-section">
-//           <label htmlFor="newRole">New Role:</label>
-//           <select id="newRole" value={newRole} onChange={handleNewRoleChange}>
-//             <option value="">Select a new role</option>
-//             <option value="driver">Driver</option>
-//             <option value="passenger">Passenger</option>
-//           </select>
-//         </div>
-//         <div className="form-section">
-//           <label className="confirm-checkbox">
-//             <input
-//               type="checkbox"
-//               id="confirmCheckbox"
-//               checked={confirmCheckbox}
-//               onChange={handleConfirmCheckboxChange}
-//             />
-//              I confirm that I want to change the role of the user.
-//           </label>
-//         </div>
-//         <div className="form-section">
-//           <button type="submit" disabled={!confirmCheckbox}>
-//             Save Changes
-//           </button>
-//           <button type="button"  onClick={handleCancel}>
-//             Cancel
-//           </button>
+             </div>
+           <div className="line2"></div>  
+       <h4 className='head'>User Role Change Form</h4>
+       <div className="another-form">
+       <div className='form-container'>
+       <form onSubmit={handleSubmit}>
+         <div className="form-section">
+          <label htmlFor="user">User:</label>
+           <select id="user" value={selectedUser} onChange={handleUserChange}>
+             <option value="">Select a user</option>
+             {users.map((user) => (
+              <option key={user.id} value={user.id}>
+                {user.name}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="form-section">
+          <label htmlFor="user">User Email:</label>
+          <input type='email'  />
+        </div>
+        <div className="form-section">
+          <label htmlFor="currentRole">Current Role:</label>
+          <input type="text" />
+        </div>
+        <div className="form-section">
+          <label htmlFor="newRole">New Role:</label>
+          <select id="newRole" value={newRole} onChange={handleNewRoleChange}>
+            <option value="">Select a new role</option>
+            <option value="driver">Driver</option>
+            <option value="passenger">Passenger</option>
+          </select>
+        </div>
+        <div className="form-section">
+          <label className="confirm-checkbox">
+            <input
+              type="checkbox"
+              id="confirmCheckbox"
+              checked={confirmCheckbox}
+              onChange={handleConfirmCheckboxChange}
+            />
+             I confirm that I want to change the role of the user.
+          </label>
+        </div>
+        <div className="form-section">
+          <button type="submit" disabled={!confirmCheckbox}>
+            Save Changes
+          </button>
+          <button type="button"  onClick={handleCancel}>
+            Cancel
+          </button>
 
         </div>
       </form>
@@ -269,7 +269,7 @@ const userForm = () => {
     </div>
     </div>
     </div>
-    </div>
+    {/* </div> */}
     </>
   );
 };
