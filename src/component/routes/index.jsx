@@ -18,7 +18,7 @@ import NewCancelTicketPage from "../../pages/NewCancelTicket/newCancelTicket";
 
 import Driver from "../../pages/Driverdashboard/driverdashboard";
 
-import CancelTicket from '../../pages/cancel-ticket/cancelTicket'
+// import CancelTicket from '../../pages/cancel-ticket/cancelTicket'
 
 
  
@@ -49,7 +49,7 @@ const Index = () =>{
            
              
  
-//             <Route path="/cancel-ticket" element= {<CancelTicket />}/>
+{/*              <Route path="/cancel-ticket" element= {<CancelTicket />}/> */}
  
             <Route path="/cancel-ticket" element= {< NewCancelTicketPage />}/>
  
