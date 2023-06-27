@@ -5,25 +5,22 @@ import { useParams } from "react-router-dom";
 
 const UserForm = () => {
   const [users, setUsers] = useState([]);
-  const [email, setEmail] = useState("");
-  const [selectedUser, setSelectedUser] = useState("");
-  const [currentRole, setCurrentRole] = useState("");
-  const [newRole, setNewRole] = useState("");
-  let [userId, setUserId] = useState("");
+  const [selectedUser, setSelectedUser] = useState('');
+  const [newRole, setNewRole] = useState('');
   const [confirmCheckbox, setConfirmCheckbox] = useState(false);
-  const [successMsg, setSuccessMsg] = useState("");
-  const [errorMsg, setErrorMsg] = useState("");
-
+  const [successMsg, setSuccessMsg] = useState('');
+  const [errorMsg, setErrorMsg] = useState('');
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch(
           `https://important-cummerbund-colt.cyclic.app/api/v2/role/readAllUsers`
+
         );
         const data = await response.json();
-        setUsers(data.data);
+        setUsers(data);
       } catch (error) {
-        setErrorMsg("Failed to get users.");
+        setErrorMsg('');
       }
     };
     fetchData();
@@ -96,9 +93,15 @@ const UserForm = () => {
     setCurrentRole(selectedUserRole);
     setEmail(selectedUserEmail);
     // setCurrentRole(selectedUser.role);
+    
   };
-  console.log(currentRole);
-
+  const handleCancel = () => {
+    setSuccessMsg('Role change successful.');
+    setSelectedUser('');
+    setCurrentRole('');
+    setNewRole('');
+    setConfirmCheckbox(false);
+  };
   const handleNewRoleChange = (event) => {
     setNewRole(event.target.value);
   };
@@ -121,6 +124,7 @@ const UserForm = () => {
       setErrorMsg("Please fill in all the fields and confirm the role change.");
       return;
     }
+   
   };
 
   return (
@@ -148,6 +152,7 @@ const UserForm = () => {
                 <p>tristanboo9@gmail.com</p>
               </div>
             </div>
+ 
           </div>
           <div className="line2"></div>
           <h4 className="head">User Role Change Form</h4>
@@ -183,7 +188,7 @@ const UserForm = () => {
                   onChange={handleUserEmail}
                 />
               </div>
-              <div className="form-section">
+              {/* <div className="form-section">
                 <label htmlFor="currentRole">Current Role:</label>
                 <input
                   type="text"
@@ -191,7 +196,7 @@ const UserForm = () => {
                   value={currentRole}
                   readOnly
                 />
-              </div>
+              </div> */}
 
               <div className="form-section">
                 <label htmlFor="newRole">New Role:</label>
@@ -230,8 +235,70 @@ const UserForm = () => {
             <div className="success-message">{successMsg}</div>
             <div className="error-message">{errorMsg}</div>
           </div>
+ 
+             </div>
+           <div className="line2"></div>  
+       <h4 className='head'>User Role Change Form</h4>
+       <div className="another-form">
+       <div className='form-container'>
+       <form onSubmit={handleSubmit}>
+         <div className="form-section">
+ 
+          <label htmlFor="user">User:</label>
+ 
+           <select id="user" value={selectedUser} onChange={handleUserChange}>
+             <option value="">Select a user</option>
+             {users.map((user) => (
+              <option key={user.id} value={user.id}>
+                {user.name}
+              </option>
+            ))}
+          </select>
         </div>
-      </div>
+        <div className="form-section">
+          <label htmlFor="user">User Email:</label>
+          <input type='email'  />
+        </div>
+        <div className="form-section">
+          <label htmlFor="currentRole">Current Role:</label>
+          <input type="text" />
+        </div>
+        <div className="form-section">
+          <label htmlFor="newRole">New Role:</label>
+          <select id="newRole" value={newRole} onChange={handleNewRoleChange}>
+            <option value="">Select a new role</option>
+            <option value="driver">Driver</option>
+            <option value="passenger">Passenger</option>
+          </select>
+        </div>
+        <div className="form-section">
+          <label className="confirm-checkbox">
+            <input
+              type="checkbox"
+              id="confirmCheckbox"
+              checked={confirmCheckbox}
+              onChange={handleConfirmCheckboxChange}
+            />
+             I confirm that I want to change the role of the user.
+          </label>
+        </div>
+        <div className="form-section">
+          <button type="submit" disabled={!confirmCheckbox}>
+            Save Changes
+          </button>
+          <button type="button"  onClick={handleCancel}>
+            Cancel
+          </button>
+
+        </div>
+      </form>
+      <div className="success-message">{successMsg}</div>
+      <div className="error-message">{errorMsg}</div>
+       
+    </div>
+    </div>
+    </div>
+
     </>
   );
 };
