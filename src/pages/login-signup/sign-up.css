@@ -97,12 +97,13 @@
 }
 .container-signup .forms-container .form-control .socials .fa-linkedin-in {
   padding: 5px 6px;
-  /* background-color: #7092b3; */
+  background-color: #7092b3;
 }
 .container-signup .forms-container .form-control.signup-form {
   opacity: 1;
   z-index: 2;
   left: 0%;
+ 
 }
 .container-signup .intros-container {
   position: relative;
@@ -124,9 +125,9 @@
   margin: 0px 30px;
 }
 .container-signup .intros-container .intro-control button {
-  border: none;
-  padding: 15px 30px;
-  background-color: #2A4966;
+  border: 1px solid white;
+  padding: 12px 40px;
+  background-color: #46698a;
   border-radius: 50px;
   color: #fff;
   margin: 10px 0px;
@@ -152,91 +153,35 @@
   z-index: 2;
 }
 
+@media screen and (max-width:400px)  {
+  .container-signup .intros-container .intro-control button a {
+    font-size: 15px;
+  }
+  .container-signup .intros-container .intro-control .intro-control__inner {
+    font-size: 15px;
+  }
+} 
+   
+@media screen and (min-width:401px) and (max-width: 480px) {
+  .container-signup .intros-container .intro-control button a {
+    font-size: 15px;
+    
+  }
+  .container-signup .intros-container .intro-control .intro-control__inner {
+    font-size: 15px;
+  }
  
-/*  
-@media screen and (max-width: 480px) {
-  .container-signup {
- 
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .container-signup .forms-container {
-    order: 2;
-    width: 100%;
-    height: 50vh;
-  }
-  .container-signup .forms-container .form-control {
-    position: absolute;
-    height: 50vh;
-  }
-  .container-signup .forms-container .form-control.signup-form {
-    left: 0%;
-    margin-top: 70px;
-  }
-  .container-signup .intros-container {
-    order: 1;
-    width: 100%;
-    left: 0%;
-    height: 40vh;
-  }
-  .container-signup .intros-container .intro-control {
-    position: absolute;
-    height: 40vh;
-  }
-
 }
 
-@media screen and (max-width: 720px) {
-    .container-signup {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    .container-signup .forms-container {
-      order: 2;
-      width: 100%;
-      height: 50vh;
-    }
-    .container-signup .forms-container .form-control {
-      position: absolute;
-      height: 50vh;
-    }
-    .container-signup .forms-container .form-control.signup-form {
-      left: 0%;
-      margin-top: 60px;
-    }
-    .container-signup .intros-container {
-      order: 1;
-      width: 100%;
-      left: 0%;
-      height: 40vh;
-    }
+@media screen and (min-width: 481px) and (max-width: 720px) {
+  .container-signup .intros-container .intro-control button a {
+    font-size: 15px;
+    
   }
+  .container-signup .intros-container .intro-control .intro-control__inner {
+    font-size: 15px;
+  }
+}    
 
-@media screen and (max-width: 860px) {
-    .container-signup {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    .container-signup .forms-container {
-      order: 2;
-      width: 100%;
-      height: 50vh;
-    }
-    .container-signup .forms-container .form-control {
-      position: absolute;
-      height: 50vh;
-    }
-    .container-signup .forms-container .form-control.signup-form {
-      left: 0%;
-      margin-top: 50px;
-    }
-    .container-signup .intros-container {
-      order: 1;
-      width: 100%;
-      left: 0%;
-      height: 40vh;
-    }
-  } */  
+
+  

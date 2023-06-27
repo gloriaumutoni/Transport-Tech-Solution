@@ -8,7 +8,9 @@ const Admin2 =()=>{
     return(
         <>
         <div className="admin-container">
+        <div className="cont-side">
         <Sidebar/>
+        </div>
         <div className="admin-content">
           <div className="upper-part">
             <div className="part-one">
@@ -47,8 +49,6 @@ const Admin2 =()=>{
                <td className="item2">{item.Driverinfo}</td>
                <td className="item2">{item.claimId}</td>
                <td className="item2">{item.status}</td>
-               <td className="item3">
-               </td>
              </tr>
            ))}
          </tbody>

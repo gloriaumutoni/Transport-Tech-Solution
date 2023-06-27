@@ -4,6 +4,7 @@ import './sidebar.css'
 import {Link} from 'react-router-dom'
 import {AiOutlineMenu} from 'react-icons/ai'
 import {AiOutlineClose} from 'react-icons/ai'
+import { color } from "framer-motion";
 const Side =()=>{
     const [clicked, setClicked] = useState(false);
     const [visible, setvisible]=useState(false)
@@ -31,7 +32,8 @@ const Side =()=>{
     setIsDarkMode(!isDarkMode);
   };
     return(
-        <>
+      <div className="aside">
+        <div className="admin-sidebar">
         <div className='icons-res'>
           {!visible && <AiOutlineMenu onClick={() => setvisible(true)}/>}
           {visible && <AiOutlineClose onClick={() => setvisible(false)}/>}
@@ -39,9 +41,14 @@ const Side =()=>{
            
         <div className="admnin-sidebar">
         <div className="admin-fix">
-            <div className="logo-admin">
-                <h1 style={{color:"white"}}>Bus<span style={{color:"#009AC7"}}>  link</span></h1>
-            </div>
+        <div className="logo-admin">
+  <h1>
+  <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
+      Bus<span style={{ color: "#009AC7" }}>link</span>
+    </Link>
+  </h1>
+</div>
+
             <div className="list-items-admin">
                 <ul>
                 <li><i class='bx bxs-dashboard'></i><Link to="/admin" style={linkStyle} onClick={handleClick}>Dashboard</Link></li>
@@ -65,7 +72,8 @@ const Side =()=>{
         </div>
         </div>
          
-        </>
+        </div>
+        </div>
     )
 }
 

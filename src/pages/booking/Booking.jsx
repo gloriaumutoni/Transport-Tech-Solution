@@ -2,7 +2,6 @@ import React from "react";
 import "./booking.css";
 import drivers from "../../../src/Driver";
 import DriveSidebar from "../../component/Side/driveSidebar";
- 
 const Booking = () => {
   return (
     <div className="driverContainer" id="booking-fix-error">
@@ -10,7 +9,9 @@ const Booking = () => {
         <DriveSidebar />
       </div>
       <div className="driverContent">
-        <div className="KicukiroNyabugogo">
+
+        <div className="KicukiroNyabugogoos">
+
           <span className="driverLocation">Kicukiro - Nyabugogo</span>
         </div>
         <div className="driverTable">

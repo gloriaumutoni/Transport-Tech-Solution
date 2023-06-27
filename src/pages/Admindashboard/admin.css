@@ -10,25 +10,23 @@
     display: grid;
     grid-template-columns: 0.2fr 1fr;
 }
+.cont-side{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
 .logo-admin h1{
     display: flex;
+    text-decoration: none;
+    color: white;
     padding: 20px 0;
     justify-content: center;
 }
-
 .admin-content{
     background-color: white;
-    /* flex: 1; */
-  /* overflow-y: auto; */
 }
 .admin-content h4{
-    padding: 20px 20px;
-}
-.line2{
-    /* content: ""; */
-    /* border: 1px solid #009AC7; */
-    
-    
+    padding: 25px 40px;
 }
 .card-admin{
     width: 80%;  
@@ -63,7 +61,7 @@
     color: white;
     font-size: 18px;
     border: none;
-    width: 24.7%;
+    width: 25.25%;
     margin-left: -30px;
     display: flex;
     justify-content: center;
@@ -111,7 +109,7 @@
   background-color: '#009AC7'  
 }
 .icon i{
-    font-size: 40px;
+    font-size: 60px;
   margin-top: 30px;
 }
 .first p{
@@ -128,7 +126,7 @@
 }
 table{
     width: 100%;
-    height: 55vh;
+    height:75vh;
   }
   .container{
     margin-left: 19rem;
@@ -251,7 +249,7 @@ margin-bottom: 40px;
   margin-top: 40px;
   padding: 40px 40px;
   border: 1px solid black;
-  height: 70vh;
+  height: 90vh;
 }
 .head{
   text-align: center;
@@ -262,8 +260,7 @@ margin-bottom: 40px;
   margin-top: 40px;
   padding: 20px;
   border: 1px solid black;
-    background-color: #E9F4FF;
-  
+  background-color: #E9F4FF;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

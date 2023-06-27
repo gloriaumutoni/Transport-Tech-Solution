@@ -33,6 +33,7 @@ const Admin1 = () => {
     <>
       <div className="admin-container">
         <Sidebar />
+
         <div className="admin-content">
           <div className="upper-part">
             <div className="part-one">
