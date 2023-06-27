@@ -66,8 +66,10 @@ const UserForm = () => {
       console.log(data);
       if (data.error == null) {
         window.alert("Role Changed successfully");
+        successMsg("Role changed successfully");
       } else {
         window.alert("Error occured while assigning role");
+        setErrorMsg("Failed to change Role.");
       }
     } catch (error) {
       console.error("Error assigning role:", error);
@@ -121,12 +123,11 @@ const UserForm = () => {
     }
   };
 
-
-    return (
-        <>
-        <div className="admin-container">
+  return (
+    <>
+      <div className="admin-container">
         <div className="cont-side">
-        <Sidebar/>
+          <Sidebar />
         </div>
 
         <div className="admin-content">
