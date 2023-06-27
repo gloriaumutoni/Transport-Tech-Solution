@@ -3,7 +3,7 @@ import "./admin.css";
 import Sidebar from "../../component/sidebar";
 import { useParams } from "react-router-dom";
 
-const userForm = () => {
+const UserForm = () => {
   const [users, setUsers] = useState([]);
   const [email, setEmail] = useState("");
   const [selectedUser, setSelectedUser] = useState("");
@@ -13,13 +13,12 @@ const userForm = () => {
   const [confirmCheckbox, setConfirmCheckbox] = useState(false);
   const [successMsg, setSuccessMsg] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
-  let Uid, passenger;
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/v2/role/readAllUsers`
+          `https://important-cummerbund-colt.cyclic.app/api/v2/role/readAllUsers`
         );
         const data = await response.json();
         setUsers(data.data);
@@ -29,22 +28,23 @@ const userForm = () => {
     };
     fetchData();
   }, []);
-  useEffect(() => {
-    const checkEmail = async () => {
-      try {
-        const response = await fetch(
-          `http://localhost:5000/api/v2/role/read?email=${email}`
-        );
-        const data = await response.json();
-        // setUsers(data.data);
-        setUserId(data.data[0]._id);
-        console.log(data.data[0]._id);
-      } catch (error) {
-        setErrorMsg("Failed to get users.");
-      }
-    };
-    checkEmail();
-  }, []);
+
+  // const checkEmail = async () => {
+  //   try {
+  //     const response = await fetch(
+  //       `https://important-cummerbund-colt.cyclic.app/api/v2/role/read?email${email}`
+  //     );
+  //     const data = await response.json();
+  //     // setUsers(data.data);
+  //     setUserId(data.data[0]._id);
+  //   } catch (error) {
+  //     setErrorMsg("Failed to get users.");
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   checkEmail();
+  // }, []);
 
   const [role, setRole] = useState("");
   const params = useParams();
@@ -53,7 +53,7 @@ const userForm = () => {
     try {
       console.log(userId);
       const result = await fetch(
-        `http://localhost:5000/api/v2/role/assign?id=${userId}`,
+        `https://important-cummerbund-colt.cyclic.app/api/v2/role/assign?id=${userId}`,
         {
           method: "PATCH",
           body: JSON.stringify({ role: newRole }),
@@ -73,12 +73,27 @@ const userForm = () => {
       console.error("Error assigning role:", error);
     }
   };
-
   const handleUserChange = (event) => {
     setSelectedUser(event.target.value);
+    setUserId(event.target.value);
 
-    setUserId(selectedUser);
-    setCurrentRole(selectedUser.role);
+    const selectedUserId = event.target.value;
+    const selectedUserName =
+      event.target.options[event.target.selectedIndex].getAttribute(
+        "data-username"
+      );
+    const selectedUserEmail =
+      event.target.options[event.target.selectedIndex].getAttribute(
+        "data-email"
+      );
+    const selectedUserRole =
+      event.target.options[event.target.selectedIndex].getAttribute(
+        "data-role"
+      );
+
+    setCurrentRole(selectedUserRole);
+    setEmail(selectedUserEmail);
+    // setCurrentRole(selectedUser.role);
   };
   console.log(currentRole);
 
@@ -92,8 +107,8 @@ const userForm = () => {
   const handleUserEmail = (event) => {
     event.preventDefault();
     setEmail(event.target.value);
-    checkEmail();
   };
+  console.log(email);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -142,7 +157,13 @@ const userForm = () => {
                 >
                   <option value="">Select a user</option>
                   {users.map((user) => (
-                    <option key={user._id} value={user._id}>
+                    <option
+                      key={user._id}
+                      value={user._id}
+                      data-username={user.userName}
+                      data-email={user.email}
+                      data-role={user.role}
+                    >
                       {user.userName}_____{user.email}___{user.role}
                     </option>
                   ))}
@@ -209,4 +230,4 @@ const userForm = () => {
     </>
   );
 };
-export default userForm;
+export default UserForm;
