@@ -6,13 +6,18 @@ import { AiFillFacebook } from "react-icons/ai";
 import { AiFillInstagram} from "react-icons/ai";
 import { FaTwitter} from "react-icons/fa";
 
-
+import { Link } from 'react-router-dom';
 import { HiLocationMarker } from "react-icons/hi";;
 import{MdCall} from "react-icons/md";
 import{MdEmail} from "react-icons/md";
 import{TbWorldWww} from "react-icons/tb";
 
 function Footer(){
+  const handleBackToTop = (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+   
   return(
      
     <>
@@ -35,10 +40,10 @@ function Footer(){
          And this system is here to  <br/>Help-us everyone to save<br/> More money and save time  .</p>
       </div>
       <div className='footer-one'>
-       <li>Home</li><br/>
-       <li>Blogs</li><br/>
-       <li>Contact-us</li><br/>
-       <li>About-us</li>
+        <Link to='/' onClick={handleBackToTop} className='one' ><li>Home</li></Link> <br />
+      <Link to='/tracking' className='one'><li>Location</li></Link> <br/>
+      <Link to='/contact' className='one'> <li>Contact-us</li></Link><br/>
+      <Link to='/aboutus' className='one'> <li>About-us</li></Link>
       </div>
       <div className='footer-two'>
         <li>Your account</li><br/>
