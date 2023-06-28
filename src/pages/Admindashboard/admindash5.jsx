@@ -91,7 +91,7 @@ const UserForm = () => {
     assignRole();
     // Perform form validation
     if (selectedUser === "" || newRole === "" || !confirmCheckbox) {
-      setErrorMsg("Please fill in all the fields and confirm the role change.");
+     // setErrorMsg("Please fill in all the fields and confirm the role change.");
       return;
     }
   };
