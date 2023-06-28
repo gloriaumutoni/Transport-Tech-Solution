@@ -16,19 +16,22 @@ const Admin1 =()=>{
     });
   };
 
+  const getData = async () => {
+    const response = await Axios.get(
+      `https://important-cummerbund-colt.cyclic.app/api/v2/role/readAll?role=Driver`
+    );
+    setData[response.data.data];
+    console.log(response.data.data);
+  };
 
-  // const [driverData, setDriverData] = useState([]);
- 
+  const [driverData, setDriverData] = useState([]);
+  useEffect(() => {
+    fetch("https://important-cummerbund-colt.cyclic.app/api/v2/role/readAll?role=Driver")
+      .then((response) => response.json())
+      .then((data) => setDriverData(data.data))
+      .catch((err) => console.log(err));
+  });
 
-//  const getData=()=>{
-//   useEffect(() => {
-//     fetch("http://localhost:5000/api/v2/role/readAll?role=Driver")
-//       .then((response) => response.json())
-//       .then((driverData) => {setDriverData(driverData.data)
-//       console.log(driverData)})
-//       .catch((err) => console.log(err));
-//   });
-//  }
 
 //   useEffect(() => {
 //     getData();
@@ -54,7 +57,7 @@ const Admin1 =()=>{
           <div className="upper-part">
             <div className="part-one">
               <h4>
-                WELCOME <span style={{ color: "#009AC7" }}>Admin.</span>
+                WELCOME <span style={{ color: "#009AC7" }}> Admin.</span>
               </h4>
             </div>
             <div className="upbar">
