@@ -11,7 +11,7 @@ const Login = () => {
   const [isSubmit, setIsSubmit] = useState(false);
   const [formErrors, setFormErrors] = useState({});
 
-  const customId = "custom-id-yes"
+
 
   const navigate = useNavigate();
 
@@ -34,9 +34,7 @@ const Login = () => {
     if (!values.password) {
       errors.password = 'Password is required';
     }
-    return  toast('Invalid credentials',{
-    toastId: customId
-    });
+    return errors;
   };
 
   useEffect(() => {
@@ -88,10 +86,11 @@ else{
 }
     
     } catch (error) {
-       console.error('Error saving data:', error);
       
+       console.error('Error saving data:', error);
+      toast('Invalid credentials');
     }
-
+   
   };
 
   const handleSignup = () => {
