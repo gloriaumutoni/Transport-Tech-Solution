@@ -63,9 +63,10 @@ const Aboutus = () => {
                     <div className='about-serve'>
                    
                     <img src={coach1} />
-                    <img src={coach3} /> 
+                    
                     <img src={coach2} /> 
-                              
+
+                    <img src={coach3} />     
                         </div>                  
                     <h1>what we offer</h1>
                     <p>                           . we book your sit every where you are in kigali <br></br>
