@@ -26,7 +26,8 @@ const Aboutus = () => {
                     <p>Take journey with us cause we don’t wait more time on 
                         bus stop we book bus every where you are we don’t <br></br>
                         need to wait on bus stop this app has came to solve 
-                        passenger waiting many minutes.</p>
+                        passenger waiting many minutes <br></br>
+                        as well as when you pay for transport when time without riching on bus stop the passenger can cancel the ticket .</p>
                 </div>
                 <div className='about-what'>
                     <div className='about-mission'>
@@ -53,8 +54,8 @@ const Aboutus = () => {
                 <div className='about-offer'>
                     
                 <h4><a href="#">OUR ADVANTAGE</a></h4>
-                    <p>We make strongest service to people who use public <br></br>
-                        car, this website is here to solve the problems our have <br></br>
+                    <p>We make good service to people who use public <br></br>
+                        car, this website is here to solve the problems. our have <br></br>
                         been meeting to wait for the bus for long hours, this website <br></br>
                         for the people who use public transport and I hope this website 
                         
@@ -62,12 +63,9 @@ const Aboutus = () => {
                     <div className='about-serve'>
                    
                     <img src={coach1} />
-
-                    <img src={coach2} /> 
-             
-                  
                     <img src={coach3} /> 
-                 
+                    <img src={coach2} /> 
+                              
                         </div>                  
                     <h1>what we offer</h1>
                     <p>                           . we book your sit every where you are in kigali <br></br>
