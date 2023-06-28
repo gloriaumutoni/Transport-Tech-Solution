@@ -11,8 +11,6 @@ const Login = () => {
   const [isSubmit, setIsSubmit] = useState(false);
   const [formErrors, setFormErrors] = useState({});
 
-
-
   const navigate = useNavigate();
 
   const handleChange = (e) => {
