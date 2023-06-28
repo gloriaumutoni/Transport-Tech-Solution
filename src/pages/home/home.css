@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing:border-box;
+    font-family:'poppins';
+    font-size:500;
+
 }
- 
+body{
+
+  font-family: 'Josefin Sans', cursive;
+}
+
 #homewhole1 h1, h2, h3 {
   font-style: italic;
   font-weight: bolder;
@@ -182,8 +193,6 @@ span{
    margin-right: 1%;
    position: relative;
 }
-
-
  #hometwo{
     color: #2A4966;
     border: #009AC7;
@@ -265,24 +274,69 @@ margin-bottom: 1%;
     border-radius: 5px;
 }
 
+.divide{
+  display:flex;
+  width:80%;
+  gap:30px;
+  height:15%;
+ padding:20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin:auto;
+}
+.divide div{
+  width:70%;
+  border-bottom: 1px double black;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.divide div h2{
+  color: #009AC7;
+  margin : 2%;
+  font-style:normal;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 2em;
+  font-family: 'system-ui',Arial, Helvetica, sans-serif;
+  
+}
+.divide div p{
+  font-size: 15px;
+  width: 90%;
+  color:rgb(112, 112, 112);
+  font-family: 'system-ui';
+}
+.divideImg img{
+  height:60%;
+  /* background:red; */
+  width:20vw;
+}
 #paragraph{
-    margin-left: 10%;
+    /* margin-top: -6%; */
     padding-bottom: 5%;
 }
 
 #parg1 h2{
-color: #244059;
+color: #009AC7;
 margin : 2%;
+font-style:normal;
+text-transform: uppercase;
+text-align: center;
+line-height: 2em;
+font-family: 'system-ui',Arial, Helvetica, sans-serif;
+margin-top: -6%;
 }
 #parg1 p{
     font-size: 15px;
    width: 90%;
-   color: rgb(94, 93, 93);
+   color:rgb(112, 112, 112);
+   font-family: 'system-ui';
+
 }
  #parg2 h2{
-    color: #244059;
     margin : 2%;
-  
+    margin-top: -4%;
 }
 #parg2 p{
     font-size: 15px;
@@ -290,9 +344,9 @@ margin : 2%;
    color: rgb(94, 93, 93);
 }
 #parg3 h2{
-    color: #244059;
+    /* color: #244059; */
     margin : 2%;
-    
+    margin-top: -4%;
 }
 #parg3 p{
     font-size: 15px;
