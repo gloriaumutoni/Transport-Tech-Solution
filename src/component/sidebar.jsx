@@ -4,7 +4,7 @@ import './sidebar.css'
 import {Link} from 'react-router-dom'
 import {AiOutlineMenu} from 'react-icons/ai'
 import {AiOutlineClose} from 'react-icons/ai'
-import { color } from "framer-motion";
+// import { color } from "framer-motion";
 const Side =()=>{
     const [clicked, setClicked] = useState(false);
     const [visible, setvisible]=useState(false)
@@ -71,7 +71,6 @@ const Side =()=>{
         </label>
         </div>
         </div>
-         
         </div>
         </div>
     )
