@@ -97,12 +97,3 @@ margin-top: 20px;
   .aside{
     position: fixed;
   }
-  /* @media screen and (max-width: 400px) {
-    .admnin-sidebar{ */
-      /* display: none; */
-      /* background-color: white; */
-    /* }
-    .icons-res{
-      display: block;
-    }
-  } */

@@ -9,12 +9,14 @@
     background-color: aquamarine;
 } */
 .about-para h1{
-    padding-left: 500px;
+    /* padding-left: 500px; */
     color: rgb(32, 32, 80);
+    text-align: center;
 }
 .about-para p{
-    padding-left: 250px;
+    /* padding-left: 250px; */
     padding-top: 50px;
+    text-align: center;
 }
 .about-mission{
     width: 300px;
@@ -25,6 +27,7 @@
     margin-top: 50px;
     align-items: center;
     text-align: center;
+    margin-left: 500px;
 }
 .about-mission h2{
     font-size: 32px;
@@ -42,6 +45,7 @@
     margin-top: -90px;
     align-items: center;
     text-align: center;
+    margin-left: 400px;
 }
 .about-vision h2{
     font-size: 32px;
@@ -57,9 +61,10 @@
     background: rgb(146, 142, 142);
     margin-left:550px;
     border-radius: 50%;
-    margin-top: -300px;
+    margin-top: -290px;
     align-items: center;
     text-align: center;
+    margin-left: 650px;
 }
 .about-objective h2{
     font-size: 32px;

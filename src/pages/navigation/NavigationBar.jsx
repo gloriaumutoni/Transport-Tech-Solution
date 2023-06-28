@@ -20,6 +20,7 @@ let NavBar = () =>{
  
                 <ul id='navnavbar'>
                  <li><Link to='/'>Home</Link> </li>
+                 <li><Link to='/aboutus'>About US</Link> </li>
                  <li><Link to='/book-here'>Book here</Link> </li>
                  <li><Link to='/cancel-ticket'> Manage Booking</Link></li>
                  <li><Link to='/contact'>Contact</Link> </li>

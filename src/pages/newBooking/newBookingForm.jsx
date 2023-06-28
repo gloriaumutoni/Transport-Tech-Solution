@@ -88,7 +88,7 @@ const NewBookingForm = () => {
           {error && <p className="error">{error}</p>}
           <header id="Btitle">enter your username</header>
           <input type='text' placeholder="enter your Names" id='first'
-            value={formValues.passengerName}
+            // value={formValues.passengerName}
             onChange={handleChange}
           />
 
