@@ -16,23 +16,38 @@ const UserForm = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `https://important-cummerbund-colt.cyclic.app/api/v2/role/readAllUsers`
+          `https://good-red-sea-urchin-ring.cyclic.app/api/v2/role/readAllUsers`
         );
         const data = await response.json();
         setUsers(data.data);
       } catch (error) {
-        setErrorMsg("Failed to get users.");
+        setErrorMsg("");
       }
     };
     fetchData();
   }, []);
+  // const checkEmail = async () => {
+  //   try {
+  //     const response = await fetch(
+  //       `https://important-cummerbund-colt.cyclic.app/api/v2/role/read?email${email}`
+  //     );
+  //     const data = await response.json();
+  //     // setUsers(data.data);
+  //     setUserId(data.data[0]._id);
+  //   } catch (error) {
+  //     setErrorMsg("Failed to get users.");
+  //   }
+  // };
+  // useEffect(() => {
+  //   checkEmail();
+  // }, []);
   const [role, setRole] = useState("");
   const params = useParams();
   const assignRole = async () => {
     try {
       console.log(userId);
       const result = await fetch(
-        `https://important-cummerbund-colt.cyclic.app/api/v2/role/assign?id=${userId}`,
+        `https://good-red-sea-urchin-ring.cyclic.app/api/v2/role/assign?id=${userId}`,
         {
           method: "PATCH",
           body: JSON.stringify({ role: newRole }),
@@ -91,7 +106,7 @@ const UserForm = () => {
     assignRole();
     // Perform form validation
     if (selectedUser === "" || newRole === "" || !confirmCheckbox) {
-     // setErrorMsg("Please fill in all the fields and confirm the role change.");
+      setErrorMsg("Please fill in all the fields and confirm the role change.");
       return;
     }
   };
@@ -161,7 +176,7 @@ const UserForm = () => {
                   type="text"
                   id="currentRole"
                   value={currentRole}
-                  readOnly
+                  
                 />
               </div>
               <div className="form-section">
