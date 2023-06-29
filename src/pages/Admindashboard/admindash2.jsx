@@ -22,7 +22,7 @@ const Admin1 = () => {
 
   const getData = async () => {
     const response = await Axios.get(
-      `https://important-cummerbund-colt.cyclic.app/api/v2/role/readAll?role=Driver`
+      `https://good-red-sea-urchin-ring.cyclic.app/api/v2/role/readAll?role=Driver`
     );
     setData[response.data.data];
     console.log(response.data.data);
@@ -31,7 +31,7 @@ const Admin1 = () => {
   const [driverData, setDriverData] = useState([]);
   useEffect(() => {
     fetch(
-      "https://important-cummerbund-colt.cyclic.app/api/v2/role/readAll?role=Driver"
+      "https://good-red-sea-urchin-ring.cyclic.app/api/v2/role/readAll?role=Driver"
     )
       .then((response) => response.json())
       .then((data) => setDriverData(data.data))
