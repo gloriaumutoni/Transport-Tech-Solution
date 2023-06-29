@@ -55,6 +55,7 @@ const Side =()=>{
                 <li><i className='bx bxs-id-card'></i><Link to="/driver"style={linkStyle} onClick={handleClick}>Drivers</Link></li>
                 <li ><i className='bx bx-bus'></i> <Link to="/bus"style={linkStyle} onClick={handleClick}>Bus manage</Link></li>
                 <li> <i className='bx bxs-book-content'></i> <Link to ="/form"style={linkStyle} onClick={handleClick}>Form</Link></li>
+                <li> <i className='far fa-comment'></i> <Link to ="/messages"style={linkStyle} onClick={handleClick}>All Messages</Link></li>
                 </ul>
             </div>
             <div className="line-admin"></div>
