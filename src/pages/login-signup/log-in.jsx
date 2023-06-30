@@ -47,7 +47,9 @@ const Login = () => {
 
   const sendDataToBackend = async () => {
     try {
+
       const response = await fetch(`${BASE_URL}/api/v2/user/login`, {
+
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -72,23 +74,27 @@ const Login = () => {
 const roles = await decoded.role
 // console.log("roles",roles)
 if(roles=="driver"){
+
   navigate('/driver');
 
 }
 else if(roles=="user"){
   navigate('/book-here');
+
 }
 else{
 
   navigate('/admin');
 
 }
+
     
     } catch (error) {
       
        console.error('Error saving data:', error);
      
        toast('Invalid credentials');
+
     }
 
    
