@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './admin.css';
 import Sidebar from '../../component/sidebar';
 
-const UserForm = () => {
+const Messages = () => {
   const [messages, setMessages] = useState([]);
   const [selectedUser, setSelectedUser] = useState('');
   const [currentRole, setCurrentRole] = useState('');
@@ -163,4 +163,4 @@ const UserForm = () => {
   );
 };
 
-export default UserForm;
+export default Messages;

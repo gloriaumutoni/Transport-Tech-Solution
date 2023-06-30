@@ -27,6 +27,7 @@ import Home from '../../pages/home/home.jsx';
 import Aboutus from "../../pages/aboutus/aboutus";
 import Seat from '../../pages/newBooking/Seat';
 import NewBookingForm from "../../pages/newBooking/newBookingForm";
+import Messages from "../../pages/Admindashboard/admindash6";
  
  
 const Index = () =>{
@@ -45,6 +46,8 @@ const Index = () =>{
             <Route path="/bus" element={<Admindash3/>}/>
             <Route path="/claim" element={<Admindash4/>}/>
             <Route path="/form" element={<Admindash5/>}/>
+            <Route path="/messages" element={<Messages/>}/>
+
             <Route path="/driverdashboard" element={<Driver/>}/>
            
              
