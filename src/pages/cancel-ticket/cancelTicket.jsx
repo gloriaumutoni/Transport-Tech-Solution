@@ -1,13 +1,10 @@
 import '../cancel-ticket/CancelTicket.css'
 import React from 'react';
  
-
 import { BsFillBusFrontFill } from "react-icons/bs";
 import NavBar from '../navigation/NavigationBar';
 
  
-
-
 class CancelTicketPage extends React.Component {
   handleCancelTicket = () => {
     // Perform cancel ticket logic here
@@ -18,7 +15,7 @@ class CancelTicketPage extends React.Component {
       <div>
         <NavBar/>
       <div className="cancel-container">
-        <h1 id="title">Bus Ticket Booking Online</h1>
+        <h1 id="Ctitle">Bus Ticket Booking Online</h1>
         <p id="sub-title">Bus link makes it easy for booking <BsFillBusFrontFill id="bus"/></p>
         <div className="sub-container">
         <div className="option1">

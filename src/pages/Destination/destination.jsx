@@ -1,7 +1,8 @@
 import React from "react";
 import "./destination.css";
 import destination from "../../../src/Destination";
-import DriveSidebar from "../../component/Side/driveSidebar";
+import DriverSidebar from "../../component/Side/driveSidebar";
+import { Link } from "react-router-dom";
 // const driver = drivers();
 console.log(destination);
 // { Students.map((item) => (
@@ -14,7 +15,7 @@ const Destination = () => {
   return (
     <div className="container-destination" id="destination-fix-error">
       <div className="sidebar">
-        <DriveSidebar/>
+        <DriverSidebar/>
       </div>
       <div className="content">
         <div className="KicukiroNyabugogoos">
@@ -32,7 +33,7 @@ const Destination = () => {
                 <tr className="table-row">
                   <td className="item1">{item.Origin}</td>
                   <td className="item2">{item.Destination}</td>
-                  <td className="item3"><span className="status">{item.Status}</span></td>
+                  <td className="item3"><span className="status"><Link to='/booking' id="item-status">{item.Status} </Link> </span></td>
                 </tr>
               ))}
             </tbody>

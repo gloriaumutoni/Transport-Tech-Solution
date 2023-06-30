@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import './driveSidebar.css'
 import {Link} from 'react-router-dom'
-const driverSidebar =()=>{
+const DriverSidebar =()=>{
     const [clicked, setClicked] = useState(false);
     const [visible, setvisible]=useState(false)
     const handleClick = () => {
@@ -33,17 +33,26 @@ const driverSidebar =()=>{
         <div className="driver-sidebar">
         
             <div className="logo-admin">
-                <h1 style={{color:"white"}}>Bus<span style={{color:"#009AC7"}}>  link</span></h1>
+            <h1>
+  <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
+      Bus<span style={{ color: "#009AC7" }}>link</span>
+    </Link>
+  </h1>
             </div>
             <div className="list-items-driver">
                 <ul>
+                <li><i class='bx bxs-id-card'></i> <Link to="/driverdashboard" style={linkStyle} onClick={handleClick}>
+                Driver Dashboard
+              </Link></li>
+
+                <li ><i class='bx bx-bus'></i> <Link to="/destination" style={linkStyle} onClick={handleClick}>
+               Destination Status
+              </Link></li> 
 
                 <li><i class='bx bxs-id-card'></i> <Link to="/booking" style={linkStyle} onClick={handleClick}>
                 Booking Status
               </Link></li>
-                <li ><i class='bx bx-bus'></i> <Link to="/destination" style={linkStyle} onClick={handleClick}>
-               Destination Status
-              </Link></li>
+              
 
                 </ul>
             </div>
@@ -64,7 +73,7 @@ const driverSidebar =()=>{
     )
 }
 
-export default driverSidebar;
+export default DriverSidebar;
 
 
 

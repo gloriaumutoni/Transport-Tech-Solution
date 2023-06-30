@@ -66,12 +66,15 @@ const handleShow = (content) =>{
                     </div>}
                     {visible &&  <div className='Navigation-Bar-tracking'>
                     <GrFormClose onClick={() =>setVisible (false)} className='tracking-close-icon'/>
+
                     <ul id='navnavbar'>
                  <li><Link to='/'>Home</Link> </li>
                  <li><Link to='/book-here'>Book here</Link> </li>
                  <li><Link to='/cancel-ticket'> Manage Booking</Link></li>
                  <li><Link to='/contact'>Contact</Link> </li>
                  <li><Link to='/login'>Sign in</Link> </li>   
+
+       
                 </ul>
             </div>}
                     

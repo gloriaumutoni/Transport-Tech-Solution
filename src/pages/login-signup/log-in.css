@@ -7,15 +7,7 @@
     box-sizing: border-box;
 }
 
-/* body {
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #ddd;
-    font-size: 14px;
-} */
+
 
 .login-center{
     display: flex;
@@ -198,8 +190,7 @@
     }
 
 }
-
-@media screen and (max-width: 720px) {
+@media screen and (min-width: 488px) and (max-width:560px) {
     .container-Login {
         height: 100vh;
         display: flex;
@@ -227,5 +218,54 @@
         width: 100%;
         left: 0%;
         height: 40vh;
+    }
+
+    .container-Login .intros-container .intro-control {
+        position: absolute;
+        height: 40vh;
+    }
+}
+
+@media screen and  (min-width: 681px) and (max-width: 720px)  {
+    .container-Login {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-Login .forms-container {
+        order: 2;
+        width: 100%;
+        height: 50vh;
+    }
+   
+    .container-Login .forms-container .form-control {
+        position: absolute;
+        height: 50vh;
+    }
+    .container-Login .forms-container .form-control h2 {
+        margin-left: 340px;   
+    }
+    .container-Login .forms-container .form-control.signin-form {
+        left: 0%;
+        margin-top: 70px;
+    }
+    .container-Login .forms-container .form-control form input{
+        width: 44%;
+       margin-left: 340px;
+    }
+    .container-Login .forms-container .form-control form button{
+        width: 40%;
+        margin-left: 355px;
+        margin-top: 10px;
+    }
+    .container-Login .forms-container .form-control span{
+        margin-left: 340px;  
+    }
+    .container-Login .forms-container .form-control .socials {
+        margin-left: 340px;  
+    }
+    .container-Login .intros-container {
+        order: 1;
     }
 }

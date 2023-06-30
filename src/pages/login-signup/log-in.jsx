@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import jwt_decode from 'jwt-decode'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import BASE_URL from '../../Api';
 
 const Login = () => {
   const initialValues = { email: '', password: '', role: '' };
@@ -46,7 +47,9 @@ const Login = () => {
 
   const sendDataToBackend = async () => {
     try {
-      const response = await fetch('http://localhost:3100/api/v2/user/login', {
+
+      const response = await fetch(`${BASE_URL}/api/v2/user/login`, {
+
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -71,11 +74,13 @@ const Login = () => {
 const roles = await decoded.role
 // console.log("roles",roles)
 if(roles=="driver"){
-  navigate('//driver');
+
+  navigate('/driver');
 
 }
 else if(roles=="user"){
-  navigate('/booking');
+  navigate('/book-here');
+
 }
 else{
 
@@ -83,12 +88,16 @@ else{
 
 }
 
-   
-      
+    
     } catch (error) {
-      console.error('Error saving data:', error);
-      toast('Invalid credentials');
+      
+       console.error('Error saving data:', error);
+     
+       toast('Invalid credentials');
+
     }
+
+   
   };
 
   const handleSignup = () => {
@@ -139,7 +148,7 @@ else{
               <p>
                 We are so excited to have you here. If you haven't already, create an account to get access to exclusive offers, rewards, and discounts.
               </p>
-              <button id="signin-btn" onClick={handleSignup}>Don't have an account? Sign Up.</button>
+              <button id="signin-btn" onClick={handleSignup}> Sign Up.</button>
             </div>
           </div>
         </div>

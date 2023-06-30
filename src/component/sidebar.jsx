@@ -4,7 +4,7 @@ import './sidebar.css'
 import {Link} from 'react-router-dom'
 import {AiOutlineMenu} from 'react-icons/ai'
 import {AiOutlineClose} from 'react-icons/ai'
-import { color } from "framer-motion";
+// import { color } from "framer-motion";
 const Side =()=>{
     const [clicked, setClicked] = useState(false);
     const [visible, setvisible]=useState(false)
@@ -51,18 +51,20 @@ const Side =()=>{
 
             <div className="list-items-admin">
                 <ul>
-                <li><i class='bx bxs-dashboard'></i><Link to="/admin" style={linkStyle} onClick={handleClick}>Dashboard</Link></li>
-                <li><i class='bx bxs-id-card'></i><Link to="/driver"style={linkStyle} onClick={handleClick}>Drivers</Link></li>
-                <li ><i class='bx bx-bus'></i> <Link to="/bus"style={linkStyle} onClick={handleClick}>Bus manage</Link></li>
-                <li> <i class='bx bxs-book-content'></i> <Link to ="/form"style={linkStyle} onClick={handleClick}>Form</Link></li>
+                <li><i className='bx bxs-dashboard'></i><Link to="/admin" style={linkStyle} onClick={handleClick}>Dashboard</Link></li>
+                <li><i className='bx bxs-id-card'></i><Link to="/driver"style={linkStyle} onClick={handleClick}>Drivers</Link></li>
+                <li ><i className='bx bx-bus'></i> <Link to="/bus"style={linkStyle} onClick={handleClick}>Bus manage</Link></li>
+ 
+                <li> <i className='bx bxs-book-content'></i> <Link to ="/form"style={linkStyle} onClick={handleClick}>Role change</Link></li>
+          
                 </ul>
             </div>
             <div className="line-admin"></div>
             <div className="list-items-admin">
                 <ul>
-                <li><i class='bx bx-comment-dots'></i> <Link to="/claim"style={linkStyle} onClick={handleClick}>Claims & <br/>feedback  </Link></li>
-                <li><i class='bx bx-cog'></i> Settings </li>
-                <li><i class='bx bx-phone-call' ></i> Help center </li>
+                <li> <i className='far fa-comment'></i> <Link to ="/messages"style={linkStyle} onClick={handleClick}>All Messages</Link></li>
+                <li><i className='bx bx-cog'></i> Settings </li>
+                <li><i className='bx bx-phone-call' ></i> Help center </li>
                 </ul>
                 </div>
                 <label className="switch">
@@ -71,7 +73,6 @@ const Side =()=>{
         </label>
         </div>
         </div>
-         
         </div>
         </div>
     )
