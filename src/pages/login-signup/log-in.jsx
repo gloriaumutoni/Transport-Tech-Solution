@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import jwt_decode from 'jwt-decode'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import BASE_URL from '../../Api';
 
 const Login = () => {
   const initialValues = { email: '', password: '', role: '' };
@@ -46,7 +47,7 @@ const Login = () => {
 
   const sendDataToBackend = async () => {
     try {
-      const response = await fetch('https://precious-tan-slug.cyclic.app/api/v2/user/login', {
+      const response = await fetch(`${BASE_URL}/api/v2/user/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

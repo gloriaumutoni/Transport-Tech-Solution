@@ -26,7 +26,11 @@ const Admin1 =()=>{
 
   const [driverData, setDriverData] = useState([]);
   useEffect(() => {
-    fetch("https://important-cummerbund-colt.cyclic.app/api/v2/role/readAll?role=Driver")
+ 
+    fetch(
+      "https://good-red-sea-urchin-ring.cyclic.app/api/v2/role/readAll?role=Driver"
+    )
+ 
       .then((response) => response.json())
       .then((data) => setDriverData(data.data))
       .catch((err) => console.log(err));

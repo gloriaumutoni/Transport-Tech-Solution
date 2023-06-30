@@ -33,7 +33,11 @@ const DriverSidebar =()=>{
         <div className="driver-sidebar">
         
             <div className="logo-admin">
-                <h1 style={{color:"white"}}>Bus<span style={{color:"#009AC7"}}>  link</span></h1>
+            <h1>
+  <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
+      Bus<span style={{ color: "#009AC7" }}>link</span>
+    </Link>
+  </h1>
             </div>
             <div className="list-items-driver">
                 <ul>
