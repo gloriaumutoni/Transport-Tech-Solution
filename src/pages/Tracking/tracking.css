@@ -24,6 +24,9 @@
 #tracking-map{
     display: none;
 }
+#tracking-cont{
+    display: none;
+}
 .tracking-map iframe{
     width: 660px;
 }
@@ -98,18 +101,26 @@ margin-left: 10px;
     font-size: 2rem;
     margin-left: -35px;
 }
-/* .dot-icon{
-    position: absolute;
-    margin-top: -20px;
-    font-size: 3rem;
-     margin-left: -45px;
+.tracking-body h2:hover{
+    color: #6DD98D;
 }
-.person-icon{
-    position: absolute;
-    margin-top: 20px;
-    font-size: 3rem; 
-    margin-left: -45px;
-} */
+.Active-content h1:hover{
+color: #6DD98D;
+}
+.tracking-clipath h5:hover{
+background-color: #6DD98D;
+}
+.nav-heading h2:hover{
+    color: #6DD98D;
+    text-decoration-line: underline;
+    text-underline-offset: 7px;
+}
+.tracking-clippath:hover{
+    background-color: #6DD98D;
+    }
+    .tracking-clipa:hover{
+        background-color: #6DD98D;
+        }
 .bxs-phone-call{
     margin-top: 3px;
     margin-left: 3px;
@@ -141,8 +152,10 @@ margin-left: 10px;
     padding-bottom: 20px;
     border-radius: 10px;
 }
-.Navigation-Bar-tracking.tracking-close-icon{
+.tracking-close-icon{
     color: white;
+    margin-left: 20px;
+    font-size: 1.5rem;
 }
 .content-tracking-opacity .nav-tracking{
     background-color: #2A4966;
@@ -153,8 +166,6 @@ margin-left: 10px;
 .nav-tracking h2{
     font-size: 1rem;
     position: absolute;
-    text-decoration-line: underline;
-    text-underline-offset: 7px;
     color:white;
     justify-content: center;
     position: absolute;
@@ -257,6 +268,25 @@ position: absolute;
     .tracking-map{
         display: none;
     }
+    .bx-search-alt-2{
+        margin-left: 230px;
+        margin-top: 30px;
+        position: absolute;
+        z-index: 1;
+    }
+    .menu-tracking{
+        float: left;
+        /* margin-left: -50px; */
+        /* position: absolute; */
+        margin-top: 60px;
+        z-index: 1;
+    }
+    #tracking-cont{
+        display: block;
+    }
+    .tracking-cont{
+        display: none;
+    }
     .container-tracking{
         display: block;
         
@@ -284,6 +314,8 @@ position: absolute;
             margin-left: -150px;
             position: absolute;
            height: 60vh;
+           /* margin-top: 10px;
+           z-index: 1; */
         }
     .tracking-map-cont{
         /* display: grid;
@@ -292,14 +324,21 @@ position: absolute;
        
     }
     .search-tracking .tracking-input{
-        /* position: absolute; */
+        position: absolute;
 z-index: 1;
          width:200px;
+         margin-top: 30px;
          padding: 2px 20px 2px 20px;
      }
+.nav-tracking{
+    height: 35vh;
+}
+.nav-tracking h2{
+   margin-top: 55px;
+}
 
     .tracking-map iframe{
-        width: 426px;
+        width: 406px;
     }
     .tracking-clippath h5{
         margin-top: 20px;
@@ -323,7 +362,7 @@ z-index: 1;
     .tracking-cont{
         /* position: absolute;
         margin-top: 100px; */
-        width: 446px;
+        width: 415px;
     }
     .tracking-map-cont{
         display: grid;
@@ -331,16 +370,61 @@ z-index: 1;
     }
     .content-tracking{
         margin-top: -67px;
-        width: 426px;
+        width: 416px;
         /* margin-left: -20px; */
     }
+    .Navigation-Bar-tracking{
+        margin-top: 40px;
+        z-index: 1;
+     }
+     .tracking-close-icon{
+        z-index: 1;
+        margin-top: 40px;
+        position: absolute;
+        font-size: 1.5rem;
+     }
 }     
 @media screen and (min-width:370px) and (max-width:500px) {
     #tracking-map{
         display: block;
     }
+    .Navigation-Bar-tracking{
+        margin-top: 40px;
+        z-index: 1;
+     }
+     .tracking-close-icon{
+        z-index: 1;
+        margin-top: 20px;
+        position: absolute;
+        font-size: 1.5rem;
+     }
     .tracking-map{
         display: none;
+    }
+    #tracking-cont{
+        display: block;
+    }
+    .tracking-cont{
+        display: none;
+    }
+    .nav-tracking h2{
+        margin-top: 55px;
+     }     
+    .nav-tracking{
+        height: 35vh;
+    }
+    .bx-search-alt-2{
+        /* margin-left: 230px; */
+        margin-top: 35px;
+        position: absolute;
+        z-index: 1;
+    }
+    .menu-tracking{
+        float: left;
+        /* margin-left: -50px; */
+        /* position: absolute; */
+        margin-top: 60px;
+        z-index: 1;
     }
     .container-tracking{
         display: block;
@@ -368,7 +452,7 @@ z-index: 1;
         .Navigation-Bar-tracking #navnavbar{
             margin-left: -150px;
             position: absolute;
-           height: 40vh;
+           height: 60vh;
         }
     .tracking-map-cont{
         /* display: grid;
@@ -380,27 +464,28 @@ z-index: 1;
         /* position: absolute; */
 z-index: 1;
          width:198px;
+         margin-top: 30px;
      }
 
     .tracking-map iframe{
-        width: 450px;
+        width: 470px;
     }
     .tracking-clippath h5{
-        margin-top: 50px;
+        margin-top: 30px;
         position: absolute;
         font-size: 1.2rem;
-        margin-left: 20px;
+        margin-left: 10px;
     }
     .tracking-clipath h5{
-        margin-top: -35px;
-        margin-left:35px;
+        margin-top: -18px;
+        margin-left:5px;
         position: absolute;
         font-size: 1.2rem;
         }
     .tracking-clipa h5{
-        margin-top: 40px;
+        margin-top: 25px;
         position: absolute;
-        /* margin-left: 78px; */
+        margin-left: 35px;
         font-size: 1.2rem;
     }
     
@@ -415,17 +500,55 @@ z-index: 1;
     }
     .content-tracking{
         margin-top: -67px;
-        width: 450px;
+        width: 470px;
         /* width: 406px; */
         /* margin-left: -20px; */
     }
+    .Navigation-Bar-tracking{
+        margin-top: 60px;
+     }
 }     
 @media screen and (min-width:501px) and (max-width:550px) {
     #tracking-map{
         display: block;
     }
+    .Navigation-Bar-tracking{
+        margin-top: 40px;
+        z-index: 1;
+     }
+     .tracking-close-icon{
+        z-index: 1;
+        margin-top: 20px;
+        position: absolute;
+        font-size: 1.5rem;
+     }
     .tracking-map{
         display: none;
+    }
+    .tracking-cont{
+        display: none;
+    }
+    #tracking-cont{
+        display: block;
+    }
+    .nav-tracking{
+        height: 35vh;
+    }
+    .nav-tracking h2{
+        margin-top: 55px;
+     }
+    .bx-search-alt-2{
+        /* margin-left: 230px; */
+        margin-top: 35px;
+        position: absolute;
+        z-index: 1;
+    }
+    .menu-tracking{
+        float: left;
+        /* margin-left: -50px; */
+        /* position: absolute; */
+        margin-top: 60px;
+        z-index: 1;
     }
     .container-tracking{
         display: block;
@@ -440,6 +563,7 @@ z-index: 1;
     .search-tracking .tracking-input{
         /* position: absolute; */
          width:198px;
+         margin-top: 30px;
         }
         .nav-tracking-search{
             margin-left: 18px; 
@@ -458,12 +582,12 @@ z-index: 1;
     } */
     
     .tracking-map iframe{
-        width: 520px;
+        width: 510px;
     }
     .tracking-cont{
         /* position: absolute;
         margin-top: 100px; */
-        width: 520px;
+        width: 510px;
     }
     .tracking-map-cont{
         display: grid;
@@ -471,16 +595,55 @@ z-index: 1;
     }
     .content-tracking{
         margin-top: -67px;
-        width: 520px;
+        width: 530px;
         margin-left: -20px;
     }
+    .Navigation-Bar-tracking{
+        margin-top: 60px;
+     }
 }     
 @media screen and (min-width:551px)and (max-width:819px){
     #tracking-map{
         display: block;
     }
+    .Navigation-Bar-tracking{
+        margin-top: 40px;
+        z-index: 1;
+     }
+     .tracking-close-icon{
+        z-index: 1;
+        margin-top: 10px;
+        margin-left: 20px;
+        position: absolute;
+        font-size: 1.5rem;
+     }
+    .tracking-cont{
+        display: none;
+    }
     .tracking-map{
         display: none;
+    }
+    #tracking-cont{
+        display: block;
+    }
+    .nav-tracking{
+        height: 35vh;
+    }
+    .nav-tracking h2{
+        margin-top: 55px;
+     }
+    .bx-search-alt-2{
+        /* margin-left: 230px; */
+        margin-top: 35px;
+        position: absolute;
+        z-index: 1;
+    }
+    .menu-tracking{
+        float: left;
+        /* margin-left: -50px; */
+        /* position: absolute; */
+        margin-top: 60px;
+        z-index: 1;
     }
     .tracking-clippath{
         /* margin-top: 40px; */
@@ -498,7 +661,9 @@ z-index: 1;
        
     }
     .Navigation-Bar-tracking #navnavbar{
-       height: 40vh;
+       /* height: 60vh; */
+       margin-top: 40px;
+       position: absolute;
     }
     .tracking-clippath h5{
         /* margin-top: 75px; */
@@ -515,35 +680,76 @@ z-index: 1;
     .tracking-clipa h5{
         /* margin-top: 75px; */
         position: absolute;
-        margin-left: 78px;
+        margin-left: 68px;
         font-size: 1.2rem;
+        /* margin-top: 5px; */
     }
     .content-tracking{
         margin-left: -20px;
-        width: 758px;
+        width: 738px;
         margin-top: -67px;
     }
     .search-tracking .tracking-input{
         /* position: absolute; */
 z-index: 1;
          width:280px;
+         margin-top: 30px;
      }
     .nav-tracking-search{
         margin-left: 18px; 
     }
     .tracking-map iframe{
-        width: 758px;
+        width: 718px;
     }
     .tracking-cont{
-        width: 758px;
+        width: 718px;
     }
+    .Navigation-Bar-tracking{
+        margin-top: 60px;
+     }
 }
 @media screen and (min-width:820px) and (max-width:900px) {
     #tracking-map{
         display: block;
     }
+    .Navigation-Bar-tracking{
+        margin-top: 40px;
+        z-index: 1;
+     }
+     .tracking-close-icon{
+        z-index: 1;
+        margin-left: 30px;
+        /* margin-top: 40px; */
+        position: absolute;
+        font-size: 1.5rem;
+     }
     .tracking-map{
         display: none;
+    }
+    .nav-tracking{
+        height: 30vh;
+    }
+    .nav-tracking h2{
+        margin-top: 55px;
+     }
+    .bx-search-alt-2{
+        /* margin-left: 230px; */
+        margin-top: 35px;
+        position: absolute;
+        z-index: 1;
+    }
+    .menu-tracking{
+        float: left;
+        /* margin-left: -50px; */
+        /* position: absolute; */
+        margin-top: 60px;
+        z-index: 1;
+    }
+    .tracking-cont{
+        display: none;
+    }
+    #tracking-cont{
+        display: block;
     }
     .container-tracking{
         display: block;
@@ -552,28 +758,33 @@ z-index: 1;
         /* position: absolute; */
 z-index: 1;
          width:300px;
+         margin-top: 30px;
      }
      .Navigation-Bar-tracking #navnavbar{
         height: 30vh;
+        margin-top: 30px;
+     }
+     .Navigation-Bar-tracking{
+        margin-top: 60px;
      }
     .tracking-map-cont{
         margin-left: -20px;
        
     }
     .tracking-clippath h5{
-        margin-top: 80px;
+        margin-top: 40px;
         position: absolute;
         font-size: 1.2rem;
-        margin-left: 20px;
+        margin-left: 30px;
     }
     .tracking-clipath h5{
-        margin-top: -35px;
+        margin-top: -25px;
         margin-left:35px;
         position: absolute;
         font-size: 1.2rem;
         }
     .tracking-clipa h5{
-        margin-top: 82px;
+        margin-top: 32px;
         position: absolute;
         margin-left: 78px;
         font-size: 1.2rem;
@@ -582,7 +793,7 @@ z-index: 1;
         margin-left: 18px; 
     }
     .tracking-map iframe{
-        width: 840px;
+        width: 850px;
     }
     .content-tracking{
         margin-left: -20px;
@@ -596,6 +807,18 @@ z-index: 1;
     .tracking-map{
         display: none;
     }
+   .tracking-cont{
+    display: none;
+}
+    #tracking-cont{
+        display: block;
+    }
+    .nav-tracking{
+        height: 30vh;
+    }
+    /* .nav-tracking h2{
+        margin-top: 25px;
+     } */
     .container-tracking{
         display: block;
         font-size: 1.8rem;
@@ -606,32 +829,33 @@ z-index: 1;
     .search-tracking .tracking-input{
         /* position: absolute; */
          width:335px;
+         margin-top: -20px;
         }
     .tracking-map-cont{
         margin-left: -20px;
        
     }
     .tracking-clippath h5{
-        margin-top: 80px;
+        margin-top: 40px;
         position: absolute;
         margin-left: 20px;
     }
     .tracking-clipath h5{
         margin-top: -35px;
-        margin-left:35px;
+        margin-left:65px;
         position: absolute;
         }
     .tracking-clipa h5{
-        margin-top: 82px;
+        margin-top: 42px;
         position: absolute;
-        margin-left: 78px;
+        margin-left: 85px;
         font-size: 1.5rem;
     }
     .nav-tracking-search{
         margin-left: 18px; 
     }
     .tracking-map iframe{
-        width: 930px;
+        width: 950px;
     }
     .content-tracking{
         margin-left: -20px;

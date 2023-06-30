@@ -66,12 +66,12 @@ const handleShow = (content) =>{
                     </div>}
                     {visible &&  <div className='Navigation-Bar-tracking'>
                     <GrFormClose onClick={() =>setVisible (false)} className='tracking-close-icon'/>
-                <ul id='navnavbar'>
-                 <li className='navbar-list'><a id='navbar-a' className='active' href='#'><Link to="/" >Home</Link></a></li>
-                 <li className='navbar-list'><a id='navbar-a' href='#'>Book here</a></li>
-                 <li className='navbar-list'><a id='navbar-a' href='#'>Manage Booking</a></li>
-                 <li className='navbar-list'><a id='navbar-a' href='#'>Contact</a></li>
-                 <li className='navbar-list'><a id='navbar-a' href='#'><Link to="/Signup" >Sign in</Link></a></li>   
+                    <ul id='navnavbar'>
+                 <li><Link to='/'>Home</Link> </li>
+                 <li><Link to='/book-here'>Book here</Link> </li>
+                 <li><Link to='/cancel-ticket'> Manage Booking</Link></li>
+                 <li><Link to='/contact'>Contact</Link> </li>
+                 <li><Link to='/login'>Sign in</Link> </li>   
                 </ul>
             </div>}
                     
@@ -129,6 +129,16 @@ const handleShow = (content) =>{
 <h5 >Nyarugenge Route</h5>
 </div>
                 </div>   
+</div>
+<div className='tracking-cont' id='tracking-cont'>
+<i class='bx bxs-bus'></i>
+<h1>Rapid Arrival Bus</h1>
+<i class='bx bx-dots-vertical-rounded'></i>
+<h2>{show}</h2>
+
+<i class='bx bxs-user'></i>
+<h2><span>Driver</span><br></br>Driver Name<strong><i class='bx bxs-phone-call' ></i></strong></h2>
+<Link to='/Booking' className='tracking-link-tag'><button>Book Now</button></Link>
 </div>
 <div className='tracking-map' id='tracking-map'>
 <iframe width="595" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=kigali%20bus%20stop,kigali%20city%20Kigali+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'></a>
