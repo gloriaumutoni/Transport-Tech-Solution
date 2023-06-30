@@ -73,9 +73,9 @@ const Login = () => {
       // console.log(decoded);
 const roles = await decoded.role
 // console.log("roles",roles)
-if(roles=="driver"){
+if(roles=="driver" || roles=="Driver"){
 
-  navigate('/driver');
+  navigate('/booking');
 
 }
 else if(roles=="user"){
