@@ -63,7 +63,15 @@
         background-color: #E9F4FF;
       }
 
-     .status{
-       color:#008000 ;
-       font-weight: 700;
-       }  
+
+       #item-status{
+        text-decoration: none;
+        color: #2A4966;
+        font-weight: 700;
+       }
+
+       #item-status:hover{
+        color: #0d61b0;
+       font-size: 15px;
+       font-weight: 600;
+       }
