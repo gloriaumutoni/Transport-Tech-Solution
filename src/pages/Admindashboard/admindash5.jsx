@@ -16,7 +16,7 @@ const UserForm = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `https://important-cummerbund-colt.cyclic.app/api/v2/role/readAllUsers`
+          `https://good-red-sea-urchin-ring.cyclic.app/api/v2/role/readAllUsers`
         );
         const data = await response.json();
         setUsers(data.data);
@@ -32,7 +32,7 @@ const UserForm = () => {
     try {
       console.log(userId);
       const result = await fetch(
-        `https://important-cummerbund-colt.cyclic.app/api/v2/role/assign?id=${userId}`,
+        `https://good-red-sea-urchin-ring.cyclic.app/api/v2/role/assign?id=${userId}`,
         {
           method: "PATCH",
           body: JSON.stringify({ role: newRole }),
