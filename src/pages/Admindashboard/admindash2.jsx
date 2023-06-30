@@ -31,7 +31,7 @@ const Admin1 = () => {
   const [driverData, setDriverData] = useState([]);
   useEffect(() => {
     fetch(
-      "https://https://giant-sari-seal.cyclic.app/api/v2/role/readAll?role=Driver"
+      "https://giant-sari-seal.cyclic.app/api/v2/role/readAll?role=Driver"
     )
       .then((response) => response.json())
       .then((data) => setDriverData(data.data))
